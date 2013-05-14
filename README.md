@@ -1,6 +1,3 @@
-mcmaster.latex
+phd_thesis
 ==============
-
-LaTeX Template Satisfying McMaster Thesis Formatting Requirements
-
-This document also strives to include/document modern packages which improve/simplify the writing of scientific theses
+Gabriel A. Devenyi's PhD thesis in LaTeX, forked from https://github.com/gdevenyi/mcmaster.latex
