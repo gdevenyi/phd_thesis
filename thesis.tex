@@ -1,6 +1,6 @@
 \RequirePackage[l2tabu, orthodox]{nag} %Package complains about uses of old functions, make sure you write modern latex
 \documentclass[letterpaper,10pt]{report}
-\usepackage[english]{babel}
+\usepackage[english,canadian]{babel}
 \usepackage{amsmath} %AMS Math Package
 \usepackage{amssymb} %AMS Math Symbols
 \usepackage[all,warning]{onlyamsmath}%Warn about non-ams math useage, suggest improvements
@@ -25,19 +25,18 @@
 \usepackage[section,subsection,subsubsection]{extraplaceins} %Modified version of placeins which works at section, subsection and subsubsection
 \usepackage{verbatim}%Fixes bugs in \verbatim, and provides \begin{comment} and \verbatiminput for including files
 \usepackage{syntonly}%Provides syntax-only latex runs, useful for when the document starts getting big!
+\usepackage{csquotes}
 \usepackage{float} %Fixes up floats (figures) and provides the H placement modifier (place the float RIGHT HERE). with great power...
 \usepackage[style=nature,backend=bibtex]{biblatex}
 %\addbibresource{library.bib}
 \usepackage[english]{isodate}%Convert any date formats to ISO style
 \usepackage{listing}%Package for listing sourcecode with syntax highlighting
-\usepackage{ellipis}%Fix \ldots and similar commands, bugs with spacing and such
+\usepackage{ellipsis}%Fix \ldots and similar commands, bugs with spacing and such
+\usepackage{graphicx}
 
-\ifpdf
-	\usepackage[pdftex]{graphicx}
-	\pdfcompresslevel=9
-\else
-	\usepackage{graphicx}
-\fi
+\pdfminorversion=5
+\pdfobjcompresslevel=3 
+\pdfcompresslevel=9
 
 \usepackage{subcaption} %The standard method to do figures with a), b) and such
 \usepackage{fancyhdr} %Package for changing header/footer
