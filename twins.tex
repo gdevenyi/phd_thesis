@@ -58,7 +58,7 @@ thin films was grown to a thickness of 600~nm and GaSb to a thickness of
 500~nm. InP samples were grown at 470~\(^\circ\)C with a V/III flux ratio of 2 
 at a growth rate of 1 \(\mu m\)/hr, resulting in a thickness of 600~nm. Double 
 crystal X-ray and TEM data also revealed that all films are fully relaxed by a 
-network of interfacial misfit dislocations\cite{Vajargah2011}. GaSb samples 
+network of interracial misfit dislocations\cite{Vajargah2011}. GaSb samples 
 were grown in the presence of a 5 nm AlSb buffer layer, as prescribed by 
 Akahane \textit{et al}.\cite{Akahane2004}.
 
@@ -114,8 +114,8 @@ habit planes.
     \begin{subfigure}[b]{0.5\linewidth}
         \centering
         \includegraphics[width=\textwidth]{twins_sim_polefigure}
-        \caption{Simulated III-V on silicon pole figure. Unique markers are used 
-        for later intensity measurements.\label{fig:twins_sim_polefigure}}
+        \caption{Simulated III-V on silicon pole figure. Markers (1-4) are used to denote peaks selected
+        for intensity measurements.\label{fig:twins_sim_polefigure}}
     \end{subfigure}
     \caption{\label{fig:polefigure_example}Representative pole figure and simulated pole 
     figure}
@@ -127,8 +127,9 @@ overcome the polar-on-non-polar growth problem\cite{Kroemer1987}. The pole figur
 generated for thin films grown on vicinal substrates were found to have a distinctive 
 asymmetry in the intensity distribution of the peaks associated with twinned orientation, 
 when compared to the thin films grown on nominal silicon substrates. The pole figures for 
-both nominal and vicinal pole figures for the III-V thin films are shown in 
-\cref{fig:twins_polefigure}.
+both nominal and vicinal substrates are shown in \cref{fig:twins_polefigure}. 
+General visual differences between the pole figures across the different materials systems can be attributed to the relative diffraction intensities of the different materials.
+In all cases the vicinal pole figures are oriented such that the center of symmetry is shifted away from the tilt direction, i.e. towards the atomic step edges.
 
 \begin{figure}
     \centering
@@ -139,5 +140,22 @@ both nominal and vicinal pole figures for the III-V thin films are shown in
     substrates.\label{fig:twins_polefigure}}
 \end{figure}
 
+The intensity of the peaks denoted 1-4, as labelled in \cref{fig:twins_sim_polefigure}, corresponding to a unique (111) reflection from each of the primary twins was integrated for each of the pole figures, and plotted in \cref{fig:twins_stats}.
+The peak intensities were corrected for x-ray structure factor exposure time, and sample thickness where these parameters were different in order to allow comparison.
+In order to better allow comparisons between material systems, in \cref{fig:twins_stats}b, intensities are normalized to the maximum for the given figure.
+For thin films grown on nominal substrates, the intensity of peaks 1-4 and hence the twin volume fraction is equal within experimental uncertainty.
+For all material systems, the vicinal substrates demonstrate a 50-75\% reduction in the intensity of peak 3, and hence the twin volume fraction corresponding to the twins forming opposite to the step direction.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{twins_stats}
+    \caption{(a) Corrected (via structure factor and exposure time) and (b) normalized intensity of twin poles (as labelled in \cref{fig:twins_sim_polefigure} above). The normalized X-ray intensity clearly shows a strong reduction in Pole 3 for all vicinal substrates.\label{fig:twins_stats}}
+\end{figure}
 
+Conventional cross-sectional TEM imaging in the [1$\overline{1}$0] direction shows microtwins present in both nominal and vicinal substrate orientations as seen in \cref{fig:twins_tem}. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{twins_tem}
+    \caption{Conventional TEM images of the [1$\overline{1}$0] cross-section, (a) GaAs Nominal DF image of variants with ($\overline{1}\overline{1}$1) twin habit plane; (b) GaAs Nominal DF image of the same area as (a); (c) GaSb Nominal BF image; (d) GaAs Vicinal DF image of variants with ($\overline{1}\overline{1}$1) twin habit plane; (e) GaAs Vicinal DF image of the same area as (d); (f) GaSb Vicinal with the preferential twinning direction of ($\overline{1}\overline{1}$1) away from step edge (Pole 1), as indicated by microtwins with bright contrast in this DF image; step edge direction is towards the right for all vicinal images.\label{fig:twins_tem}}
+\end{figure}
