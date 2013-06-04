@@ -27,8 +27,8 @@
 \usepackage{syntonly}%Provides syntax-only latex runs, useful for when the document starts getting big!
 \usepackage{csquotes}
 \usepackage{float} %Fixes up floats (figures) and provides the H placement modifier (place the float RIGHT HERE). with great power...
-\usepackage[style=numeric-comp,backend=bibtex]{biblatex}
-%\addbibresource{library.bib}
+\usepackage[style=numeric-comp,backend=biber]{biblatex}
+\addbibresource{test.bib}
 \usepackage[english]{isodate}%Convert any date formats to ISO style
 \usepackage{listing}%Package for listing sourcecode with syntax highlighting
 \usepackage{ellipsis}%Fix \ldots and similar commands, bugs with spacing and such
@@ -55,24 +55,23 @@
 %\syntaxonly %Uncomment to only check compile for syntax PRODUCES NO OUTPUT
 
 \hypersetup{
-    unicode=true,          % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={My title},    % title
-    pdfauthor={Gabriel A. Devenyi},     % author
-    pdfsubject={Subject},   % subject of the document
-    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
-    pdfnewwindow=true,      % links in new window
-    colorlinks=false,       % false: boxed links; true: colored links
-    linkcolor=red,          % color of internal links
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=cyan           % color of external links
+    unicode=true,
+    pdftoolbar=true,
+    pdfmenubar=true,
+    pdffitwindow=false,
+    pdfstartview={FitH},
+    pdftitle={My title},
+    pdfauthor={Gabriel A. Devenyi},
+    pdfsubject={Subject},
+    pdfkeywords={keyword1} {key2} {key3},
+    pdfnewwindow=true,
+    colorlinks=false,
+    linkcolor=red,
+    citecolor=green,
+    filecolor=magenta,
+    urlcolor=cyan
 }
 \graphicspath{{figures/}} %Uncomment if you want to hide all figure files in a graphics/ subdirectory
-
 
 \title{Thesis Example}
 \author{Gabriel A. Devenyi}
@@ -148,14 +147,22 @@ NUMBER OF PAGES: vii, 212}
 
 %For large LaTeX documents, it is best practice to separate the material into smaller files so that it is easier to handle, use \input to insert each file into the overall document
 
+\chapter{Introduction}
 %\input{introduction.tex}
 \chapter{The Role of Vicinal Surfaces in Epitaxial Twin Formation}
-%\input{twins.tex}
+\input{twins.tex}
 \chapter{Tilted Epitaxy on 211 Oriented Substrates}
 \input{211.tex}
-%Other useful examples
+\chapter{CdTe Growth on Sapphire Substrates}
+%\input{CdTeSapphire.tex}
+\chapter{CdTe on SrTiO3}
+%\input{srtio3.tex}
+\chapter{CdTe Nanowire Growth on Sapphire}
+%\input{cdtenanowire.tex} 
+
+%%Other useful examples
 %\textsubscript{} and \textsuperscript{} are the best way to do super/sub (provided by fixltx2e)
 
-%\printbibliography
+\printbibliography
 %\printindex
 \end{document}
