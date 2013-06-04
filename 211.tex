@@ -1,7 +1,15 @@
 \section{Introduction}
 In parallel to the investigations of vicinal (100) substrates, the ARISE project investigated alternative substrate orientations including (111) and (211). While the results of (111) substrates were uninteresting, growth of thin films on (211) substrates demonstrated a number of interesting properties. Most interesting amongst these was the spontaneous tilting of thin films grown on top of (211) oriented silicon substrates. Such tilting had been remarked upon previously in literature,  but no comprehensive examination of its origins or relationship to material parameters had been examined.
 
-In this work, also done in close collaboration with Ms. Steffi Woo, the spontaneous tilting of thin films grown on (211) oriented silicon substrates was examined. The effects of the naturally asymmetric substrate was found to cause a tilt of the growing thin film in order to minimize the strain across the interface. Using this idea of projected strain minimization across the interface, a model was developed which predicted the tilt as a function of intrinsic lattice mismatch between the substrate and thin film. Examiniation of the reports of thin film tilting in literature showed the model successfully calculated tilt for a large number of material systems and made predictions for those systems for which no measured values had been reported.
+In this work, also done in close collaboration with Ms. Steffi Woo, the spontaneous 
+tilting of thin films grown on (211) oriented silicon substrates was examined. The 
+effects of the naturally asymmetric substrate was found to cause a tilt of the growing 
+thin film in order to minimize the strain across the interface. Using this idea of 
+projected strain minimization across the interface, a model was developed which predicted 
+the tilt as a function of intrinsic lattice mismatch between the substrate and thin film. 
+Examination of the reports of thin film tilting in literature showed the model 
+successfully calculated tilt for a large number of material systems and made predictions 
+for those systems for which no measured values had been reported.
 \section{Background}
 The (211) orientation of non-polar semiconductor substrates, most notably silicon, has a number of beneficial properties. Of most relevance to the epitaxy of thin films on Si(211) substrates is the occurrence of two energetically non-equivalent lattice sites on the surface, without the need for surface reconstruction.\cite{Wright1982} These two non-equivalent lattice sites offer preferential nucleation locations for the individual adatoms during growth of polar (group III-V and II-VI) semiconductors. Such preferred nucleation is proposed to eliminate the occurrence of anti-phase domains (APDs) during the growth of polar semiconductors\cite{Wright1982} while also maintaining the interface neutrality condition of h$\pm$k$\pm$l$=$0.\cite{Wright1982} The intrinsic asymmetry of the (211) surface is also expected to influence the formation of epitaxial twins during growth\cite{Devenyi2011}. Si(211) substrates have been used to produce the highest quality CdTe\cite{Zhao2011}, ZnTe\cite{Wang2011a} and HgCdTe\cite{Dhar1997a} despite large lattice mismatches of 19.4\%, 12.3\%, and 19.1\%, respectively. 
 
@@ -13,6 +21,7 @@ previously published procedures\cite{Devenyi2011}, at 600, 640 and 500{\degree}C
 dimensional X-ray diffraction (2DXRD) frames were captured for stereographic pole figure 
 analysis and crystallographic indexing as per Devenyi \textit{et al.}\cite{Devenyi2011}.
 \begin{figure}
+    \centering
 \includegraphics{211_polefigure}
 \caption{\label{fig:211_polefigure}a) 2DXRD Stereographic pole figure and b) accompanying modelled pole figure, identifying the origin of each peak in the pole figure from the bulk or one of six twin variants. Overlapping peaks indicate twinning habit planes. Outermost poles are partially visible due to experimental limitations. Streaking in peaks is due to instrumental broadening. (S.O. = second-order twinning).}
 \end{figure}
@@ -21,6 +30,7 @@ analysis and crystallographic indexing as per Devenyi \textit{et al.}\cite{Deven
 
 Indexing of the crystal unit cells present in the film was performed using \textit{Bruker APEXII} single crystal refinement software, to obtain orientation matrices for the Si substrate as well as the seven GaSb phases. The bulk thin film orientation matrix was then compared to the substrate matrix and a tilt calculated using \textit{orilib} a crystal orientation calculation library, yielding a tilt of 2.65\degree, 2.55\degree and 2.40\degree $\pm$ 0.2\degree about the [01$\overline{1}$] direction towards [$\overline{1}$11], these values are indistinguishable within experimental error. The (111) habit plane twin formed in these films is also tilted with respect to the substrate, by the same angle as the bulk, this is expected by crystallography, since this twinned orientation shares extended interfaces with the bulk orientation.
 \begin{figure}
+    \centering
 \includegraphics{211_tem}
 \caption{\label{fig:211_tem}Conventional TEM image of the (0$\overline{1}$1) cross section, with inset diffraction pattern of the epitaxial and (111) habit plane twin variant in blue and red, respectively, and inset higher-magnification of the epitaxial variant showing misfit dislocations.}
 \end{figure}
@@ -33,12 +43,22 @@ Analysis using an atomic ball-and-stick model, along with trigonometric modellin
  \frac{ a_{film}}{2\sin(74.207^\circ + \delta)} = \frac{ a_{Sub}}{\sqrt{3}}   \label{eqn:211_twin}
 \end{gather}
 \begin{figure}
+    \centering
 \includegraphics{211_model}
 \caption{\label{fig:211_model}Ball-and-stick atomic model of a triple junction of the epitaxial orientation, twinned orientation (with (111) habit plane in blue), and the Si(211) surface. Geometrical alignment of the atomic planes as described by EQNs.~\ref{eqn:211_epi} and \ref{eqn:211_twin} are also shown in red/blue and black, respectively. Terrace (T) and edge (E) atom labels denote the two non-equivalent surface sites.}	
 \end{figure}
 \begin{figure}
+    \centering
 \includegraphics{211_data}
-\caption{\label{fig:211_data}Colormap showing the projected strain as a function of intrinsic lattice mismatch and positive tilt angle of an epitaxial film, computed from EQN.~\ref{eqn:211_epi} with the zero projected strain contour highlighted (dot-dash line). The dotted line also overlays EQN.~\ref{eqn:211_twin}. Experimental data points from this work ($\times$), Ref.~\onlinecite{Zhao2011} ($\odot$), Ref.~\onlinecite{Wang2011a} ($\boxdot$), Ref.~\onlinecite{Johnson2011} ($\Diamond$, $\bigtriangleup$) and Ref.~\onlinecite{smith2012_znte,smith2012_gaas} ($\pentagon$, $\varhexagon$) are shown, indicating good agreement with measured tilts of thin films. Common heteroepitaxial systems are also highlighted. Close lattice mismatches are merged for figure clarity.}
+\caption{\label{fig:211_data}Colormap showing the projected strain as a function of 
+intrinsic lattice mismatch and positive tilt angle of an epitaxial film, computed from 
+EQN.~\ref{eqn:211_epi} with the zero projected strain contour highlighted (dot-dash 
+line). The dotted line also overlays EQN.~\ref{eqn:211_twin}. Experimental data points 
+from this work ($\times$), Ref.~\textcite{Zhao2011} ($\odot$), Ref.~\textcite{Wang2011a} 
+($\boxdot$), Ref.~\textcite{Johnson2011} ($\Diamond$, $\bigtriangleup$) and 
+Ref.~\textcite{smith2012_znte,smith2012_gaas} ($\pentagon$, $\varhexagon$) are shown, 
+indicating good agreement with measured tilts of thin films. Common heteroepitaxial 
+systems are also highlighted. Close lattice mismatches are merged for figure clarity.}
 \end{figure}
 In the twinned orientation, the Si($\overline{1}$11) plane spacing is aligned to the projection of the GaSb(200)$_{tw}$ plane spacing (both in black) onto the GaSb/Si interface, by a tilt of 2.22\degree. The geometrical constraints of these planes can be described by the relations as expressed in EQN.~\ref{eqn:211_twin}. The line of zero projected strain for the twinned region is also shown in FIG.~\ref{fig:211_data} (dotted line). The applicability of EQN.~\ref{eqn:211_twin} is considerably more limited across heteroepitaxial systems, as the constraints described by EQN.~\ref{eqn:211_epi} also needs to be simultaneously satisfied as extended interfaces are shared. However, an equivalent relationship describing another set of planes for other lattice mismatches may replace the relationship described by EQN.~\ref{eqn:211_twin}. The proposed ball-and-stick atomic model (FIG.~\ref{fig:211_model}) also shows that the Ga- and Sb-atoms in the twinned variant are perfectly registered with the terrace (T) and edge (E) atoms of the Si substrate. The epitaxial variant interface is significantly distorted, and the same atomic registration of Ga- and Sb-atoms to the underlying Si substrate does not occur, however the projected sublattice is still aligned. This correlates well with the misfit dislocations observed at the GaSb/Si interface in the inset of FIG.~\ref{fig:211_tem}.
 
