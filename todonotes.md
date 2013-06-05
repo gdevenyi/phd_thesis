@@ -1,8 +1,6 @@
 Figure Corrections
 ======================
-* Edit 211 pole figure to be wide instead of narrow
 * Generate photograph of InSb liftoff
-* Generate pole figure of InSb liftoff
 * TEM/STEM of CdTe for liftoff section
 * HRXRD to show partially strain relaxed CdTe
 * Generate model of gold on spinel substrate
