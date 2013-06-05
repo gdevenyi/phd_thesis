@@ -41,8 +41,8 @@
 
 \usepackage{subcaption} %The standard method to do figures with a), b) and such
 \usepackage{fancyhdr} %Package for changing header/footer
-\usepackage{showkeys} %Prints all instances of \label in margin for easy writing
-\usepackage{lineno} %Allows labeling of line numbers throughout document
+%\usepackage{showkeys} %Prints all instances of \label in margin for easy writing
+%\usepackage{lineno} %Allows labeling of line numbers throughout document
 \usepackage{makeidx} %For generating index files
 \usepackage{lipsum} %Prints junk text with \lipsum
 \usepackage{setspace} %Provides \doublespacing command
@@ -149,16 +149,23 @@ NUMBER OF PAGES: vii, 212}
 
 \chapter{Introduction}
 %\input{introduction.tex}
+\part{III-V Materials on Silicon}
 \chapter{The Role of Vicinal Surfaces in Epitaxial Twin Formation}
 \input{twins.tex}
 \chapter{Tilted Epitaxy on 211 Oriented Substrates}
 \input{211.tex}
-\chapter{CdTe Growth on Sapphire Substrates}
-%\input{CdTeSapphire.tex}
-\chapter{CdTe on SrTiO3}
+\part{Semiconductors on Oxide Substrates}
+\chapter{CdTe Growth on Sapphire Substrates and Liftoff Phenomonon}
+\input{cdteliftoff.tex}
+\chapter{CdTe Growth on Reconstructed SrTiO3}
 %\input{srtio3.tex}
 \chapter{CdTe Nanowire Growth on Sapphire}
 %\input{cdtenanowire.tex} 
+\chapter{III-V Growth on Oxides and Liftoff Phenonmoon}
+%\input{mbeoxide.tex}
+\part{Noble Metals on Oxides}
+\chapter{Nanostructured Gold on Spinel}
+%\input{nanogold.tex}
 
 %%Other useful examples
 %\textsubscript{} and \textsuperscript{} are the best way to do super/sub (provided by fixltx2e)
