@@ -7,7 +7,7 @@ properties of the resulting thin films\cite{svetlana-work,stephen-paper}.
 While the work investigating the growth parameters and properties of the resulting thin 
 films has progressed to a high level, relatively less investigation has been focused on 
 explaining the surprising success that has been achieved with this material system. With 
-a relative lattice mismatch of 3.7\% between CdTe and sapphire, a difference in the 
+a relative lattice mismatch of 3.xx\% between CdTe and sapphire, a difference in the 
 crystallographic space group (cubic CdTe versus hexagonal sapphire), and a vast chemical 
 difference (high ionicity semiconductor CdTe versus complex oxide sapphire), the high 
 quality single crystal nature of the grown thin films is far from expected.
@@ -15,13 +15,17 @@ quality single crystal nature of the grown thin films is far from expected.
 In this work investigating the CdTe on sapphire heteroepitaxial material system, the 
 unexpected high quality growth is examined through the lens of symmetry and energy at the 
 epitaxial 
-interface. These examinations reveal some explanatory models for the epitaxial alignment 
-and defects present in the thin films. These examinations also reveal the previously 
+interface. These examinations reveal theoretical support for an explanatory model of the 
+epitaxial alignment 
+and defects present in CdTe thin films. These examinations also reveal the previously 
 undocumented and highly surprising result that CdTe is not bonded nearly as strongly as 
 expected to the sapphire substrates after epitaxial growth, resulting in the 
-technologically relevant liftoff phenomenon. This work was completed in collaboration 
+technologically relevant liftoff phenomenon. The liftoff phenomon is examined and its 
+resulting freestanding thin films are characterized. This liftoff phenomon has been 
+discovered to be significantly robust as to apply for a provisional patent\cite{patent}. 
+This work was completed in collaboration 
 with Mr. Stephen M. Jovanovic (growths), Dr. Kristoffer Mienander (DFT, surfaces) and Ms. 
-Steffi Woo (TEM).
+Steffi Woo (TEM), and relies on prior work by Dr. Robert Hughes and Dr. Svetlana Neretina.
 
 \section{Background}
 CdTe is a cubic semiconductor (a = 6.14xxx) with a very strong propensity to grown 
@@ -33,8 +37,21 @@ thin films is to control the nucleation and in-plane orientation. \textalpha-Al$
 is a rhobehedral complex oxide (a = xxxx, c = yyy), which presents a hexgonal surface net 
 on its c-plane surface. As had been previously investigated by the Preston research 
 group, the (110) diagonal of CdTe matches to a lattice constant of sapphire to within 
-3.5\%.
-
+3.xx\%, providing a geometric template for the epitaxial alignment of (111)-up on the 
+c-plane surface. While the c-plane sapphire offers an epitaxial template for the CdTe, 
+the mismatch of cubic on hexagonal symmetries offers two equivalent orientations for the 
+CdTe crystal, as shown in \cref{fig:cdteliftoff_geometry}.
+\begin{figure}
+    \centering
+    \missingfigure{Triangle on Hexagon Fit}
+    \caption{\label{fig:cdteliftoff_geometry}Geometric model of cubic CdTe crystal 
+    structure fit on hexagonal c-plane sapphire surface}
+\end{figure}
+Despite the geometric equivalence of two orientations of cubic on hexagonal symmetry, 
+growths done by this research group have resulted in a single orientation of CdTe on the 
+sapphire surface. Previous work by this research group attempted to explain the preferred 
+orientation through experiments in the modification of sapphire\cite{Neretina2009b}, 
+suggesting that the energy considerations at the surface play a key factor in epitaxy.
 \section{Experimental}
 CdTe thin films were deposited on single crystal c-plane \textalpha-Al$_2$O$_3$ $\pm$ 
 0.5\degree wafers, obtained from MTI Crystals Inc and diced into 12 mm $\times$ 12 mm 
@@ -58,6 +75,62 @@ detector on a Bruker 3-circle D8 goniometer with Rigaku RU-200 rotating anode X-
 generator and parallel-focusing mirror optics were used for the data collection. 2DXRD 
 data was processed into pole figures using Bruker GADDS.
 \section{Results and Discussion}
+CdTe thin films had been previously thoroughly structurally characterized via 2DXRD, AFM 
+and TEM. As such, one of the next steps to fully characterize the CdTe thin films was to 
+produce larger uniform films\cite{stephen-thesis} and to electrically characterize films 
+via resistivity and hall effect. As part of this investigation, lithographic patterning 
+of Pt contacts was performed to create van der pauw geometry. Upon performing the acetone 
+soak, as the photoresist dissolved, and the metal film floated off the sample, it 
+remained in one piece, lifting off the areas of CdTe that were in contact with the metal from the epitaxial substrate. 
+For a sample that had been previously characterized to be single crystal, this result was 
+unexpected, as all that was required for this liftoff was an ultrasonic bath.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{cdteliftoff_nanowires}
+    \caption{\label{fig:cdteliftoff_nanowires}}
+\end{figure}
+This weak bonding phenomenon had been previously hinted at when CdTe nanowires were 
+observed in SEM to have toppled in place, as shown in \cref{fig:cdteliftoff_nanowires}, a 
+event that could not have happened unless the bond strength with the interface was very 
+weak.
+
+After the discovery of the liftoff phenomenon with lithographic patterning, simpler 
+methods of liftoff were attempted. Strong adhesive tapes were found to successfully 
+remove thin films with a simple mechanical peeling motion. While the tape peeling was 
+effective, the large curvatures cause cleaving and breakage in the lifted off film. 
+Adhesive epoxies were attempted and found to provide a more rigid carrier, eliminating 
+cleaving and breakage. Yields of liftoff are highly dependent on the quality of bonding 
+to the CdTe surface, clean surfaces and effective adhesives are key. Numerous other 
+bonding methods were tested including optical element adhesive, polymer films and the 
+simplification of liftoff by the addition of LN\textsubscript{2} as thermal shock. The generalized adhesive based liftoff process is shown in \cref{fig:cdteliftoff_process}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{cdteliftoff_process}
+    \caption{\label{fig:cdteliftoff_process}The generalized CdTe liftoff process}
+\end{figure}
+The flexible non-conductive liftoff carriers offered a first step to producing 
+freestanding thin films, but electrical contact to the films is a key property in order 
+to yield devices. To this end, thin films were coated with metal, first platinum (a known 
+CdTe contact material) and then copper, in order to create a temperature stable surface. 
+Samples were then wetted with solder paste and placed metal side down onto a copper 
+surface, and thermally cycled through a solder reflow curve, as shown in 
+\cref{fig:cdteliftoff_process}b. Upon removal from the oven, the films were found to have bonded to the copper surface and spontaneously lifted off from the original sapphire substrate. These experiments have demonstrated that the production of freestanding thin films by the liftoff phenomon is remarkably simple and straightforward.
+
+Concurrent to investigations into the production of freestanding thin films via the liftoff process, the obvious question arose as to the properties of these films when compared to those attached to the epitaxial substrate. 2DXRD measurements were undertaken on thin films before, \cref{fig:cdteliftoff_F22_attached} and after \cref{fig:cdteliftoff_F22_released}, liftoff processing using two part epoxy.
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{cdteliftoff_F22_attached}
+        \caption{\label{fig:cdteliftoff_F22_attached}(111) Pole figure of as-grown CdTe on sapphire}
+    \end{subfigure} %
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{cdteliftoff_F22_released}
+        \caption{\label{fig:cdteliftoff_F22_released}2DXRD of single crysal CdTe thin film on epoxy carrier}
+    \end{subfigure}
+    \caption{\label{fig:cdteliftoff_2DXRD}Attached and released CdTe pole figures}
+\end{figure}
 
 
 
