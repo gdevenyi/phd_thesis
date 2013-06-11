@@ -7,6 +7,7 @@ Figure Corrections
 * Generate model of CdTe on sapphire substrate
 * Generate model of InSb on sapphire substrate
 * Collect/generate DFT images of Cd and Te energy landscapes on sapphire
+* Generate 211 sideview (110) of silicon
 
 Measure and plot narrowness of CdTe peaks before/after liftoff
 Still need to measure and plot HRXRD of pre/post liftoff
