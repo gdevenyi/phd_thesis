@@ -16,4 +16,6 @@ Still need to measure and plot HRXRD of pre/post liftoff
 A model of A on B crystal growth, through the examination of geometric/chemical alignment.
 - Complications due to nucleation (multiple geometric orientations)
 - Sub/superlattice alignment
-
+- The two level model of geometry (symmetry) and energy (bonding)
+- first model exists (Graphoepitaxy)
+- second model exists (traditional homoepitaxy)
