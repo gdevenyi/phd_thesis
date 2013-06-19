@@ -10,6 +10,10 @@ Figure Corrections
 * Generate DFT images of InSb on Sapphire substate
 * Generate 211 sideview (110) of silicon
 
+
+* Decide on an implement consistent a) b) c) in text
+* Investigate scientific words without hyphenation
+
 Measure and plot narrowness of CdTe peaks before/after liftoff
 Still need to measure and plot HRXRD of pre/post liftoff
 
