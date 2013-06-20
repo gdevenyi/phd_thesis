@@ -3,22 +3,22 @@
 \section{Background}
 
 \section{Experimental}
-The gold nanostructures were formed through the deposition of gold films on MgAl2O4 substrates (MTI Corp.)
+The gold nanostructures were formed through the deposition of gold films on MgAl\textsubscript{2}O\textsubscript{4} substrates (MTI Corp.)
 followed by an annealing procedure which facilitated film
 dewetting and nanostructure formation. The films were
 sputter-coated at room temperature to a thickness of 5 \AA-15
 \AA with a GATAN PECS Model 682 ion beam coating/etching system. The samples were then placed in a tube
-furnace with a 100 sccm flow of argon, heated to 1100\degree\celsius
+furnace with a 100 sccm flow of argon, heated to 1100\celsius~
 in 45 min, and then held at that temperature for 1 h.
-Following this treatment, the sample was cooled to 1000\degree\celsius
+Following this treatment, the sample was cooled to 1000\celsius~
 in 30 min, held at that temperature for an additional hour,
 and then allowed to cool to room temperature over an interval
 of approximately 8 h. Holding the temperature at both 1100
-and 1000\degree\celsius~was crucial to the formation of the nanostructures described here. Removal of either step results in the formation of faceted gold spheres sitting directly on the substrate.
+and 1000\celsius~was crucial to the formation of the nanostructures described here. Removal of either step results in the formation of faceted gold spheres sitting directly on the substrate.
 
 Scanning electron microscopy (SEM) images of the gold
 nanostructures formed on the (100), (111), and (110)
-MgAl2O4 substrates, obtained using a JEOL-7000F SEM in
+MgAl\textsubscript{2}O\textsubscript{4} substrates, obtained using a JEOL-7000F SEM in
 secondary electron mode, are shown in Figure 1. For each
 substrate orientation, one observes two types of features, (i)
 spheres supported by a necking region attached to a geometrically shaped base (Figure 1a-c) and (ii) standalone base
@@ -47,9 +47,9 @@ side lengths of 40, 65, and 65 nm $\times$ 110 nm for the (100),
 (111), and (110) substrates, respectively.
 \begin{figure}
     \centering
-    \includegraphics{nanogold_sem}
+    \includegraphics[width=0.8\textwidth]{nanogold_sem}
     \caption{\label{fig:nanogold_sem}SEM images showing the gold nanostructures formed
-        on MgAl2O4 substrates. The three upper images show spheres
+        on MgAl\textsubscript{2}O\textsubscript{4} substrates. The three upper images show spheres
         supported by a necking region attached to a geometrically shaped
         base for the (a) [100]-, (b) [111]-, and (c) [110]-oriented substrates.
         Each of these images was taken at a 70°\degree tilt. The aura seen around
@@ -62,6 +62,7 @@ side lengths of 40, 65, and 65 nm $\times$ 110 nm for the (100),
         without platinum shows the same structures but is of poor quality
         due to substrate charging effects.}
 \end{figure}
+
 While there are two basic types of nanostructures formed
 on each substrate orientation, these structures are found in
 various stages of development. For the most part, the bases
@@ -69,7 +70,7 @@ are well-developed and show little size variation. The
 spherical structures, however, vary dramatically both in their
 size and position relative to the base structures. Figure 2
 shows a series of top-down SEM images for the case of the
-(111) MgAl2O4 substrate showing an evolution of the
+(111) MgAl\textsubscript{2}O\textsubscript{4} substrate showing an evolution of the
 nanostructures from a standalone triangular base to bases
 supporting spheres of increasing size. Notable is the fact that
 the nanostructure, shown in Figure 2b, manifests itself as a
@@ -82,9 +83,9 @@ the size of the triangular base structure increases for sphere
 diameters greater than 80 nm (see Figure 2e and f).
 \begin{figure}
     \centering
-    \missingfigure{SEM Progression of figure}
+    \includegraphics[width=0.9\textwidth]{nanogold_progression}
     \caption{\label{fig:nanogold_progression}SEM images showing the top-down view of gold
-        nanostructures formed on the (111) surface of MgAl2O4 substrates.
+        nanostructures formed on the (111) surface of MgAl\textsubscript{2}O\textsubscript{4} substrates.
         The sequence of images is chosen to show progressively larger
         spheres atop the base structures. Note that only the smallest sphere,
         shown in (b), is offset from the center of the triangular base and
@@ -92,9 +93,10 @@ diameters greater than 80 nm (see Figure 2e and f).
         as is the case for (e) and (f). The size of each image is 130$\times$30
         nm\textsuperscript{2}.}
 \end{figure}
+
 The base structures formed on each substrate orientation
 are a clear consequence of the epitaxial relationship formed
-between gold and the latticed-matched MgAl2O4 substrate.
+between gold and the latticed-matched MgAl\textsubscript{2}O\textsubscript{4} substrate.
 This is apparent from the fact that the geometries of the base
 structures mimic the underlying symmetry of the substrates.
 It is also likely that the base sizes are a consequence of the
@@ -119,4 +121,182 @@ modelling has also been successfully used to predict the
 equilibrium shape of biological lipid bilayers (blood cells)
 when exposed to abnormal pressure, temperature, magnetic,
 and chemical environments.39-44
+
+The gold nanostructures were modelled as a continuum
+elastic surface constrained by a footprint. Three different
+footprint geometries (square, equilateral triangle, and rectangle) were used in order to mimic the four-fold, three-fold,
+and two-fold symmetries associated with the (100), (111), and (110) surfaces of MgAl\textsubscript{2}O\textsubscript{4}. The size and shape of the
+footprint were kept constant during the simulated growths
+in order to match the experimental observation indicating a
+high degree of base uniformity. For each orientation, the
+contact angle (i.e., the angle between the footprint plane and
+the tangent plane of any surface connected to the footprint's
+edge) was set to a constant where the value was chosen to
+be consistent with the observed faceting, as is schematically
+shown in Figure 3.
+
+With these constraints, the shape of an open elastic surface
+can be fully described by the mean curvature, H, and the
+Gaussian curvature, $K$, while its corresponding elastic
+properties can be characterized by a bending modulus \textkappa and
+a Gaussian modulus \textkappa\textsubscript{G}. The surface energy ($F$) can then be
+formulated as
+\begin{equation}
+F = \int \frac{\kappa}{2}H^2 dA + \int \kappa_G K dA + \lambda S + PV
+\end{equation}
+where \textlambda, V, S, and dA are the particle's surface tension,
+volume, total surface area, and surface area element, respectively.45,46 The pressure, P, serves as a Lagrange multiplier
+which ensures that a constant volume is enclosed between
+the structure and the footprint plane. The second term gives
+the integrated Gaussian curvature, which is constant according to the Gauss-Bonnet theorem.47 For a given surface
+tension and volume, the equilibrium shape will correspond
+to an energy minimum determined by the shape equation
+\textdelta F $=$ 0. The structures are more readily solved by first
+rescaling the free energy of the model to become dimensionless, such that
+\begin{equation}
+\tilde{F} = \int \left (\frac{\tilde{\kappa} \tilde{H}^2}{2} + 1 \right)d \tilde{A} + \tilde{P} \tilde{V}
+\end{equation}
+where
+\begin{align*}
+\tilde{A} &= A/S_0 & \tilde{V} &= V/S^{3/2}_0 & \tilde{H} &= H S^{1/2}_0 \\
+\tilde{\kappa} &= \kappa / \lambda S_0 & \tilde{P} &= P S^{1/2}_0 / \lambda & \tilde{F} &= F / (\lambda S_0)
+\end{align*}
+and S0 is the area of the base. Thus, according to this
+dimensionless free-energy expression, there are two independent controlling parameters,
+$\tilde{\kappa}$ and \~{P}.
+
+Helfrich and Ou-Yang45 have analytically solved the shape
+equation for some symmetrical geometries. For the work
+presented here, the surface is sectioned into discrete elements
+using a triangulation mesh, and a simple dissipative model
+is used to minimize the energy, as in eq 2[48]
+\begin{equation}
+    \frac{\delta \mathbf{r}}{\delta t} = - M \frac{\delta \tilde{F}}{\delta \mathbf{r}}
+\end{equation}
+where \textbf{r}(t) is the position vector of a point on the particle
+surface at the time t and M is a kinetic coefficient. These
+methods, developed by Taniguchi et al.,48 are, however,
+unable to simulate large deformations. To circumvent this
+limitation, we employed two techniques, equiangulation and
+vertex averaging, available through the Surface Evolver software developed by K. Brakke.49 Following the procedure of Lim et al.,39,42,43 the curvature was discretized based on
+the methods of Julicher,50 which exactly describe the
+curvature in the continuum limit. The variational derivative
+used in the triangulation scheme was evaluated analytically.
+For the Surface Evolver technique, variables were solved
+numerically when analytical variations for discrete curvatures
+proved difficult.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{nanogold_facets}
+    \caption{\label{fig:nanogold_facets}Proposed faceting of the base structures grown on (a) [100]-, (b) [111]-, and (c) [110]-oriented substrates.}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{nanogold_simgrowth}
+    \caption{\label{fig:nanogold_simgrowth}Simulations based on the continuum elastic model showing the shape evolution of structures with a triangular footprint as the
+        total volume is progressively increased. The shape of these modelled structures is remarkably similar to that of the self-assembled gold
+        nanostructures formed on (111) MgAl\textsubscript{2}O\textsubscript{4} substrates (Figures 1b and e and 2). The scale is in arbitrary units.}
+\end{figure}
+
+Using the numerical methodology, a progression of
+structures with increasing volume were calculated using
+square, triangular, and rectangular footprints having contact
+angles of 54.7\degree, 70.5\degree, and 35\degree~(long-axis) by 45\degree~(short-axis),
+respectively. The chosen contact angles are consistent with
+the inferred faceting, as shown in Figure 3. For each case,
+the footprint area and surface tension are set to unity, while
+the bending modulus is allowed to vary. Figure 4 shows the
+calculated progression for the triangular footprint. As the
+volume is increased, there is an evolution from a nearly flat
+base, to a base with a bulge, and then finally to a spherical
+structure supported by a necked region to a triangular base.
+These simulated structures are remarkably similar to the gold
+nanostructures formed on the (111) MgAl\textsubscript{2}O\textsubscript{4} substrate (see
+Figures 1b and c and 2). Similar trends are observed for the
+square and rectangular footprints. Figure 5 shows the
+simulated high volume structures for the square and rectangular footprints, which, once again, are consistent with
+experimental observations. The simulations do not, however,
+account for any of the observed asymmetries.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{nanogold_square_rect}
+    \caption{\label{fig:nanogold_square_rect}Simulations based on the continuum elastic model
+        showing the expected high volume shape for the (a) square and
+        (b) rectangular (length/width ) 1.42:1) footprints. These structures
+        show a resemblance to the self-assembled gold nanostructures
+        formed on the (100) and (110) MgAl\textsubscript{2}O\textsubscript{4} substrates (Figure 1) but
+        show none of the observed asymmetries. The scale is in arbitrary
+        units.}
+\end{figure}
+
+The shape of the base structures of the self-assembled gold
+nanostructures is strongly influenced by epitaxy and the underlying symmetry of the substrate surface. That being
+said, it is difficult to account for the hollowed-out center
+observed for the base structure formed on the (100) MgAl\textsubscript{2}O\textsubscript{4}
+using epitaxy-based arguments. This feature is, however,
+predicted by the continuum elastic model. Figure 6a shows
+the topographical color map obtained from the modeling for
+the low-volume structure. It clearly shows a circular depres-
+sion in the middle of the structure as well as a lobe near
+each corner. Motivated by the simulation results, we
+examined the topography of the self-assembled gold nanostructure using atomic force microscopy (AFM). Figure 6b
+shows a tapping mode AFM image of the base structure
+obtained using a Digital Instruments scanning probe microscope (SPM) and a NanoScope IIIa controller. Even though
+the features of the nanostructure are somewhat washed out
+due to the fact that the resulting image is a convolution of
+the nanostructure and the AFM tip geometry, the nanostructure's four lobes and central depression are clearly visible.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{nanogold_afm}
+    \caption{\label{fig:nanogold_afm}A comparison of the (a) topographical color map derived
+        from the continuum elastic model and (b) the AFM image of a
+        self-assembled gold nanostructure deposited on the (100) MgAl\textsubscript{2}O\textsubscript{4}
+        substrate. Note that the simulation predicts both the presence of
+        four lobes at the corners and a central depression. The scale of the
+        topographic image is arbitrary, and the scale of the AFM image is
+        10 nm.}
+\end{figure}
+
+Taken together, the experimental observations and the
+continuum elastic modeling results strongly suggest that
+epitaxy and a minimization of the surface free energy are
+the two primary drivers in determining the shape and size
+of the self-assembled gold nanostructures. The fact that
+similar structures have not been previously observed is likely
+a consequence of the synthesis route used. The route employed here not only involves temperatures well in excess
+of those typically used when forming substrate-supported
+nanostructures but also requires an annealing profile which
+accesses two temperatures. It is possible that the initial 1100\celsius~anneal is needed to induce surface reconstructions in the
+MgAl\textsubscript{2}O\textsubscript{4} substrates which are essential to the growth of these
+nanostructures. Surface reconstructions have been shown to
+strongly influence the growth of both nanostructures28,34,35
+and thin films51 when using (100) SrTiO3 substrates. We,
+however, consider it more likely that the formation of these
+nanostructures requires temperatures in excess of the melting
+point of bulk gold (1064\celsius). Significant deviations from
+the bulk value, due to finite size effects, are considered
+unlikely since such effects appear to occur only in nanostructures smaller than 5 nm.52 Once molten, the nanostructures are cooled to 1000\celsius~and held at this temperature,
+which is just below the melting point. Such a temperature
+allows for solidification while maintaining high adatom
+mobility. The fact that this fabrication step is crucial to the
+formation of the observed intricate nanostructures provides
+compelling evidence that considerable adatom motion is
+essential. In this scenario, it is likely that an Ostwald-like
+ripening process will play a role where larger nanostructures
+grow at the expense of smaller ones. Substrate surface steps,
+due to the inherent miscut of the substrate,53 could also
+influence the process by providing energetically favorable
+nucleation sites. Nanostructure formation is also heavily
+reliant on the epitaxial relationship between the nanostructure
+base and the underlying substrate. This relationship determines the crystallographic alignment of the base structures,
+while the consistency in size is likely a consequence of the
+strain imposed by lattice mismatch. Once the 1000\celsius~anneal
+ends, the adatom motion will be quickly quenched by the
+lower temperatures, allowing no further alterations to the
+shape or size of the nanostructures. The end result is
+intricately shaped nanostructures whose size and shape are
+determined by a minimization of the surface free energy
+while simultaneously being subject to the constraints imposed
+by epitaxy.
+
 \section{Implications for Symmetry and Energy at Epitaxial Surfaces}
