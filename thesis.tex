@@ -10,7 +10,7 @@
 \usepackage{booktabs} %makes tables look better
 \usepackage{siunitx} %provides standard printing for SI units
 \usepackage[breaklinks,hidelinks]{hyperref} %Provides clickable links
-\usepackage{cleveref} %Allows use of \cref, which knows what kind of ref you're making, so you don't have to write EQN and such
+\usepackage[capitalize,noabbrev]{cleveref} %Allows use of \cref, which knows what kind of ref you're making, so you don't have to write EQN and such
 \usepackage{ifpdf} %Conditions for if pdftex is running
 \usepackage[T1]{fontenc} %upgrades font encodings
 \usepackage[utf8]{inputenc}%Tells latex the file is saved as UTF-8 (make sure it is!)
@@ -54,6 +54,7 @@
 \onehalfspacing
 %\linenumbers %Uncomment to turn on line numbers
 %\syntaxonly %Uncomment to only check compile for syntax PRODUCES NO OUTPUT
+\hyphenation{nano-wires nano-wire ad-atom wurt-zite nano-structures vi-cinal nano-twins off-cut crys-tal-lites epi-tax-i-ally micro-twinning}
 
 \hypersetup{
     unicode=true,
@@ -107,7 +108,7 @@ McMaster University
 DOCTOR OF PHILOSOPHY (2013) McMaster University
 (Engineering Physics)
 Hamilton, Ontario
-TITLE: The Character and Administration of Governor John Wentworth\\
+TITLE: Energy and Symmetry at Surfaces: Role in Nanostructures and Epitaxy\\
 AUTHOR: Gabriel A. Devenyi, B.\ Eng. (McMaster University)\\
 SUPERVISOR: Professor John S. Preston\\
 NUMBER OF PAGES: vii, 212}
@@ -144,6 +145,10 @@ NUMBER OF PAGES: vii, 212}
 
 \chapter{Introduction}
 \input{introduction.tex}
+\chapter{Theory}
+\input{theory.tex}
+\chapter{Experimental}
+\input{experimental.tex}
 \part{III-V Materials on Silicon}
 \chapter{The Role of Vicinal Surfaces in Epitaxial Twin Formation}
 \input{twins.tex}
@@ -156,7 +161,7 @@ NUMBER OF PAGES: vii, 212}
 \input{srtio3.tex}
 \chapter{CdTe Nanowire Growth on Sapphire}
 \input{cdtenanowire.tex} 
-\chapter{III-V Growth on Oxides and Liftoff Phenonmoon}
+\chapter{III-V Growth on Oxides and Liftoff Phenomenon}
 \input{mbeoxide.tex}
 \part{Noble Metals on Oxides}
 \chapter{Nanostructured Gold on Spinel}
