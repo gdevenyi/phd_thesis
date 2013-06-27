@@ -17,6 +17,7 @@ Figure Corrections
 * Write short-form captions for TOC
 * Download citations/generate for SrTiO3
 * Download ciations/generate for nanocdte
+* \protect all citations in \captions
 
 Measure and plot narrowness of CdTe peaks before/after liftoff
 Still need to measure and plot HRXRD of pre/post liftoff
