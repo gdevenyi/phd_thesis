@@ -9,6 +9,7 @@ Figure Corrections
 * Collect/generate DFT images of Cd and Te energy landscapes on sapphire
 * Generate DFT images of InSb on Sapphire substate
 * Generate 211 sideview (110) of silicon
+* Collect missing figures for srtio3
 
 
 * Decide on an implement consistent a) b) c) in text
@@ -17,6 +18,7 @@ Figure Corrections
 * Download citations/generate for SrTiO3
 * \protect all citations in \captions
 * Cite Vicky's ray paper somewhere
+* Read all references for errors/typos
 
 Measure and plot narrowness of CdTe peaks before/after liftoff
 Still need to measure and plot HRXRD of pre/post liftoff
