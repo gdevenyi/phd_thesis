@@ -10,7 +10,7 @@ Figure Corrections
 * Generate DFT images of InSb on Sapphire substate
 * Generate 211 sideview (110) of silicon
 * Collect missing figures for srtio3
-
+* Consider how STEM work on CdTe will be integrated
 
 * Decide on an implement consistent a) b) c) in text
 * Investigate scientific words without hyphenation
