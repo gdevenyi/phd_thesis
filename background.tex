@@ -5,32 +5,47 @@ There are a few key theoretical concepts which must be understood in order to be
 
 \section{Epitaxy}
 \subsection{Homoepitaxy}
-Equilibium versus kinetics. Even the most perfectly matched systems in terms of atomic bonding and lattice match can grow with defects if the deposition rate is too fast.
+Equilibrium versus kinetics. Even the most perfectly matched systems in terms of atomic bonding and lattice match can grow with defects if the deposition rate is too fast.
 
 \subsection{Heteroepitaxy}
-SiGe as the model system.
-
-
-
-III-V lattice matched as next best model system
+%SiGe as the model system.
+%
+%Alignment using [HKL]//(hkl);[UVW]//[uvw] = film-up/substrate-up;film in-plane//substrate in-plane
+%
+%Sub and superlattice alignment
+\begin{figure}
+    \centering
+    \missingfigure{Figure from ohring page 426 - Heteroepitaxy alignment}
+    \caption{\label{fig:back_hetero_alignment}Simple epitaxial alignment of cubes on cubes\cite{Palmstrom1995}}
+\end{figure}
+%III-V lattice matched as next best model system
 \subsubsection{Strain}
 \begin{figure}
     \centering
-    \missingfigure{Diagram of matched, strained and relaxed films}
-    \caption{\label{fig:back_strain}Matched, strained and relaxed films}
+    \includegraphics[width=0.7\textwidth]{back_strain}
+    \caption{\label{fig:back_strain}Unit cell models of matched, strained and relaxed films from \cite{ohring2001materials}}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{back_strain_regions}
+    \caption{\label{fig:back_strain_regions}Regions of pseudomorphic and relaxed growth versus lattice mismatch}
 \end{figure}
 \begin{equation}
-f = \frac{a_f - a_s}{a_s}
+f = \frac{a_f - a_s}{a_s} \label{eqn:strain}
 \end{equation}
-* Matched
-* Strained
-* Relaxed films
+%* Matched
+%* Strained
+%* Relaxed films
+%Pseudomorphic growth
+%Relaxation via defects
+%Misfit dislocation
+
 
 \subsection{Clusters and Nucleation}
 \begin{figure}
     \centering
-    \missingfigure{SK, layer-by-layer, and van der mere}
-    \caption{\label{fig:back_growth_mode}SK, layer-by-layer and frank van der mere growth modes}
+    \includegraphics[width=0.7\textwidth]{back_growth_mode}
+    \caption{\label{fig:back_growth_mode}SK, layer-by-layer and frank van der mere growth modes\cite{ohring2001materials}}
 \end{figure}
 
 \begin{figure}
@@ -45,15 +60,15 @@ If one were to consider a crystal of infinite size, and subsequently cut it alon
 The atoms on the surface of a newly cleaved crystal have a number of options for resolving their high energy configuration. The simplest of options for atoms in those high energy states to reduce their energy is to move, that is, to change it's position relative to other atoms. These movements happen both the in-plane and out-of-plane directions. Both atomic translations can cause additional shifts in the atomic layers below the surface.  Both in-plane and out-of-plane atomic movement breaks the bulk symmetry of the original crystal, resulting in a surface with lower symmetry. In extreme cases, atoms can migrate and form islands or otherwise cause faceting on the surface in order to minimize energy. A schematic example of the atom movement for surface reconstruction is shown in \cref{fig:back_recon_move}.
 \begin{figure}
     \centering
-    \missingfigure{Image of before-after atom moving surface reconstruction}
+    \includegraphics[width=0.7\textwidth]{back_recon_move}
     \caption{\label{fig:back_recon_move}Example of surface reconstruction with atomic movement}
 \end{figure}
 
 A more complex response resulting in a surface reconstruction that can arise is a change in the actual bonding in the upper layers of the crystal. Dimers and higher order bonding can form at the surface of the crystal, partially resolving the dangling bonds present on the surface. This dimerization of the surface can significantly reduce the chemical activity of the surface since the electronic structure has been satisfied internally to the crystal. An example of such dimerization is shown in \cref{fig:back_recon_dimer}
 \begin{figure}
     \centering
-    \missingfigure{Dimer formation during surface reconstruction}
-    \caption{\label{fig:back_recon_dimer}Dimerization on surface reconstruction}
+    \includegraphics[width=0.7\textwidth]{back_recon_dimer}
+    \caption{\label{fig:back_recon_dimer}a) STM of silicon surface reconstruction showing dimers b) cross sectional view of model ($2 \times 1$) surface reconstruction c) top view showing reconstructed surface unit cell \cite{ohring35}} 
 \end{figure}
 
 Finally, a surface can reconstruct by losing some of the atoms which originally formed the surface. The removal of such atoms can allow which was once a close-packed surface to have significantly less density than the parent crystal lattice.
@@ -78,29 +93,29 @@ Thus far, energy and time have only been discussed in general terms. The most su
     \caption{\label{fig:back_recon_phase}Phase diagram of surface reconstruction}
 \end{figure}
 
-The formation and stability of a given surface reconstruction also depends upon the environment surrounding the crystal. Assuming the surrounding environment does not chemically react with a given crystal, the presence of absence (vacuum) of an inert gas will affect the activation energies for the surface atom processes. A vacuum above a crystal when annealing promotes the exit of atoms from the surface as there is force resisting the atoms, or backscattering them towards the surface. For complex crystals which incorporate elemental gasses into their lattice, different surface reconstructions are achievable if an overpressure of those gasses are present, rather than a vacuum. These surface reconstructions are commonly seen in the complex oxides, where oxygen is a primary constituent of the crystal and will be lost from the surface during annealing if an overpressure is not provided.
+The formation and stability of a given surface reconstruction also depends upon the environment surrounding the crystal. Assuming the surrounding environment does not chemically react with a given crystal, the presence of absence (vacuum) of an inert gas will affect the activation energies for the surface atom processes. A vacuum above a crystal when annealing promotes the exit of atoms from the surface as there is force resisting the atoms, or back scattering them towards the surface. For complex crystals which incorporate elemental gasses into their lattice, different surface reconstructions are achievable if an overpressure of those gasses are present, rather than a vacuum. These surface reconstructions are commonly seen in the complex oxides, where oxygen is a primary constituent of the crystal and will be lost from the surface during annealing if an overpressure is not provided.
 
-Stability of surface reconstructions to subsequent interactions with atoms added to the surface varies widely depending upon the properties of the crystal. Semiconductor cyrstals have less stable surface reconstructions, interactions with additional atoms easily destroy an established reconstruction. Refractory crystals such as complex oxides are considerably more stable once reconstructed, a point which has been taken advantage of in this work.
+Stability of surface reconstructions to subsequent interactions with atoms added to the surface varies widely depending upon the properties of the crystal. Semiconductor crystals have less stable surface reconstructions, interactions with additional atoms easily destroy an established reconstruction. Refractory crystals such as complex oxides are considerably more stable once reconstructed, a point which has been taken advantage of in this work.
 
 \subsection{Nomenclature for Surface Reconstructions}
 Since surface reconstructions are pseudo-2D constructs, the allowed symmetries of a surface reconstruction are a subset of those of the allowable 3D lattices. There are five unique 2D surface nets that can be used to describe the symmetry of a surface reconstruction as shown in \cref{fig:back_recon_lattices}
 \begin{figure}
     \centering
-    \missingfigure{figre 7-6 from ohring page 367}
-    \caption{\label{fig:back_recon_lattices}The five unique 2D surface nets}
+    \includegraphics[width=0.8\textwidth]{back_recon_lattices}
+    \caption{\label{fig:back_recon_lattices}The five unique 2D surface nets (figure7-6)}
 \end{figure}
 
-The nomenclature of naming surface reconstructions is determined by the relationship of the 2D surface lattice to the underlying unit cell. The smallest repeating surface cell is determined and denoted by whether it is primitive (P), having only one atom per surface cell, or centred (C). The surface cell's repeat unit is then related to underlying unit cell by the ratio of the surface cell lattice constant to the unit cell lattice constant. Thus, the simplest surface reconstruction for a crystal would be the P(1 $\times$ 1) reconstruction, containing one atom, and having the same spacing as then underlying crystal. These nomenclatures do not include details such as the type, number or configuration of atoms which make up the reconstruction. These reconstrucitons can also be rotated relative to the underlying unit cell being denoted by R. A number of example surface reconstructions namings are shown in \cref{fig:back_recon_name_examples}. The nomenclature for surface reconstructions is not unique, as a reconstruction such as C(2$\times$2) is equivalent to ($\sqrt{2}\times\sqrt{2}$)R45\degree reconstruction.
+The nomenclature of naming surface reconstructions is determined by the relationship of the 2D surface lattice to the underlying unit cell. The smallest repeating surface cell is determined and denoted by whether it is primitive (P), having only one atom per surface cell, or centred (C). The surface cell's repeat unit is then related to underlying unit cell by the ratio of the surface cell lattice constant to the unit cell lattice constant. Thus, the simplest surface reconstruction for a crystal would be the P($1 \times 1$) reconstruction, containing one atom, and having the same spacing as then underlying crystal. These nomenclatures do not include details such as the type, number or configuration of atoms which make up the reconstruction. These reconstructions can also be rotated relative to the underlying unit cell being denoted by R. A number of example surface reconstructions namings are shown in \cref{fig:back_recon_name_examples}. The nomenclature for surface reconstructions is not unique, as a reconstruction such as C($2\times2$) is equivalent to ($\sqrt{2}\times\sqrt{2}$)R45\degree~reconstruction.
 \begin{figure}
-    \centering
-    \missingfigure{figure from page 369 ohring}
-    \caption{\label{fig:back_recon_name_examples}}
+    \centering\
+    \includegraphics[width=0.9\textwidth]{back_recon_name_examples}
+    \caption{\label{fig:back_recon_name_examples} Atomic positions of adatoms (shaded) relative to atoms (dots) arrayed on a (100) simple cubic substrate. a) P($2 \times 2$) b) C($2 \times 2$) or ($\sqrt{2}\times\sqrt{2}$)R45\degree c) P($1 \times 2$) d) P($2 \times 1$)}
 \end{figure}
 
 \section{Atomic Bonding}
 \begin{figure}
     \centering
-    \missingfigure{Ohring page 374 - potential energy versus distance}
+    \includegraphics[width=0.9\textwidth]{back_bond_potential}
     \caption{\label{fig:back_bond_potential}Potential energy versus distance for atom respect to surface}
 \end{figure}
 
