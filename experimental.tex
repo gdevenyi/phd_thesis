@@ -14,37 +14,59 @@ X-ray diffraction is fundamentally an interference phenomenon, for a set of plan
    \label{eqn:laue}
 \end{align}
 
-A concept known as reciprocal, or momentum space, is a common construct used in solid state physics to disucss the properties of crystals. Reciprocal space can be visualized as a lattice of points, each representing a spacing present in the crystal, and the lattice having the same symmetry as the real crystal. Reciprocal space is also the Fourier partner of the real space lattice of the crystal. Reciprocal space provides an opportunity for an alternate expression of the conditions for diffraction, known as the Ewald construction. The Ewald construction or Ewald sphere expresses the diffraction condition through the overlay of a sphere of raidus 1/\textlambda{} pinned on its radius at the origin in reciprocal space, a incident X-ray beam ($k_i$) entering the sphere. The direction of the exiting diffraction beam is determined by the intersection of the surface of the sphere with the reciprocal lattice, as shown in \cref{fig:exp_xray_ewald}. As a crystal is rotated (or the incoming beam is moved), the ewald sphere will rotate about the origin, sweeping through reciprocal space and exciting diffraction conditions as the sphere coincides with lattice points. The pinned rotation of the Ewald sphere about the origin means that only reciprocal lattice points with a radius from the origin of less than 2/\textlambda{} can be excited into diffraction, indicating the effective limitation of a given x-ray source, as well as why light is an ineffective diffraction probe.
+A concept known as reciprocal, or momentum space, is a common construct used in solid state physics to discuss the properties of crystals and is intimately related to diffraction. Reciprocal space can be visualized as a lattice of points, each representing a spacing present in the crystal, and the lattice having the same symmetry as the real crystal. Reciprocal space is also the Fourier partner of the real space lattice of the crystal. Reciprocal space provides an opportunity for an alternate expression of the conditions for diffraction, known as the Ewald construction. The Ewald construction or Ewald sphere expresses the diffraction condition through the overlay of a sphere of radius 1/\textlambda{} pinned on its radius at the origin in reciprocal space, a incident X-ray beam ($k_i$) entering the sphere. The direction of the exiting diffraction beam is determined by the intersection of the surface of the sphere with the reciprocal lattice, as shown in \cref{fig:exp_xray_ewald}. As a crystal is rotated (or the incoming beam is moved), the Ewald sphere will rotate about the origin, sweeping through reciprocal space and exciting diffraction conditions as the sphere coincides with lattice points. The pinned rotation of the Ewald sphere about the origin means that only reciprocal lattice points with a radius from the origin of less than 2/\textlambda{} can be excited into diffraction, indicating the effective limitation of a given x-ray source, as well as why light is an ineffective diffraction probe.
 \begin{figure}
 \centering
-\missingfigure{Picture of ewald sphere construction from Bob He}
-\caption{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions}
+\includegraphics[width=0.8\textwidth]{exp_xray_ewald}
+\caption{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions\cite{bobhe}}
 \end{figure}
 
 
-Stuff about intensity limitations (structure factor)
+%Stuff about intensity limitations (structure factor)
 
 \subsection{2DXRD - Reciprocal Space Mapping}
-\label{sec:2DXRD} As shown by \cref{eqn:laue} and \cref{fig:exp_xray_ewald}, there are an infinite number of orientations of a crystal which generate diffraction. For the purposes of the analysis of crystals, the lowest orders of crystal diffraction (small h,k,l) are the strongest, and provide the least ambiguous information. This still leaves a significant number of diffraction beams of interest to measure and provide structural information. The naive measurement technique for collecting this information involves taking a crystal and orienting an incoming x-ray beam, and a detector in configurations that satisfy \cref{eqn:laue}. Such measurements assume that the experimenter knows (or assumes) the orientation and unit cell of the crystal to a degree well enough calculate those configurations. If either of those pieces of information is unknown, the experimenter must instead sample the 4\textpi radians of angular space surrounding a crystal with sufficient resolution to collection the information they desire. Such experiments, when performed using a typical x-ray point detector, take inordinate amounts of time.
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\textwidth]{exp_xray_machine}
-    \caption{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system\cite{gadds_manual}}
-\end{figure}
-An alternate implementation of such a measurement process is through the use of a 2D planar detector rather than a point detector. A 2D x-ray detector can subtend a large section the angular space surrounding a given experiment, potentially collecting information about a large section of reciprocal space with each frame it collects as shown in \cref{fig:exp_xray_2dxrd}. If configuration is then swept through a range of diffraction conditions, the 2D detector will collect information about a wide swath of reciprocal space. 2DXRD techniques simultaneously collect information about the phase and symmetry of an unknown sample allowing that information to be then examined via a variety of techniques.
+\label{sec:2DXRD} As shown by \cref{eqn:laue} and \cref{fig:exp_xray_ewald}, there are an large number of orientations of a crystal which generate diffraction. For the purposes of the analysis of crystals, the lowest orders of crystal diffraction (small h,k,l) are the strongest, and provide the least ambiguous information, the they are also at the lowest 2\texttheta{} values. This still leaves a significant number of diffraction beams of interest to measure and provide structural information. The naive measurement technique for collecting this information involves taking a crystal and orienting an incoming x-ray beam, and a detector in configurations that satisfy \cref{eqn:laue}. Such measurements assume that the experimenter knows the orientation and unit cell of the crystal to a degree well enough calculate those configurations. If either of those pieces of information is unknown, the experimenter must instead sample the 4\textpi{} solid angle (usually only the upper 2\textpi{} half) of angular space surrounding a crystal with sufficient resolution to intersect with the diffraction conditions of interest. Such experiments, when performed using a typical x-ray point detector, take inordinate amounts of time, as the angular space is large and the point detector must count for a long time to achieve good counting statistics.
 \begin{figure}
     \centering
-    \missingfigure{diffraction to 2d detector from bob he}
-    \caption{\label{fig:exp_xray_2dxrd}Intersection of diffraction with 2d x-ray detector}
+    \includegraphics[width=0.8\textwidth]{exp_xray_machine}
+    \caption{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system, with the laboratory geometry\cite{bobhe}}
+\end{figure}
+An alternate implementation of such a measurement process is through the use of a 2D planar detector rather than a point detector. A 2D x-ray detector can subtend a large section the angular space surrounding a given experiment, potentially collecting information about a large section of reciprocal space with each frame it collects. If configuration is then swept through a range of diffraction conditions, the 2D detector will collect information about a wide swath of reciprocal space. 2DXRD techniques simultaneously collect information about the phase and symmetry of an unknown sample allowing that information to be then examined via a variety of techniques.
+
+\subsubsection{Practical 2DXRD Measurement}
+
+\subsubsection{Interpretation of 2DXRD Measurements}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{exp_xray_polesphere}
+    \caption{\label{fig:exp_xray_polesphere}The pole sphere showing the origin of peaks in a pole figure and their relationship to the sample and an individual unit cell\cite{gadds_manual}}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \missingfigure{4 simulated pole figures, completely random, in-plane random, textured, single crystal}
+    \caption{\label{fig:exp_xray_polefigure_examples}Example pole figures of a) Randomly oriented b) in-plane random orientation c) textured d) single crystal samples of the same composition and crystal structure}
 \end{figure}
 
 
 \subsection{High Resolution XRD}
+While mapping reciprocal space provides a great deal of information about the phases and symmetries present in a given sample, the resolution available on such 2D detectors is limited in both the number of pixels, and the spacing between them. In addition, the x-ray beam geometry associated with 2DXRD measurements introduces instrumental broadening into the measurements preventing careful inspection of small scale diffraction details. In order to examine the small scale details of diffraction intensity, a different configuration must be implemented for the x-ray source and detector, this configuration is known as high resolution x-ray diffraction. If the general landscape of reciprocal space (diffraction intensity) is known through the application of 2DXRD techniques, HRXRD can carefully sample small sections of reciprocal space with very high resolution.
+
+Recall that for a perfect crystal, there is only a single configuration for which the diffraction condition will be satisfied, resulting in a highly intense diffraction peak with minimal spacial extent. For a real sample, intensity distribution of individual diffraction peaks in reciprocal space provides information about the deviance from the ideal crystal.
+
+Using HRXRD measurements, the exact d-spacing of a given material can be determined, showing whether a sample has its lowest energy structure or it is strained. If the orientation of the sample can be controlled carefully, the d-spacing can be measured absolutely, otherwise, it can be measured relative to a known standard such as a single crystal substrate. The broadening (spatial extent) of a HRXRD peak provides different information depending upon the dimension along which it is examined. In the 2\texttheta{} direction, the radial direction in reciprocal space, broadening indicates that the spacing of interest is actually a distribution of spacings within the region of the sample illuminated by x-rays. Such distributions can indicate strain or compositional variation in the region of interest. The broadness of the x-ray peak when sample is rocked in the \textomega{} direction, while keeping 2\texttheta{} fixed indicates that a given d-spacing has a distribution of orientations within the sample, usually indicating multiple crystallites.
+
+
+\subsubsection{Practical HRXRD Measurement}
+%Single wavelength
+%Arcsecond resolution goiniometer
+%Highly parallel source
+%Typically surface parallel planes
 
 \section{Electron Microscopy}
-\section{TEM}
-\section{STEM}
-\section{SEM}
+\subsection{TEM}
+\subsection{STEM}
+\subsection{SEM}
 
 \section{Growth Techniques}
 The work presented in this thesis are prepared primarily by two different growth methods, pulsed laser deposition (PLD) and molecular beam epitaxy (MBE). While these methods are quite distinct in their properties and the regimes under which they operate, the same material systems were not prepared by both systems, so direct comparisons cannot be made. Nevertheless, the differences between these growth processes will be examined in some detail to provide sufficient motivation for their choice for the given experiments.
