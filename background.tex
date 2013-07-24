@@ -4,33 +4,59 @@ As this thesis is primarily an exploration of epitaxial interfaces using a wide 
 There are a few key theoretical concepts which must be understood in order to best describe the expanded epitaxial model proposed here. The first, and most integral to the discussion is an examination of the model of epitaxy as currently defined in the literature. This is integral to differentiate where the material systems examined diverge from the idealized models presented in the literature. As part of the examination of epitaxy, particular attention will be given to nucleation and clusters on surfaces as this examination hinges on the role of the epitaxial interface. Beyond epitaxy, the other key subjects which require background exposition are surface reconstructions, which describe the properties of the other side of the epitaxial interface, the substrate, and atomic bonding, the connections which reach across the epitaxial interface.
 
 \section{Epitaxy}
-\subsection{Homoepitaxy}
-%Equilibrium versus kinetics. 
-%Even the most perfectly matched systems in terms of atomic bonding and lattice match can grow with defects if the deposition rate is too fast.
+\subsection{Homoepitaxy - Separating Thermodynamics from Kinetics}
+The most basic form of epitaxy that can be conceived of is homoepitaxy, that is, where a material \textbf{A}, is grown on an existing single crystal of that same material \textbf{A}. In this growth process, the crystal structure, lattice constants and chemistry are identical across the epitaxial interface. Despite this ideal situation, the growth of perfect homoepitaxial crystals is not guaranteed. The fact that a homoepitaxial growth can be defective in a number of ways is due to the difference between the thermodynamics and kinetics of the epitaxial growth process. Thermodynamically, one would expect that since the lowest energy state for the system would be the continuation of the existing single crystal via the homoepitaxial growth process, however, due to kinetics, the exact conditions of growth process can have a substantial impact on the growth process.
+
+The homoepitaxial growth process is an excellent model system to separate the role of thermodynamics in growth from that of the kinetics. Kinetics in an epitaxial growth process refers to the role time plays in an epitaxial growth process, usually examined in terms of rates. There are two fundamental kinetic rate types involved in epitaxial growth, those which can be directly controlled by the experimenter and those which are primarily properties of the material system and can only be indirectly influenced by the experimenter, the most common kinetic processes in epitaxy are shown in \cref{fig:back_epi_rates}.
+\begin{figure}
+    \centering
+    \missingfigure{Figure showing different rates on a surface}
+    \caption{\label{fig:back_epi_rates}Processes with kinetic rates during epitaxy}
+\end{figure}
+
+The most common experimentally controlled rates in an epitaxial growth are the rate of addition of atoms to the growth interface, and the rate the temperature is increased or decreased during a growth. The rate of atom addition, or the growth rate is a key parameter and in homoepitaxial growth, can reveal the role kinetics plays in growth. If the rate at which atoms are added to an epitaxial interface is extremely high, the atoms will have no time to move towards their thermodynamically preferred location. The resulting material that grows will consist of the layers of atoms stacked randomly where they first hit the substrate and were immediately covered by more atoms. Such a configuration is clearly not an epitaxial growth, rather the film is likely to be amorphous, yet there are no material limitations per-se that causing the poor growth, it is purely kinetic. As the growth rate is lowered adatoms are allowed more time to move via diffusion, they may register in some regions, but not in others, resulting in a partially crystalline growth. As the deposition rate is further reduced, depending upon the material, the film may grow in a fully crystalline nature, but be twinned or contain stacking faults. The bonding along \{111\} directions in a crystal susceptible to faults due to their relative rotational symmetry, the exact susceptibility is known by the Stacking Fault Energy (SFE)\cite{stacking-fault-energy}. This energy is a measure of the cost of making such a defect in a crystal, so crystals with low SFE are very susceptible to twinning during growth. As the growth rate is still lowered, the adatoms have time to find their low energy states with respect to twins, finally arriving at a single crystal.
+\begin{equation}
+A = A_0 \exp^{-\frac{E_0}{kT}} \label{eqn:arrhennius}
+\end{equation}
+While the directly controlled deposition rate seems to be severely limited by defect formation and stacking of adatoms, there are large number of kinetic processes during growth that can be indirectly influenced by an experimenter through the control of temperature. Fundamentally, the other kinetic processes fundamental to growth are all of the Arhennius type, as shown in\cref{eqn:arhennius}. As such, these processes have an exponential dependence on the temperature at which growth occurs. Among the other kinetic processes involved in growth, the most important are surface diffusion, bulk diffusion, desorption and nucleation/denucleation. Through the increase in temperature the rates of all of these (except nucleation) processes increases. This has a strong impact on the epitaxial process. 
+
+The key kinetic factor to the improvement of epitaxial growth is the increase in the surface diffusion rate. Surface diffusion of adatoms during growth is the process by which an newly adsorbed atom from the impinging atoms finds its lowest energy position on the epitaxial surface. Increases in temperature increase the rate at which these adatoms move, increasing the probability that they will find their lowest energy position before they are encapsulated by additional atoms. While increases in temperature will improve the mobility of adatoms, increases in temperature also increase other processes. Bulk diffusion is the process by which adatoms at the epitaxial interface diffuse into the bulk through exchange with other atoms or travel interstitially. In homoepitaxy this process is mostly irrelevent, but in any chemically dissimilar growth such a process distorts the interface, which is generally not preferred. Similarly, as temperature increases, the adatoms begin to desorb, leaving the epitaxial interface, slowing growth and under extreme circumstances, the substrate itself can also begin to breakdown. Finally, at very high surface diffusion rates, adatoms may not ever attach to others, nucleating new layers of crystal.
+
+The kinetics of growth are thus balanced between the intended growth rate, determined by the delivery of atoms to the epitaxial interface, and a temperature that is high enough to ensure single crystal growth, but not too high as to cause breakdown of the epitaxial process itself.
+
+\todo{Reference some work on Silicon-Silcon homoeptiaxy which demonstrates these facts}
+
 
 \subsection{Heteroepitaxy}
+Heteroepitaxy covers a wide range of A on B epitaxy systems, as such, the following treatment will start from the basics established in homoepitaxy and gradually add the levels of complexity found in real-world systems and consider how they add to the accepted model.
+
 %SiGe as the model system.
 %
 %Alignment using [HKL]//(hkl);[UVW]//[uvw] = film-up/substrate-up;film in-plane//substrate in-plane
 %
 %Sub and superlattice alignment
-\begin{figure}
-    \centering
-    \missingfigure{Figure from ohring page 426 - Heteroepitaxy alignment}
-    \caption{\label{fig:back_hetero_alignment}Simple epitaxial alignment of cubes on cubes\cite{Palmstrom1995}}
-\end{figure}
-%III-V lattice matched as next best model system
-\subsubsection{Strain}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{back_strain}
-    \caption{\label{fig:back_strain}Unit cell models of matched, strained and relaxed films from \cite{ohring2001materials}}
-\end{figure}
+
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{back_strain_regions}
     \caption{\label{fig:back_strain_regions}Regions of pseudomorphic and relaxed growth versus lattice mismatch\cite{Bean1986}}
 \end{figure}
+
+\begin{figure}
+    \centering
+    \missingfigure{Figure from ohring page 426 - Heteroepitaxy alignment}
+    \caption{\label{fig:back_hetero_alignment}Simple epitaxial alignment of cubes on cubes\cite{Palmstrom1995}}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{back_strain}
+    \caption{\label{fig:back_strain}Unit cell models of matched, strained and relaxed films from \cite{ohring2001materials}}
+\end{figure}
+
+%III-V lattice matched as next best model system
+
 \begin{equation}
 f = \frac{a_f - a_s}{a_s} \label{eqn:strain}
 \end{equation}
@@ -45,14 +71,14 @@ f = \frac{a_f - a_s}{a_s} \label{eqn:strain}
 \subsection{Clusters and Nucleation}
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{back_growth_mode}
+    \includegraphics[width=0.6\textwidth]{back_growth_mode}
     \caption{\label{fig:back_growth_mode}SK, layer-by-layer and frank van der mere growth modes\cite{ohring2001materials}}
 \end{figure}
 
 \begin{figure}
     \centering
-    \missingfigure{pg 383 regions of types of growth}
-    \caption{\label{fig:back_nucleation_regions}Figure from Ohring page 383}
+    \includegraphics[width=0.7\textwidth]{back_nucleation_regions}
+    \caption{\label{fig:back_nucleation_regions}Regions of different nucleation/growth modes as a function of lattice mismatch and surface energies\cite{ohring2001materials}}
 \end{figure}
 
 \section{Surface Reconstructions} 
