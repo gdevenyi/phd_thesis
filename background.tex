@@ -28,46 +28,44 @@ The kinetics of growth are thus balanced between the intended growth rate, deter
 
 
 \subsection{Heteroepitaxy}
-Heteroepitaxy covers a wide range of A on B epitaxy systems, as such, the following treatment will start from the basics established in homoepitaxy and gradually add the levels of complexity found in real-world systems and consider how they add to the accepted model.
+Heteroepitaxy covers a wide range of A on B epitaxy systems, as such, the following treatment will start from the basics established in homoepitaxy and gradually add the levels of complexity found in real-world systems and consider how they add to the model.
 
-%SiGe as the model system.
-%
-%Alignment using [HKL]//(hkl);[UVW]//[uvw] = film-up/substrate-up;film in-plane//substrate in-plane
-%
-%Sub and superlattice alignment
+\subsubsection{Strain}
+The first step in the complication from homoepitaxy to heteroepitaxy is to introduce a difference in the lattice constants between the substrate and the growing epitaxial crystal, while maintaining the crystal structures and chemical composition. Nature has provided an ideal model system which perfectly fits these requirements, the Si$_{1-x}$Ge$_x$ system grown on silicon. In Si$_{1-x}$Ge$_x$, germanium substitutes into the silicon lattice randomly, maintaining the same valence and diamond structure. The lattice constant varies nearly linearly between silicon and germanium as in \cref{eqn:sige}.
 
+The difference between lattice constants is expressed as the lattice mismatch as in \cref{eqn:mismatch}. Negative values indicate that the growing layer is in tension by bonding to the substrate, while positive values indicate that growing layer is in tension by bonding to the substrate. The fundamental physical parameter describing such mismatched system is strain, this is, the distortion of atoms from the thermodynamic equilibrium positions, due to bonding to a mismatched substrate. Strain can be conceptualized as energy stored within the stretched bonds of the epitaxial layer, increasing the internal energy within the epitaxial crystal.
+\begin{equation}
+a_{Si_{1-x}Ge_x} = 0.5431 + 0.01992x + 0.0002733x^2 \label{eqn:sige}
+\end{equation}
+
+Through the examination of the Si$_{1-x}$Ge$_x$ system grown on silicon, the effect of pure compressive strain on an epitaxial process has been examined. As an epitaxial crystal of Si$_{1-x}$Ge$_x$ is grown on a silicon substrate, the strain energy in the crystal increases with thickness. The growing epitaxial crystal maintains the lateral lattice constant of the substrate, and conserves it's volume by changing it's vertical lattice constant, this is known as pseudomorphic growth. Beyond a certain point, the energy required to add another layer of strained crystal is too much, and the strain is relieved through the introduction of a defects in the form of dislocations. In a dislocation, the bonding between the epitaxial crystal and the substrate is broken to allow the crystal to expand, leaving a dangling bond at the substrate. Such a process is random so defects are located randomly at the interface. The exact thickness where a pseudomorphic growth will introduce defects in order to accommodate strain is known as the critical thickness and is dependent upon a number of factors including the strength of the bonds across the epitaxial interface, the bond strength within the epitaxial layer, and the energetic cost of forming a dislocation in terms of atomic movement and dangling bonds. The experimental curve for the model system Si$_{1-x}$Ge$_x$  is shown in \cref{fig:back_strain_regions}. The critical thickness model is qualitatively similar for other systems that have similar growth properties.
+
+
+\begin{equation}
+f = \frac{a_f - a_s}{a_s} \label{eqn:mismatch}
+\end{equation}
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{back_strain_regions}
     \caption{\label{fig:back_strain_regions}Regions of pseudomorphic and relaxed growth versus lattice mismatch\cite{Bean1986}}
 \end{figure}
 
+\subsubsection{Chemically Dissimilar Heteroepitaxy}
+On the other side of the heteroepitaxy spectrum are those epitaxial growths that have identical crystal structures but differ in their chemical compositions. There few material systems which provide an ideal model for a lattice matched (zero strain), but chemically dissimilar epitaxial growth. The most well characterized model system available is lattice matched III-V on germanium on epitaxial growth
+%
+%Alignment using [HKL]//(hkl);[UVW]//[uvw] = film-up/substrate-up;film in-plane//substrate in-plane
+%
+%Sub and superlattice alignment
 \begin{figure}
     \centering
     \missingfigure{Figure from ohring page 426 - Heteroepitaxy alignment}
     \caption{\label{fig:back_hetero_alignment}Simple epitaxial alignment of cubes on cubes\cite{Palmstrom1995}}
 \end{figure}
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{back_strain}
-    \caption{\label{fig:back_strain}Unit cell models of matched, strained and relaxed films from \cite{ohring2001materials}}
-\end{figure}
-
-%III-V lattice matched as next best model system
-
-\begin{equation}
-f = \frac{a_f - a_s}{a_s} \label{eqn:strain}
-\end{equation}
-%* Matched
-%* Strained
-%* Relaxed films
-%Pseudomorphic growth
-%Relaxation via defects
-%Misfit dislocation
-
-
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.7\textwidth]{back_strain}
+%    \caption{\label{fig:back_strain}Unit cell models of matched, strained and relaxed films from \cite{ohring2001materials}}
+%\end{figure}
 \subsection{Clusters and Nucleation}
 \begin{figure}
     \centering
