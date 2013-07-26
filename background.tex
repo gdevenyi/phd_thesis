@@ -51,7 +51,18 @@ f = \frac{a_f - a_s}{a_s} \label{eqn:mismatch}
 \end{figure}
 
 \subsubsection{Chemically Dissimilar Heteroepitaxy}
-On the other side of the heteroepitaxy spectrum are those epitaxial growths that have identical crystal structures but differ in their chemical compositions. There few material systems which provide an ideal model for a lattice matched (zero strain), but chemically dissimilar epitaxial growth. The most well characterized model system available is lattice matched III-V on germanium on epitaxial growth
+On the other side of the heteroepitaxy spectrum are those epitaxial growths that have identical crystal structures but differ in their chemical compositions. There few material systems which provide an ideal model for a lattice matched (zero strain), but chemically dissimilar epitaxial growth. The most well characterized model system available is a lattice matched III-V semiconductor on germanium, specifically GaAs, which has an extremely small ($<$0.1\%) lattice mismatch. GaAs is a binary semiconductor with a the zinc blende structure, which is a cubic crystal identical to silicon and germanium's diamond structure, but with a two-atom basis (Ga, As). The crystal is covalently bonded as with Si, but has a $\sim$30\% ionic character due to differences in electronegativity\cite{Christensen1987}.
+
+The zinc blende crystal structure is due to the presence of two atoms of different valence (group III-group V), which forms a polar crystal structure, with the group-III atom supplying three electrons and the group-V atom supplying five electrons to the bonding structure. The two-atom basis of zinc blende breaks the diamond crystal structure such that the structure is no longer centrosymmetric, meaning that opposite directions in the crystal are no longer symmetrically equivalent. This breaking of symmetry in the crystal means that the ordering of the group-III and group-V atoms at the epitaxial interface matters for crystal growth. This problem is known as ``polar-on-nonpolar'' epitaxy\cite{Biegelsen1992,Kroemer1987}.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{back_polar_model}
+    \caption{\label{fig:back_polar_model}Ideal polar on non-polar after \cite{Biegelsen1992}}
+\end{figure}
+
+If the truncated crystal surface of such a polar semiconductor is brought towards the truncated surface of a silicon crystal as in \cref{fig:back_polar_model}, the interface that results, while all bonds will be satisfied with no strain, will not be satisfied electronically. There will be an excess or deficit of electrons participating in bonding at the interface, leaving a layer of excess charge. Such excess charge would be massive as it forms across the entire interface. During growth of a crystal, rather than the thought experiment just discussed, we could expect that the surface charge would be a driving force for an atomic rearrangement at the interface. Experimental results have shown that a number of rearrangements are possible. The interface region can become three dimensional with the substrate and epitaxial layer atoms swapping in order to balance the number of excess and deficient bonds, resulting in an overall neutral charge. Various defects can also form, resulting in dangling bonds which can compensate charge. Some orientations of the crystal substrate, such as (211) offer unique lattice sites such that the charge neutrality is maintained automatically, which has motivated some of the work presented in \cref{sec:211}.
+
+In addition to issues of charge neutrality at chemically dissimilar ideal epitaxial interfaces, there are is a second common issue that arises. This issue only arises in practical growth situations, due to the fact that real substrates are never perfectly aligned with their intended crystal orientation. These 
 %
 %Alignment using [HKL]//(hkl);[UVW]//[uvw] = film-up/substrate-up;film in-plane//substrate in-plane
 %
