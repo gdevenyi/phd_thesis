@@ -10,7 +10,7 @@ The most basic form of epitaxy that can be conceived of is homoepitaxy, that is,
 The homoepitaxial growth process is an excellent model system to separate the role of thermodynamics in growth from that of the kinetics. Kinetics in an epitaxial growth process refers to the role time plays in an epitaxial growth process, usually examined in terms of rates. There are two fundamental kinetic rate types involved in epitaxial growth, those which can be directly controlled by the experimenter and those which are primarily properties of the material system and can only be indirectly influenced by the experimenter, the most common kinetic processes in epitaxy are shown in \cref{fig:back_epi_rates}.
 \begin{figure}
     \centering
-    \missingfigure{Figure showing different rates on a surface}
+    \includegraphics[width=0.7\textwidth]{back_rates}
     \caption{\label{fig:back_epi_rates}Processes with kinetic rates during epitaxy}
 \end{figure}
 
@@ -39,7 +39,7 @@ a_{Si_{1-x}Ge_x} = 0.5431 + 0.01992x + 0.0002733x^2 \label{eqn:sige}
 The difference between lattice constants is expressed as the lattice mismatch as in \cref{eqn:mismatch}. Negative values indicate that the growing layer is in tension by bonding to the substrate, while positive values indicate that growing layer is in tension by bonding to the substrate. The fundamental physical parameter describing such mismatched system is strain, this is, the distortion of atoms from the thermodynamic equilibrium positions, due to bonding to a mismatched substrate. Strain can be conceptualized as energy stored within the stretched bonds of the epitaxial layer, increasing the internal energy within the epitaxial crystal.
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{back_strain}
+    \includegraphics[width=0.8\textwidth]{back_strain}
     \caption{\label{fig:back_strain}Unit cell models of matched, strained and relaxed films from \cite{ohring2001materials}}
 \end{figure}
 
@@ -70,9 +70,9 @@ In addition to issues of charge neutrality at chemically dissimilar ideal epitax
 \subsection{Clusters and Nucleation}
 As will arise again and again throughout this document, the key factor in the growth of epitaxial crystals is the properties of the epitaxial interface. The two generalized properties that impact this interface are the energy and symmetry at the interface. The initial stages of the epitaxial growth process is a key step which reveals the complex interplay of strain, energy and symmetry, through the form of the nucleation of the epitaxial crystal.
 
-A key qualitative measure of the affinity of a given crystal to grow on another crystal is what is termed the nucleation mode of the epitaxial crystal. Qualitatively, the nucleation mode of a given epitaxial crystal \textbf{A} on a substrate \textbf{B}, describes the affinity for the atoms in \textbf{A} to wet (spread out and contact) the substrate versus sticking to each other. The wetting and dewetting of a given system is described by Young's equation, as in \cref{eqn:youngs}. Young's equation describes the balance of three energies, the crystal-substrate energy, the substrate-gas energy and the crystal-gas energy, through a parameter denoted the contact angle. The contact angle is the key parameter which determines wetting characteristics of a system.
+A key qualitative measure of the affinity of a given crystal to grow on another crystal is what is termed the nucleation mode of the epitaxial crystal. Qualitatively, the nucleation mode of a given epitaxial crystal \textbf{A} on a substrate \textbf{B}, describes the affinity for the atoms in \textbf{A} to wet (spread out and contact) the substrate versus sticking to each other. The wetting and dewetting of a given system is described by Young's equation, as in \cref{eqn:youngs}. Young's equation describes the balance of three energies, the film-substrate energy, the substrate-vapour energy and the film-vapour energy, through a parameter denoted the contact angle. The contact angle is the key parameter which determines wetting characteristics of a system.
 \begin{equation}
-\gamma_{SL} + \gamma_{LG} \cos{\theta_c} = \gamma_{SG} \label{eqn:youngs}
+\gamma_{FS} + \gamma_{FV} \cos{\theta_c} = \gamma_{SV} \label{eqn:youngs}
 \end{equation}
 Young's equation can be visualized as a droplet of the epitaxial crystal material sitting atop a substrate, making some contact angle with the substrate, as in \cref{fig:back_epi_young}. Contact angles of less than 90\degree{} are denoted as wetting a surface, while angles greater than 90\degree{} are denoted as dewetting a surface. During epitaxial nucleation, incoming atomic material grows as one of three modes, named island nucleation, layer-by-layer nucleation, and stranski-krastanov or mixed-mode nucleation, as in \cref{fig:back_growth_mode}. 
 \begin{figure}
