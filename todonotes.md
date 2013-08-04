@@ -17,7 +17,6 @@ Writing ToDos
 * Include figure page 773 from ohring liftoff cdte
 * Surface reconsturctions are charge-neutral
 
-
 A model of A on B crystal growth, through the examination of geometric/chemical alignment.
 - Complications due to nucleation (multiple geometric orientations)
 - Sub/superlattice alignment
