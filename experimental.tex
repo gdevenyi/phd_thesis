@@ -17,7 +17,7 @@ X-ray diffraction is fundamentally an interference phenomenon, for a set of plan
 A concept known as reciprocal, or momentum space, is a common construct used in solid state physics to discuss the properties of crystals and is intimately related to diffraction. Reciprocal space can be visualized as a lattice of points, each representing a spacing present in the crystal, and the lattice having the same symmetry as the real crystal. Reciprocal space is also the Fourier partner of the real space lattice of the crystal. Reciprocal space provides an opportunity for an alternate expression of the conditions for diffraction, known as the Ewald construction. The Ewald construction or Ewald sphere expresses the diffraction condition through the overlay of a sphere of radius 1/\textlambda{} pinned on its radius at the origin in reciprocal space, a incident X-ray beam ($k_i$) entering the sphere. The direction of the exiting diffraction beam is determined by the intersection of the surface of the sphere with the reciprocal lattice, as shown in \cref{fig:exp_xray_ewald}. As a crystal is rotated (or the incoming beam is moved), the Ewald sphere will rotate about the origin, sweeping through reciprocal space and exciting diffraction conditions as the sphere coincides with lattice points. The pinned rotation of the Ewald sphere about the origin means that only reciprocal lattice points with a radius from the origin of less than 2/\textlambda{} can be excited into diffraction, indicating the effective limitation of a given x-ray source, as well as why light is an ineffective diffraction probe.
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{exp_xray_ewald}
+\includegraphics[width=0.6\textwidth]{exp_xray_ewald}
 \caption{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions\cite{bobhe}}
 \end{figure}
 
@@ -46,8 +46,8 @@ The last optimization parameter for 2DXRD scans is the amount of time spent coll
 Once a 2DXRD measurement has been taken, the resulting data consists of a series of 2D detector frames. The exact number of frames is determined by the sampling resolution set during the 2DXRD scans. Each frame is a snapshot of the the diffraction intensity collected from the sample for the exact angular configuration in space stored with the frame. A single 2DXRD frame (\cref{fig:exp_xray_frame}) which contains a x-ray diffraction peak can be analyzed via a number of integration techniques. The two perpendicular pixel directions on the 2DXRD frames are transformed into two angular dimensions in the coordinate system of the sample, 2\texttheta{} and \textchi \cite{bobhe}. The resulting frame is sliced into hyperbola with the x-direction of the frame corresponding to the radius and a new dimension \textchi{} corresponding to the direction along a given hyperbola.
 \begin{figure}
     \centering
-    \missingfigure{Example 2DXRD frame}
-    \caption{\label{fig:exp_xray_frame}An example x-ray frame with an example conic sections labelled and integration types shown}
+    \includegraphics{exp_xray_frame}
+    \caption{\label{fig:exp_xray_frame}An example x-ray frame with a conic section of fixed 2\texttheta{} highlighted}
 \end{figure}
 
 The data on a frame can be integrated in one dimensional plots along either dimension of the hyperbola. Integration of the data along \textchi{} and plotting with respect to 2\texttheta{} results in a pseudo-powder pattern similar to those taken in a common Bragg-Brantano XRD system, expect it can be performed for diffraction peaks other than perpendicular to the substrate. Such plots show the presence of d-spacings within the frame of interest, and their width. Integration of data over a 2\texttheta{} range and producing a one dimensional plot will show the spatial intensity distribution of a given diffraction peak. Examples of both such integration types are shown in \cref{fig:exp_xray_frame}.
@@ -86,7 +86,7 @@ The most difficult situation that occurs is when the generated pole figure conta
 Other textured epitaxial crystals may arise through multiple preferred growth relationships with the underlying substrate. Such systems typically have pole figures where the symmetry of the overall pole figure reflects the substrate surface symmetry. The example in \cref{fig:exp_xray_polefigure_examples}c is one of a (111)-up crystal (3-fold symmetry) on a (100) substrate (4-fold symmetry), showing $3\times 4=12$ peaks.
 \begin{figure}
     \centering
-    \missingfigure{4 simulated pole figures, completely random, in-plane random, textured, single crystal}
+    \includegraphics{exp_xray_polefigure_examples}
     \caption{\label{fig:exp_xray_polefigure_examples}Example pole figures of a) Polycrystalline randomly oriented b) in-plane random orientation c) textured epitaxial crystals of the same composition and crystal structure}
 \end{figure}
 
@@ -101,12 +101,14 @@ Recall that for a perfect crystal, there is only a single configuration for whic
 
 Using HRXRD measurements, the exact d-spacing of a given material can be determined, showing whether a sample has its lowest energy structure or it is strained. If the orientation of the sample can be controlled carefully, the d-spacing can be measured absolutely, otherwise, it can be measured relative to a known standard such as a single crystal substrate. The broadening (spatial extent) of a HRXRD peak provides different information depending upon the dimension along which it is examined. In the 2\texttheta{} direction, the radial direction in reciprocal space, broadening indicates that the spacing of interest is actually a distribution of spacings within the region of the sample illuminated by x-rays. Such distributions can indicate strain or compositional variation in the region of interest. The broadness of the x-ray peak when sample is rocked in the \textomega{} direction, while keeping 2\texttheta{} fixed indicates that a given d-spacing has a distribution of orientations within the sample, usually indicating multiple crystallites.
 
-
 \subsubsection{Practical HRXRD Measurement}
-%Single wavelength
-%Arcsecond resolution goiniometer
-%Highly parallel source
-%Typically surface parallel planes
+In order to ensure the validity of HRXRD measurements of exact d-spacings and x-ray diffraction peak widths, the HRXRD system and it's operation must satisfy several conditions. These properties specifically deal with the properties of the x-ray source used in HRXRD, and the operation of the goiniometer in the rotation of the sample, source, and detector.
+
+For practical HRXRD, the x-ray source much monochromated far more than for general x-ray work. Typical x-ray sources will contain bright peaks from multiple core electron levels, along with Bremsstrahlung radiation, and will be monochromated with a one monochromator. Such a source will still have an appreciable broadening in its peak and such broadness will convolve with the sample's true properties. HRXRD measurements must be taken with x-ray sources with at least two monochromators, and may have up to four. Sufficient monochromation will ensure that the instrumentation broadening will be below the level of the sample's actual diffraction properties, allowing a sensible measurement result. Such extra monochromation results in a significantly weaker signal than general experiments, and a much longer experiment time. Beam size considerations are a balance between the sample's spatial distribution and the intensity of the diffraction signal.
+
+The second practical requirement for HRXRD is for precise alignment of the sample, and the ability to be make precise movements of the sample. Absolute alignment of the sample is required in order to absolutely determine the orientation of crystal structures and the d-spacing of the planes of interest. Precise orientation and movement of sample is achieved by a goniometer with resolution of at least one arcsecond (1/3600 of a degree), with good reproducibility.
+
+Practical HRXRD measurements, even after performing alignment, are best performed by with reference to a known diffraction peak. For HRXRD measurements attempting to determine the exact d-spacing for a epitaxial crystal, it is best achieved by aligning to a strong reference peak of the substrate, and including that peak in the measurement in order to allow both absolute measurement and relative calculation of the d-spacing.
 
 \section{Electron Microscopy}
 The second of two very useful probes for examining the properties of epitaxial thin films is electrons, specifically, electron beams generated for electron microscopy. The electron, unlike the x-ray is a particle which interacts fairly strongly with materials. Electrons can be generated and accelerated to high velocities, resulting in DeBroglie wavelengths orders of magnitude smaller than X-rays and as a a result can be confined or focused to sub-angstrom areas. The electron's use as a probe can be used as both a mechanism to produce excite other phenomena for study, or to measure the effect a given sample has on a beam of uniform electrons. For generic beam of nearly-monochromatic electrons, typical of electron microscopy, a number of interactions are possible for a sample of finite thickness, as shown in \cref{fig:exp_em_electron_interaction}. The interactions of electrons with a sample can provide both chemical and structural information with fine spatial resolution thanks to the tight control of electron beams.
