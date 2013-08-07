@@ -70,15 +70,15 @@ In addition to issues of charge neutrality at chemically dissimilar ideal epitax
 \subsection{Clusters and Nucleation}
 As will arise again and again throughout this document, the key factor in the growth of epitaxial crystals is the properties of the epitaxial interface. The two generalized properties that impact this interface are the energy and symmetry at the interface. The initial stages of the epitaxial growth process is a key step which reveals the complex interplay of strain, energy and symmetry, through the form of the nucleation of the epitaxial crystal.
 
-A key qualitative measure of the affinity of a given crystal to grow on another crystal is what is termed the nucleation mode of the epitaxial crystal. Qualitatively, the nucleation mode of a given epitaxial crystal \textbf{A} on a substrate \textbf{B}, describes the affinity for the atoms in \textbf{A} to wet (spread out and contact) the substrate versus sticking to each other. The wetting and dewetting of a given system is described by Young's equation, as in \cref{eqn:youngs}. Young's equation describes the balance of three energies, the film-substrate energy, the substrate-vapour energy and the film-vapour energy, through a parameter denoted the contact angle. The contact angle is the key parameter which determines wetting characteristics of a system.
+A key qualitative measure of the affinity of a given crystal to grow on another crystal is what is termed the nucleation mode of the epitaxial crystal. Qualitatively, the nucleation mode of a given epitaxial crystal \textbf{A} on a substrate \textbf{B}, describes the affinity for the atoms in \textbf{A} to wet (spread out and contact) the substrate versus sticking to each other. The wetting and dewetting of a given system is described by Young's equation, as in \cref{eqn:youngs}. Young's equation describes the balance of three energies, the solid-liquid energy ($\gamma_SL$), the solid-gas energy ($\gamma_{SG}$) and the liquid-gas energy ($\gamma_{LG}$), through a parameter denoted the contact angle. The contact angle is the key parameter which determines wetting characteristics of a system.
 \begin{equation}
-\gamma_{FS} + \gamma_{FV} \cos{\theta_c} = \gamma_{SV} \label{eqn:youngs}
+\gamma_{SL} + \gamma_{LG} \cos{\theta_c} = \gamma_{SG} \label{eqn:youngs}
 \end{equation}
-Young's equation can be visualized as a droplet of the epitaxial crystal material sitting atop a substrate, making some contact angle with the substrate, as in \cref{fig:back_epi_young}. Contact angles of less than 90\degree{} are denoted as wetting a surface, while angles greater than 90\degree{} are denoted as dewetting a surface. During epitaxial nucleation, incoming atomic material grows as one of three modes, named island nucleation, layer-by-layer nucleation, and stranski-krastanov or mixed-mode nucleation, as in \cref{fig:back_growth_mode}. 
+Young's equation can be visualized as a droplet of the epitaxial crystal material sitting atop a substrate, making some contact angle with the substrate, as in \cref{fig:back_epi_young}. Contact angles of less than 90\degree{} are denoted as wetting a surface, while angles greater than 90\degree{} are denoted as dewetting a surface. During epitaxial nucleation, incoming atomic material grows as one of three modes, named island nucleation, layer-by-layer nucleation, and Stranski-Krastanov or mixed-mode nucleation, as in \cref{fig:back_growth_mode}. 
 \begin{figure}
     \centering
-    \missingfigure{Young's equation visiulaization}
-    \caption{\label{fig:back_epi_young}Young's equation visualized as a droplet sitting atop a substrate}
+    \includegraphics[width=0.9\textwidth]{back_epi_young}
+    \caption{\label{fig:back_epi_young}Young's equation visualized as a droplet sitting atop a substrate\cite{wikipedia}]}
 \end{figure}
 
 The energies in Young's equation are intrinsic to the crystal and chemical relationship between the epitaxial crystal and the substrate, as well as possibly the overlying gas. Strain and chemical bonding are the two primary factors which influence the energy parameters which participate in the nucleation process. The regions of have been mapped experimentally for several model systems, both chemically similar and strained, and the chemically dissimilar but unstrained, as shown in \cref{fig:back_nucleation_regions}. Layer-by-layer nucleation and growth is most readily achieved when the epitaxial crystal and substrate are chemically compatible and have minimal strain. For chemically incompatible systems nucleation is always island nucleation, as the epitaxial crystal would rather bond to itself than the substrate. With increasing strain nucleation can begin as layer by layer, but transition to island after several layers.
@@ -119,8 +119,8 @@ Finally, a surface can reconstruct by losing some of the atoms which originally 
 When crystals are cut along low index planes (100,111,110), surface reconstructions happen directly on these surfaces. When crystals are cut along high index planes, there is additional energy associated with exposing non-close-packed planes. These high index planes are highly unfavourable and do not have stable reconstructions. The high index surface instead undergoes a breakup into sections of low index planes, separated by steps of fractional or multiples of the unit cell, as shown in \cref{fig:back_recon_vicinal}. These low index planes can then further reconstruct as previously discussed.
 \begin{figure}
     \centering
-    \missingfigure{Vicinal surface showing reconstruction}
-    \caption{\label{fig:back_recon_vicinal}Vicinal surface showing reconstruction}
+    \includegraphics{back_recon_vicinal}
+    \caption{\label{fig:back_recon_vicinal}Vicinal silicon (100) surface reconstructions, single and double steps\cite{Alerhand1990}}
 \end{figure}
 
 The most common case of high index planes exposed for surface reconstruction is offcut or vicinal surfaces. The surfaces of single crystal wafers, when cut from a boule have a misalignment from the intended low-index plane due to processing error. These wafers, when reconstructed form terraces of the low index plane, separated by fractional unit cell steps.
@@ -131,8 +131,8 @@ While a unreconstructed crystal surface is in a high energy state, all the route
 Thus far, energy and time have only been discussed in general terms. The most successful and commonly used method of actually delivering energy and eliciting a reconstruction is to increase the temperature of the crystal. Annealing crystals can be done at a carefully controlled temperature for any desired amount of time. Careful experimentation with various crystals has resulted in ``phase diagrams'' of surface reconstructions given a surface and temperature combination, as seen in \cref{fig:back_recon_phase}.
 \begin{figure}
     \centering
-    \missingfigure{Phase diagram of surface reconstruction}
-    \caption{\label{fig:back_recon_phase}Phase diagram of surface reconstruction}
+    \includegraphics[width=0.6\textwidth]{back_recon_phase}
+    \caption{\label{fig:back_recon_phase}Phase diagram of the Silicon (100) surface reconstruction\cite{Pehlke1991}}
 \end{figure}
 
 The formation and stability of a given surface reconstruction also depends upon the environment surrounding the crystal. Assuming the surrounding environment does not chemically react with a given crystal, the presence of absence (vacuum) of an inert gas will affect the activation energies for the surface atom processes. A vacuum above a crystal when annealing promotes the exit of atoms from the surface as there is force resisting the atoms, or back scattering them towards the surface. For complex crystals which incorporate elemental gasses into their lattice, different surface reconstructions are achievable if an overpressure of those gasses are present, rather than a vacuum. These surface reconstructions are commonly seen in the complex oxides, where oxygen is a primary constituent of the crystal and will be lost from the surface during annealing if an overpressure is not provided.
