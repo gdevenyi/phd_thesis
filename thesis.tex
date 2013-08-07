@@ -36,6 +36,7 @@
 \usepackage{listing}%Package for listing sourcecode with syntax highlighting
 \usepackage{ellipsis}%Fix \ldots and similar commands, bugs with spacing and such
 \usepackage{graphicx}
+\setkeys{Gin}{width=0.75\textwidth}
 \usepackage{wasysym}
 
 \pdfminorversion=5
@@ -144,37 +145,37 @@ NUMBER OF PAGES: vii, 212}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 %Thesis starts here
 
-%For large LaTeX documents, it is best practice to separate the material into smaller files so that it is easier to handle, use \input to insert each file into the overall document
+%For large LaTeX documents, it is best practice to separate the material into smaller files so that it is easier to handle, use \include to insert each file into the overall document
 
 \chapter{Introduction}
-\input{introduction.tex}
+\include{introduction}
 
 \chapter{Background}
-\input{background.tex}
+\include{background}
 
 \chapter{Experimental}
-\input{experimental.tex}
+\include{experimental}
 
 \part{III-V Materials on Silicon}
 \chapter{The Role of Vicinal Surfaces in Epitaxial Twin Formation}
-\input{twins.tex}
+\include{twins}
 
 \chapter{Tilted Epitaxy on (211) Oriented Substrates}
-\input{211.tex}
+\include{211}
 
 \part{Semiconductors on Oxide Substrates}
 \chapter{CdTe Growth on Sapphire Substrates and Liftoff Phenomenon}
-\input{cdteliftoff.tex}
+\include{cdteliftoff}
 
 \chapter{CdTe Growth on Reconstructed \texorpdfstring{SrTiO$_3$}{SrTiO3}}
-\input{srtio3.tex}
+\include{srtio3}
 
 \chapter{CdTe Nanowire Growth on Sapphire}
-\input{nanocdte.tex} 
+\include{nanocdte} 
 
 \part{Noble Metals on Oxides}
 \chapter{Nanostructured Gold on Spinel}
-\input{nanogold.tex}
+\include{nanogold}
 
 \part{Closing Discussions}
 \chapter{Future Work}
