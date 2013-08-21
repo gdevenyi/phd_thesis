@@ -36,3 +36,4 @@ thesis.pdf
 *.xml
 *blx.bib
 *.bcf
+*.synctex.gz(busy)
