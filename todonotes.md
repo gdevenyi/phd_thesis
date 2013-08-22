@@ -12,7 +12,6 @@ Writing ToDos
 * Collect missing figures for srtio3
 
 * Integrate details of polarity measurement of CdTe
-* Include figure of potential energy vs distance page 374 ohring
 * Fix introduction to talk about SiGe mixed materials
 * Include figure page 773 from ohring liftoff cdte
 * Surface reconsturctions are charge-neutral
