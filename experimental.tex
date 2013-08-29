@@ -18,7 +18,7 @@ A concept known as reciprocal, or momentum space, is a common construct used in 
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{exp_xray_ewald}
-\caption{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions\cite{bobhe}}
+\caption[Ewald sphere]{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions\cite{bobhe}}
 \end{figure}
 
 \subsection{2DXRD - Reciprocal Space Mapping}
@@ -30,7 +30,7 @@ An alternate implementation of such a measurement process is through the use of 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{exp_xray_machine}
-    \caption{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system, with the laboratory geometry\cite{bobhe}}
+    \caption[2DXRD diagram]{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system, with the laboratory geometry\cite{bobhe}}
 \end{figure}
 Practical 2DXRD measurements are achieved through the use of a multi-axis goiniometer, a device which maintains the sample at a central point while rotating its orientation relative to the X-ray source and detector. For the purposes of epitaxial crystals grown on substrates, a sample under measurement is placed in the goinometer with its surface normal oriented along the goiniometer's sample axis and a reference edge. An x-ray source is placed on one arm of the goiniometer and the 2D detector is placed on the other arm.
 
@@ -47,7 +47,7 @@ Once a 2DXRD measurement has been taken, the resulting data consists of a series
 \begin{figure}
     \centering
     \includegraphics{exp_xray_frame}
-    \caption{\label{fig:exp_xray_frame}An example x-ray frame with a conic section of fixed 2\texttheta{} highlighted}
+    \caption[Example 2DXRD frame]{\label{fig:exp_xray_frame}An example x-ray frame with a conic section of fixed 2\texttheta{} highlighted}
 \end{figure}
 
 The data on a frame can be integrated in one dimensional plots along either dimension of the hyperbola. Integration of the data along \textchi{} and plotting with respect to 2\texttheta{} results in a pseudo-powder pattern similar to those taken in a common Bragg-Brantano XRD system, expect it can be performed for diffraction peaks other than perpendicular to the substrate. Such plots show the presence of d-spacings within the frame of interest, and their width. Integration of data over a 2\texttheta{} range and producing a one dimensional plot will show the spatial intensity distribution of a given diffraction peak. Examples of both such integration types are shown in \cref{fig:exp_xray_frame}.
@@ -57,18 +57,19 @@ While integration of the diffraction data on a single frame provides useful quan
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{exp_xray_polesphere}
-    \caption{\label{fig:exp_xray_polesphere}The pole sphere showing the origin of peaks in a pole figure and their relationship to the sample and an individual unit cell\cite{gadds_manual}}
+    \caption[Mapping of a unit cell to pole sphere]{\label{fig:exp_xray_polesphere}The pole sphere showing the origin of peaks in a pole figure and their relationship to the sample and an individual unit cell\cite{gadds_manual}}
 \end{figure}
 
 To generate a pole figure from a collection of frames a 2\texttheta{} and \textchi{} range are selected on the first frame of a series of frames. Generally, such a range will include the maximum width of a single d-spacing of interest (such as \{111\}) and the entire extent of \textchi{} on the frame. The range is integrated across 2\texttheta{}, producing a one dimensional intensity scan. The intensity scan from each frame is then mapped onto the pole sphere (\cref{fig:exp_xray_polesphere}) according to the frame orientation information, forming a geodesic line of intensity. The pole sphere is a construction centred on the sample which maps the direction in space that diffraction intensity is collected by the detector. As each frame is integrated, the surface of the pole sphere is painted with colour mapped intensity data. The resulting sphere of data is then stereographically (angle preserving) projected onto a circle, resulting in a pole figure. The pole figure is a polar diffraction intensity colour map with the radial direction represented by \textalpha{}, the angle from the top of the sphere and the azimutual direction \textphi{} is the in-plane orientation relative to the sample's \textphi{} zero orientation set during sample mounting. An example pole figure mapping a single data point from the pole sphere is shown in \cref{fig:exp_xray_polefigure}. 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{exp_xray_polefigure}
-    \caption{\label{fig:exp_xray_polefigure}Example mapping of pole sphere data points to pole figure\cite{bobhe}}
+    \caption[Mapping of pole sphere to pole figure]{\label{fig:exp_xray_polefigure}Example mapping of pole sphere data points to pole figure\cite{bobhe}}
 \end{figure}
 
 \subsubsection{Ipretation and Simulation of Pole Figures}
 Once a pole figure has been generated the resulting graphical representation of the diffraction data must be interpreted in the context of the sample. Generally, a pole figure will be generated for a low-index reflection (100,110,111) for both the epitaxial crystal and the substrate. By generating two figures, the orientation relationship between the diffraction intensity produced by the grown crystal and the single crystal substrate can be examined by comparing the two figures.
+\todo{Should this figure be removed?}
 \begin{figure}
     \centering
     \missingfigure{Comparison of Winwulff simulation and generated single crystal silicon (111) pole figure}
@@ -87,7 +88,7 @@ Other textured epitaxial crystals may arise through multiple preferred growth re
 \begin{figure}
     \centering
     \includegraphics{exp_xray_polefigure_examples}
-    \caption{\label{fig:exp_xray_polefigure_examples}Example pole figures of a) Polycrystalline randomly oriented b) in-plane random orientation c) textured epitaxial crystals of the same composition and crystal structure}
+    \caption[Example simulated pole figures]{\label{fig:exp_xray_polefigure_examples}Example pole figures of a) Polycrystalline randomly oriented b) in-plane random orientation c) textured epitaxial crystals of the same composition and crystal structure}
 \end{figure}
 
 Beyond the analysis of the symmetry of diffraction intensity, which indentifies the crystallites present within a sample, the relative intensities within the pole figure provide a wealth of information about the epitaxial crystal. Similar to the integration techniques applicable to raw 2DXRD frames, the diffraction intensity in a pole figure can be sliced and integrated in a number of ways. The pole figure can be inspected by simply integrating the information in a given area, allowing comparison of the intensity of individual diffraction peaks. Pole figure intensity can also be integrated radially and plotted versus \textphi{}, providing information on the in-plane rotational misalignment of the selected epitaxial crystallites. Finally, pole figure intensity can be integrated versus \textphi{} and plotted radially.
@@ -115,7 +116,7 @@ The second of two very useful probes for examining the properties of epitaxial t
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{exp_em_electron_interaction}
-    \caption{\label{fig:exp_em_electron_interaction}Schematic of an electron beam interacting with a sample showing backscattered electrons (BSE), secondary electrons (SE), generated X-rays, low angle scattered electrons (LAE), high angle scattered electrons (HAE), and the main electron beam passing through the sample.}
+    \caption[Electron interactions with materials]{\label{fig:exp_em_electron_interaction}Schematic of an electron beam interacting with a sample showing backscattered electrons (BSE), secondary electrons (SE), generated X-rays, low angle scattered electrons (LAE), high angle scattered electrons (HAE), and the main electron beam passing through the sample.}
 \end{figure}
 
 This work relied upon two measurement techniques which utilized electrons as their primary probe, scanning electron microscopy (SEM) and (scanning)transmission electron microscopy (STEM/TEM). SEM is an invaluable technique non-destructive technique for examining surfaces at high resolution to extract information about both the structural and chemical properties. STEM/TEM is a tool which utilizes similar interactions to examine the cross sectional structural and chemical properties of mechanically thinned slices of materials with sufficient resolution to examine individual columns of atoms in crystals.
