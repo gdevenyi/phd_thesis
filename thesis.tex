@@ -33,11 +33,12 @@
 \addbibresource{nanocdte.bib}
 \addbibresource{srtio3.bib}
 \usepackage[english]{isodate}%Convert any date formats to ISO style
-\usepackage{listing}%Package for listing sourcecode with syntax highlighting
+\usepackage{listings}%Package for listing sourcecode with syntax highlighting
 \usepackage{ellipsis}%Fix \ldots and similar commands, bugs with spacing and such
 \usepackage{graphicx}
 \setkeys{Gin}{width=0.75\textwidth}
 \usepackage{wasysym}
+\usepackage{lastpage}
 
 \pdfminorversion=5
 \pdfobjcompresslevel=3 
@@ -89,14 +90,14 @@
 
 \begin{titlepage} %Half-title page for McMaster Formatting
 	\vspace*{\fill}\Centering
-	The Role of Energy and Symmetry at Epitaxial Interfaces
+	THE ROLE OF ENERGY AND SYMMETRY AT EPITAXIAL INTERFACES
 	\vspace*{\fill}
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \begin{titlepage} %Titlepage
 \Centering
 \vspace*{\fill} %This makes text vertically centered
-{\Large The Role of Energy and Symmetry at Epitaxial Interfaces\\
+{\Large THE ROLE OF ENERGY AND SYMMETRY AT EPITAXIAL INTERFACES\\
 By\\GABRIEL A.\ DEVENYI, B.\ ENG.\\}
 \vfill 
 A Thesis Submitted to the School of Graduate Studies in Partial Fulfilment of 
@@ -108,14 +109,10 @@ McMaster University
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \pagenumbering{roman}
 \setcounter{page}{2} %Descriptive note page
-{\Large Descriptive Note\\
-DOCTOR OF PHILOSOPHY (2013) McMaster University
-(Engineering Physics)
-Hamilton, Ontario
-TITLE: The Role of Energy and Symmetry at Epitaxial Interfaces\\
-AUTHOR: Gabriel A. Devenyi, B.\ Eng. (McMaster University)\\
-SUPERVISOR: Professor John S. Preston\\
-NUMBER OF PAGES: vii, 212}
+{\Large
+McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario(Engineering Physics)\\ 
+TITLE: The Role of Energy and Symmetry at Epitaxial Interfaces AUTHOR: Gabriel A. Devenyi, B.Eng. (McMaster University) SUPERVISOR: Professor John S. Preston NUMBER OF 
+PAGES: ix, \pageref{LastPage}}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\begin{abstract}
 		\thispagestyle{plain}
@@ -130,7 +127,6 @@ NUMBER OF PAGES: vii, 212}
 
 	\tableofcontents
 	\listoffigures
-	\listoftables
 	\newpage
 	\pagenumbering{arabic} %Reset page numbering
 
@@ -141,6 +137,11 @@ NUMBER OF PAGES: vii, 212}
 	\fancyhead[RE,LO]{McMaster University -- Engineering Physics}
 	\fancyhead[LE,RO]{PhD Thesis -- Gabriel A. Devenyi}
 	\fancyfoot[CE,CO]{\thepage}
+    
+    \lstset{% general command to set parameter(s)
+basicstyle=\footnotesize\ttfamily,
+breaklines=true
+}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 %Thesis starts here
@@ -179,7 +180,13 @@ NUMBER OF PAGES: vii, 212}
 
 \part{Closing Discussions}
 \chapter{Future Work}
+\include{future}
 \chapter{Conclusions}
+\include{conclusions}
+
+\appendix
+\chapter{Lattice Matching Calculations}
+\lstinputlisting[language=Octave]{lattice-checker.m}
 
 \printbibliography
 %\printindex
