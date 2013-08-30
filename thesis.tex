@@ -36,7 +36,7 @@
 \usepackage{listings}%Package for listing sourcecode with syntax highlighting
 \usepackage{ellipsis}%Fix \ldots and similar commands, bugs with spacing and such
 \usepackage{graphicx}
-\setkeys{Gin}{width=0.75\textwidth}
+\setkeys{Gin}{width=0.75\textwidth} %Sets default width of \includegraphics{}
 \usepackage{wasysym}
 \usepackage{lastpage}
 
@@ -92,14 +92,17 @@
 	\vspace*{\fill}\Centering
 	THE ROLE OF ENERGY AND SYMMETRY AT EPITAXIAL INTERFACES
 	\vspace*{\fill}
+    \setcounter{page}{0}
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \begin{titlepage} %Titlepage
+\pagenumbering{roman}
 \Centering
 \vspace*{\fill} %This makes text vertically centered
-{\Large THE ROLE OF ENERGY AND SYMMETRY AT EPITAXIAL INTERFACES\\
+{\Large THE ROLE OF ENERGY AND SYMMETRY AT\\
+EPITAXIAL INTERFACES
 By\\GABRIEL A.\ DEVENYI, B.\ ENG.\\}
-\vfill 
+\vfill
 A Thesis Submitted to the School of Graduate Studies in Partial Fulfilment of 
 the Requirements for the Degree Doctor of Philosophy
 McMaster University
@@ -107,12 +110,11 @@ McMaster University
 \textcopyright Copyright by Gabriel A.\ Devenyi, May 2013
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\pagenumbering{roman}
-\setcounter{page}{2} %Descriptive note page
-{\Large
-McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario(Engineering Physics)\\ 
-TITLE: The Role of Energy and Symmetry at Epitaxial Interfaces AUTHOR: Gabriel A. Devenyi, B.Eng. (McMaster University) SUPERVISOR: Professor John S. Preston NUMBER OF 
-PAGES: ix, \pageref{LastPage}}
+{\Large \noindent McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario (Engineering Physics)\\ 
+TITLE: The Role of Energy and Symmetry at Epitaxial Interfaces\\
+AUTHOR: Gabriel A. Devenyi, B.Eng. (McMaster University)\\
+SUPERVISOR: Professor John S. Preston\\
+NUMBER OF PAGES: ix, \pageref{LastPage}}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\begin{abstract}
 		\thispagestyle{plain}
@@ -186,6 +188,7 @@ breaklines=true
 
 \appendix
 \chapter{Lattice Matching Calculations}
+\label{apndx:lattice-matches}
 \lstinputlisting[language=Octave]{lattice-checker.m}
 
 \printbibliography
