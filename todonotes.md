@@ -9,7 +9,6 @@ Writing ToDos
 * Collect/generate DFT images of Cd and Te energy landscapes on sapphire
 * Generate DFT images of InSb on Sapphire substate
 * Generate 211 sideview (110) of silicon
-* Collect missing figures for srtio3
 
 * Integrate details of polarity measurement of CdTe
 * Fix introduction to talk about SiGe mixed materials
@@ -32,10 +31,6 @@ Science Todos
 
 Structure Todos
 ====================
-* Decide on an implement consistent a) b) c) in text
-* Investigate scientific words without hyphenation
-* Write short-form captions for TOC
-* Download citations/generate for SrTiO3
 * \protect all citations in \captions
 * Cite Vicky's ray paper somewhere
 * Read all references for errors/typos
