@@ -4,7 +4,7 @@
 \usepackage{amsmath} %AMS Math Package
 \usepackage{amssymb} %AMS Math Symbols
 \usepackage[all,warning]{onlyamsmath}%Warn about non-ams math useage, suggest improvements
-\usepackage[letterpaper,top=3.8cm,bottom=2.5cm,inner=2.5cm,outer=3.8cm]{geometry} %Sets up basic page dimensions
+\usepackage[letterpaper,twoside,top=3.8cm,bottom=2.5cm,inner=3.8cm,outer=2.5cm]{geometry} %Sets up basic page dimensions
 \usepackage[tracking=true,kerning=true,expansion]{microtype} %makes type look better
 \usepackage{booktabs} %makes tables look better
 \usepackage{siunitx} %provides standard printing for SI units
@@ -59,6 +59,7 @@
 %\linenumbers %Uncomment to turn on line numbers
 %\syntaxonly %Uncomment to only check compile for syntax PRODUCES NO OUTPUT
 \hyphenation{nano-wires nano-wire ad-atom wurt-zite nano-structures vi-cinal nano-twins off-cut crys-tal-lites epi-tax-i-ally micro-twinning eq-ui-ang-u-la-tion}
+\setlength{\headheight}{15pt}
 
 \hypersetup{
     unicode=true,
@@ -66,7 +67,7 @@
     pdfmenubar=true,
     pdffitwindow=false,
     pdfstartview={FitH},
-    pdftitle={My title},
+    pdftitle={The Role of Energy and Symmetry at Epitaxial Interfaces},
     pdfauthor={Gabriel A. Devenyi},
     pdfsubject={Subject},
     pdfkeywords={keyword1} {key2} {key3},
@@ -99,7 +100,7 @@
 \centering
 \vspace*{\fill} %This makes text vertically centered
 {\Large THE ROLE OF ENERGY AND SYMMETRY AT\\
-EPITAXIAL INTERFACES
+EPITAXIAL INTERFACES\\
 By\\GABRIEL A.\ DEVENYI, B.\ ENG.\\}
 \vfill
 A Thesis Submitted to the School of Graduate Studies in Partial Fulfilment of 
@@ -109,7 +110,7 @@ McMaster University
 \textcopyright Copyright by Gabriel A.\ Devenyi, May 2013
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-{\Large \noindent McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario (Engineering Physics)\\ 
+{\noindent McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario (Engineering Physics)\\ 
 TITLE: The Role of Energy and Symmetry at Epitaxial Interfaces\\
 AUTHOR: Gabriel A. Devenyi, B.Eng. (McMaster University)\\
 SUPERVISOR: Professor John S. Preston\\
@@ -142,7 +143,9 @@ NUMBER OF PAGES: ix, \pageref{LastPage}}
     
     \lstset{% general command to set parameter(s)
 basicstyle=\footnotesize\ttfamily,
-breaklines=true
+breaklines=true,
+tabsize=2,
+frame=single
 }
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
