@@ -1,5 +1,5 @@
 \RequirePackage[l2tabu, orthodox]{nag} %Package complains about uses of old functions, make sure you write modern latex
-\documentclass[letterpaper,10pt,twoside]{report}
+\documentclass[letterpaper,12pt,twoside]{report}
 \usepackage[english,canadian]{babel}
 \usepackage{amsmath} %AMS Math Package
 \usepackage{amssymb} %AMS Math Symbols
@@ -52,6 +52,7 @@
 \usepackage{setspace} %Provides \doublespacing command
 \usepackage{todonotes} %Provides \todo{something} which puts labels in magin and \missingfigure{something} to put in placeholder figures
 \setlength{\marginparwidth}{2.5cm} %Fix Todonote placement
+\reversemarginpar
 \widowpenalty=300 %Prevent widows (single sentences at end of page)
 \clubpenalty=300 %Prevent orphans (single sentences on empty pages)
 %\doublespacing %Uncomment to turn on double spacing
@@ -89,8 +90,11 @@
 \begin{document}
 
 \begin{titlepage} %Half-title page for McMaster Formatting
-	\vspace*{\fill}\centering
-	THE ROLE OF ENERGY AND SYMMETRY AT EPITAXIAL INTERFACES
+    \topskip0pt
+	\vspace*{\fill}
+    \begin{center}{\Large
+	THE ROLE OF ENERGY AND SYMMETRY AT EPITAXIAL INTERFACES}
+    \end{center}
 	\vspace*{\fill}
     \setcounter{page}{0}
 \end{titlepage}
