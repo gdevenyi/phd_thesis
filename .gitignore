@@ -32,7 +32,8 @@
 *.tdo
 *~
 *.fls
-thesis.pdf
+*thesis.pdf
+*Thesis.pdf
 *.xml
 *blx.bib
 *.bcf
