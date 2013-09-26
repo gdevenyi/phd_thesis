@@ -14,11 +14,11 @@ Beyond epitaxy, the other key subjects which require background exposition are s
 In this growth process, the crystal structure, lattice constants and chemistry are identical across the epitaxial interface.
 Despite this ideal situation, the growth of perfect homoepitaxial crystals is not guaranteed.
 The fact that a homoepitaxial growth can be defective in a number of ways is due to the difference between the thermodynamics and kinetics of the epitaxial growth process.
-Thermodynamically, one would expect that since the lowest energy state for the system would be the continuation of the existing single crystal via the homoepitaxial growth process, however, due to kinetics, the exact conditions of growth process can have a substantial impact on the growth process.
+Thermodynamically, one would expect that since the lowest energy state for the system would be the continuation of the existing single crystal via the homoepitaxial growth process, however, due to kinetics, the exact conditions of growth process can have a substantial impact on the outcome crystal.
 
 The homoepitaxial growth process is an excellent model system to separate the role of thermodynamics in growth from that of the kinetics.
 Kinetics in an epitaxial growth process refers to the role time plays in an epitaxial growth process, usually examined in terms of rates.
-There are two fundamental kinetic rate types involved in epitaxial growth, those which can be directly controlled by the experimenter and those which are primarily properties of the material system and can only be indirectly influenced by the experimenter, the most common kinetic processes in epitaxy are shown in \cref{fig:back_epi_rates}.
+There are two fundamental kinetic rate types involved in epitaxial growth, those which can be directly controlled by the experimenter and those which are primarily properties of the material system and can only be indirectly influenced by the experimenter, the most important kinetic processes in epitaxy are shown in \cref{fig:back_epi_rates}.
 \begin{figure}
  \centering \includegraphics[width=0.9\textwidth]{back_epi_rates}
  \caption[Kinetic Processes of atoms on surfaces]{\label{fig:back_epi_rates}Kinetic processes with Arrhenius rates which participate during epitaxy}
@@ -34,7 +34,7 @@ As the deposition rate is further reduced, depending upon the material, the film
 The bonding along \{111\} directions in a zincblende crystal is susceptible to faults due to their relative rotational symmetry, the exact susceptibility is known by the Stacking Fault Energy (SFE)\cite{Duffar2010}.
 Stacking fault energies in semiconductor materials vary from as low as single digit mJ/m\textsuperscript{2} (CdTe 9~mJ/m\textsuperscript{2}), to over 200 mJ/m\textsuperscript{2} (C 285~mJ/m\textsuperscript{2})\cite{Takeuchi1999}.
 This energy is a measure of the cost of making such a defect in a crystal, so crystals with low SFE are very susceptible to twinning during growth.
-As the growth rate is still lowered, the adatoms have time to find their low energy states with respect to twins, finally arriving at a single crystal.
+At yet lower growth rates the adatoms have time to find their low energy states with respect to twins, finally arriving at a single crystal.
 \begin{align}
  A = A_0 e^{-\frac{E_0}{kT}} \label{eqn:arrhenius} \\
  A = - v a^2 e^{-\frac{E_0}{kT}}
@@ -52,10 +52,10 @@ The key kinetic factor to the improvement of epitaxial growth is the increase in
 Surface diffusion of adatoms during growth is the process by which a newly adsorbed atom from the impinging atoms finds its lowest energy position on the epitaxial surface.
 Increases in temperature increase the rate at which these adatoms move, increasing the probability that they will find their lowest energy position before they are encapsulated by additional atoms.
 While increases in temperature will improve the mobility of adatoms, increases in temperature also increase other processes.
-Bulk diffusion is the process by which adatoms at the epitaxial interface diffuse into the bulk through exchange with other atoms or travel interstitially.
+Bulk diffusion is the process by which adatoms at the epitaxial interface diffuse into the substrate through exchange with other atoms or travel interstitially.
 In homoepitaxy this process is mostly irrelevant, but in any chemically dissimilar growth such a process distorts the interface, which is generally not preferred.
-Similarly, as temperature increases, the adatoms begin to desorb, leaving the epitaxial interface, slowing growth and under extreme circumstances, the substrate itself can also begin to breakdown.
-Finally, at very high surface diffusion rates, adatoms may not ever attach to others, nucleating new layers of crystal.
+Furthermore, as temperature increases, adatoms can begin to desorb, leaving the epitaxial interface, slowing growth and under extreme circumstances, the substrate itself can also begin to lose atoms.
+Finally, at very high surface diffusion rates, adatoms may not ever attach to others, preventing nucleation of new layers of crystal.
 
 The kinetics of growth are thus balanced between the intended growth rate, determined by the delivery of atoms to the epitaxial interface, and a temperature that is high enough to ensure single crystal growth, but not too high to cause breakdown of the epitaxial process, a delicate balance.
 
@@ -131,7 +131,7 @@ While such an offset is not detrimental to the substrate itself, the zincblende 
 The step edge will contain III-III or V-V bonds, a section known as an anti-phase boundary, a defect that causes significant electrical defects and unintentional doping due to uncompensated bonds.
 Sufficient care must be taken when preparing substrates (as noted later in \cref{sec:reconstruction}) in order to avoid these highly detrimental anti-phase boundaries.
 
-\subsection{Clusters and Nucleation} As will arise again and again throughout this document, the key factor in the growth of epitaxial crystals is the properties of the epitaxial interface.
+\subsection{Clusters and Nucleation} As will be noted throughout this document, the key factor in the growth of epitaxial crystals is the properties of the epitaxial interface.
 The two generalized properties that impact this interface are the energy and symmetry at the interface.
 The initial stages of the epitaxial growth process is a key step which reveals the complex interplay of strain, energy and symmetry, through the form of the nucleation of the epitaxial crystal.
 
@@ -154,8 +154,8 @@ The additional energy consideration, visualized in \cref{fig:back_epi_young}b sh
  \caption[Young's equation]{\label{fig:back_epi_young}a) Young's equation visualized as an isotropic droplet sitting atop a substrate, with surface energies and contact angle labelled b) Minimum surface energy Wulff shape of a crystalline material atop a substrate, with surface energies, contact angle and crystal surface energy (after \cite{wikipedia_surface_energy})}
 \end{figure}
 
-Since Young's equation (and Wulff shapes) describe the relative preference of a given material to stick to a substrate or to itself, such wetting and dewetting can naturually be extended to describe the modes of growth when a film is deposited onto a substrate.
-During epitaxial nucleation, incoming atomic material grows as one of three modes, named island nucleation, layer-by-layer nucleation, and Stranski-Krastanov or mixed-mode nucleation\cite{Venables1984}, as in \cref{fig:back_nucleation_regions}.
+Since Young's equation (and Wulff shapes) describe the relative preference of a given material to stick to a substrate or to itself, such wetting and dewetting can naturally be extended to describe the modes of growth when a film is deposited onto a substrate.
+During epitaxial nucleation, incoming atomic material is incorporated into thin films as one of three modes, named island nucleation (Volmer–Weber), layer-by-layer nucleation (Frank–van der Merwe), and layer plus island (Stranski-Krastanov) or mixed-mode nucleation\cite{Venables1984}, as in \cref{fig:back_nucleation_regions}.
 These modes describe the preference for the deposited atoms to spread out (wet) the growth interface or bunch up (dewet).
 
 The energies in Young's equation are intrinsic to the crystal and chemical relationship between the epitaxial crystal and the substrate, as well as possibly the overlying gas.
@@ -171,12 +171,12 @@ Systems which would prefer to form islands during nucleation can be restricted t
 \todo{Fix here conclusion here}For a generalized epitaxial system, there are several other factors not considered as part of this simple model.
 These nucleation modes do not consider the kinetics of the growth process, if atoms are delivered too quickly nucleation can form islands regardless of the predictions of Young's equation.
 \begin{figure}
- \centering \includegraphics[width=0.7\textwidth]{back_nucleation_regions}
- \caption[Nucleation phase diagram of surface energy and strain]{\label{fig:back_nucleation_regions}Regions of different nucleation/growth modes as a function of lattice mismatch and surface energies\cite{ohring2001materials} (used with permission)}
+ \centering \includegraphics[width=0.8\textwidth]{back_nucleation_regions}
+ \caption[Nucleation phase diagram of surface energy and strain]{\label{fig:back_nucleation_regions}Phase diagram showing regions of different thin film nucleation modes, plotted with axes of lattice mismatch (strain) and ratio of surface energies (used with permission after \cite{ohring2001materials})}
 \end{figure}
 
 \section{Surface Reconstructions}\label{sec:reconstruction}
-If one were to consider a crystal of infinite size, and then cut it along any direction, the resulting truncated crystal surface would be a very high energy surface.
+If one were to consider a crystal of infinite size, and then cut it along any direction, the resulting truncated crystal surface would have a very high energy surface.
 Bonds will be completely unsatisfied, there is likely to be an unbalanced charge, and the surrounding environment for each surface atom will be significantly different than they were in the bulk.
 This high energy condition is clearly not the equilibrium state and must be resolved.
 The resolution of this high energy state that results when surfaces of a single crystal are exposed is called the surface reconstruction.
@@ -192,7 +192,7 @@ In extreme cases, atoms can migrate and form islands or otherwise cause faceting
 A schematic example of the atom movement and relaxation for surface reconstructions is shown in \cref{fig:back_recon_move}.
 \begin{figure}
  \centering \includegraphics[width=0.5\textwidth]{back_recon_move}
- \caption[Simple surface reconstruction]{\label{fig:back_recon_move}The process of surface reconstruction with atomic movement a) truncated crystal b) layer movement due to no overlayer c) atomic roughening of surface to reduce total energy (after \cite{ohring2001materials})}
+ \caption[Simple surface reconstruction]{\label{fig:back_recon_move}The process of surface reconstruction with atomic movement a) truncated crystal b) layer movement due to no overlayer c) atomic roughening of surface to reduce total energy, with a\textsubscript{r} labelled as the reconstructed perpendicular lattice spacing (after \cite{ohring2001materials})}
 \end{figure}
 
 A more complex response resulting in a surface reconstruction that can arise is a change in the actual bonding in the upper layers of the crystal.
@@ -210,7 +210,7 @@ This is typical in reconstructions of materials where gaseous materials integrat
 The resulting reconstruction can be multiple layers thick, progressively containing less atoms from the bulk to the surface.
 Similarly, if reconstructions are formed in the appropriate atmosphere, the reconstruction can integrate additional atoms into the reconstruction.
 
-\subsection{Cuts Along High-index Planes} When crystals are cut along low index planes (100, 111, 110 for example in cubic structures), surface reconstructions happen directly on these surfaces.
+\subsection{Cuts Along High-index Planes} When crystals are cut along low index planes (for example \{100\}, \{111\}, \{110\}  in cubic structures), surface reconstructions happen directly on these surfaces.
 When crystals are cut along high index planes, there is additional energy associated with exposing non-close-packed planes.
 These high index planes are highly unfavourable and do not have stable reconstructions.
 The high index surface instead undergoes a breakup into sections of low index planes, separated by steps of fractional or multiples of the unit cell, as shown in \cref{fig:back_recon_vicinal}.
@@ -237,7 +237,7 @@ Thus, while a crystal surface may be in a relatively high energy state after cut
 Energy must be inputted into the system in order to allow the atoms to move, bond or leave the surface.
 The energy landscape of surface reconstructions has many local minima, so there are many possible surface reconstructions for a given surface, depending upon how much activation energy is provided to the system.
 Beyond how much energy is delivered to the crystal, it takes time for the atoms to reach a one of local minima for the surface.
-Some surface reconstructions can take a significant time to achieve, adding more energy would result in transitions into another reconstruction so the only route is time.
+Some surface reconstructions can take a significant time to progress to completion, adding more energy in an attempt to speed up such reconstructions can result in transitions into another reconstruction, as such, time spent reconstructing is a key factor in the conditions of the final surface.
 
 Thus far, energy and time have only been discussed in general terms.
 The most successful and commonly used method of delivering energy and eliciting a reconstruction is to increase the temperature of the crystal.
@@ -277,16 +277,16 @@ The nomenclature for surface reconstructions is not unique, as a reconstruction 
 reconstruction.
 \begin{figure}
  \centering\ \includegraphics[width=0.9\textwidth]{back_recon_name_examples}
- \caption[Examples of surface reconstructions]{\label{fig:back_recon_name_examples}Simple surface reconstructions showing atomic positions of adatoms (shaded) relative to atoms (dots) arrayed on a (100) simple cubic substrate\.
+ \caption[Examples of surface reconstructions]{\label{fig:back_recon_name_examples}Examples of simple cubic surface reconstructions showing atomic positions of reconstructed atoms (shaded) relative to bulk atoms (dots) on a (100) simple cubic substrate.
   a) P(\(2 \times 2\)) b) C(\(2 \times 2\)) or
   (\(\sqrt{2}\times\sqrt{2}\))R45\degree{}
-  c) P(\(1 \times 2\)) d) P(\(2 \times 1\))}
+  c) P(\(1 \times 2\)) d) P(\(2 \times 1\)) (used with permission after \cite{ohring2001materials})}
 \end{figure}
 
 \section{Atomic Bonding --- Attraction Between Atoms}
-%Add phyisorption 10-100meV bond energy
-%Use words chemisorption 1-10eV
-%\cite{oura2010surface}
+\todo{Add phyisorption 10-100meV bond energy
+Use words chemisorption 1-10eV
+\cite{oura2010surface}}
 The strength of attraction between atoms is a key factor in the growth process of epitaxial crystals.
 Attraction between atoms in a crystal is dominated by three different types of forces, electrostatic attraction, covalent electronic attraction and dipole attraction.
 
@@ -311,7 +311,7 @@ While it is a substantial component of the properties of water it is rare in cry
 Van der walls attraction is the third of the atomic interaction potentials.
 Van der Walls attraction is due to the dipole-dipole interactions between the electronic structure of atoms.
 Such an attraction process is different than covalent, the electronic structures are attracted due to their oscillating polarizabilty of the electron could, but do not share or hybridize electronic structures.
-These atomic interactions occur at greater distances than covalent interactions, and are considerably weaker, generally having potentials of 10--100~meV. The Van der Walls potential is the force that initially binds adatoms at the epitaxial interface, allowing them to move more freely on the surface before chemically reacting and becoming covalently bound, as seen in \cref{fig:back_bond_potential}.
+These atomic interactions occur at greater distances than covalent interactions, and are considerably weaker, generally having potentials of 10--100~meV. The Van der Walls potential is the force that initially binds adatoms at the epitaxial interface, allowing them to move relatively freely on the surface before chemically reacting and becoming covalently bound, as seen in \cref{fig:back_bond_potential}.
 
 In real materials, the bonding is more complicated than the three distinct potentials described.
 Many materials have both a covalent and an ionic nature at the same time, a property described as ionicity.
