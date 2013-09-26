@@ -1,6 +1,6 @@
 \section{Introduction}
 The work presented in this thesis, being experimental in nature, hinges on numerous experimental techniques.
-The fundamental components of this work rely on extensive use of X-ray diffraction (XRD) and transmission electron microscopy (TEM) in non-standard and novel ways.
+The fundamental components of this work rely on extensive use of X-ray diffraction (XRD) and transmission electron microscopy (TEM) in both standard and novel ways.
 These techniques will be examined and examined in some detail, as their novel usage is integral to the work presented here.
 Several other experimental techniques are also utilized in this work, but they are used in their everyday implementations as seen in many papers in literature.
 These experimental techniques will be discussed only briefly for brevity.
@@ -33,11 +33,11 @@ Reciprocal space is also the Fourier partner of the real space lattice of the cr
 Reciprocal space provides an opportunity for an alternate expression of the conditions for diffraction, known as the Ewald construction.
 The Ewald construction or Ewald sphere expresses the diffraction condition through the overlay of a sphere of radius 1/\textlambda{} pinned on its radius at the origin in reciprocal space, an incident X-ray beam (\textbf{k\textsubscript{i}}) entering the sphere.
 The direction of the exiting diffraction beam is determined by the intersection of the surface of the sphere with the reciprocal lattice, as shown in \cref{fig:exp_xray_ewald}.
-As a crystal is rotated (or the incoming beam is moved), the Ewald sphere will rotate about the origin, sweeping through reciprocal space and exciting diffraction conditions as the sphere coincides with lattice points.
+As a crystal is rotated (or the incoming beam is moved), the Ewald sphere will rotate about the reciprocal space origin, sweeping through reciprocal space and exciting diffraction conditions as the sphere coincides with lattice points.
 The pinned rotation of the Ewald sphere about the origin means that only reciprocal lattice points with a radius from the origin of less than 2/\textlambda{} can be excited into diffraction, indicating the effective limitation of a given X-ray source, as well as why light is an ineffective diffraction probe.
 \begin{figure}
  \centering \includegraphics[width=0.6\textwidth]{exp_xray_ewald}
- \caption[Ewald sphere]{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions showing incoming X-ray beam to crystal (C) and the reflected and transmitted diffraction cones for a fixed 2\straighttheta{}\cite{He2009}(used with permission)}
+ \caption[Ewald sphere]{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions (vector form of laue equation) showing incoming X-ray beam to crystal (C) and the reflected and transmitted diffraction cones for a fixed (hkl) and 2\straighttheta{} (used with permission from \cite{He2009})}
 \end{figure}
 
 \subsection{2DXRD --- Reciprocal Space Mapping}
@@ -58,7 +58,7 @@ If configuration is then swept through a range of diffraction conditions, the 2D
 \subsubsection{Practical 2DXRD Measurement}
 \begin{figure}
  \centering \includegraphics[width=0.8\textwidth]{exp_xray_machine}
- \caption[Typical 2DXRD experimental implementation]{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system, with the sample and laboratory coordinate systems\cite{He2009}(used with permission)}
+ \caption[Typical 2DXRD experimental implementation]{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system with source, sample and detector, with the sample (S) and laboratory (L) coordinate systems labelled. Standard goiniometer angles are also labelled (used with permission from \cite{He2009})}
 \end{figure}
 Practical 2DXRD measurements are achieved through the use of a multi-axis goiniometer, a device which maintains the sample at a central point while rotating its orientation relative to the X-ray source and detector.
 For the purposes of epitaxial crystals grown on substrates, a sample under measurement is placed in the goinometer with its surface normal oriented along the goiniometer's sample axis and a reference edge.
@@ -105,7 +105,7 @@ The data on a frame can be integrated in one dimensional plots along either dime
 Integration of the data along \textchi{} and plotting with respect to 2\straighttheta{} results in a pseudo-powder pattern similar to those taken in a common Bragg-Brantano XRD system, expect it can be performed for diffraction peaks other than perpendicular to the substrate.
 Such plots show the presence of d-spacings within the frame of interest, and their width.
 Integration of data over a 2\straighttheta{} range and producing a one dimensional plot will show the spatial intensity distribution of a given diffraction peak.
-Examples of both such integration types are shown in \cref{fig:exp_xray_frame}.
+An example 2DXRD frame, showing the different integration directions is shown in \cref{fig:exp_xray_frame}.
 
 \subsubsection{Pole Figure Generation} While integration of the diffraction data on a single frame provides useful quantitative measures of the distribution of a diffraction peak in space, when many frames are collected the generation and interpretation of many frames is tedious difficult to interpret.
 Pole figure generation from a set of frames is a method of graphically representing the spatial extent of the diffraction intensity of a given d-spacing around a given sample.
@@ -210,7 +210,7 @@ The broadness of the X-ray peak when sample is rocked in the \textomega{} direct
 \subsubsection{Practical HRXRD Measurement} In order to ensure the validity of HRXRD measurements of exact d-spacings and X-ray diffraction peak widths, the HRXRD system and it's operation must satisfy several conditions.
 These properties specifically deal with the properties of the X-ray source used in HRXRD, and the operation of the goiniometer in the rotation of the sample, source, and detector.
 
-For practical HRXRD, the X-ray source much monochromated far more than for general X-ray work.
+For practical HRXRD, the X-ray source must be much monochromated far more than than for general X-ray work.
 Typical X-ray sources will contain bright peaks from multiple core electron levels, along with Bremsstrahlung radiation, and will be monochromated with a single monochromator.
 Such a source will still have an appreciable broadening in its peak and such broadness will convolve with the sample's true properties.
 HRXRD measurements must be taken with X-ray sources with at least two monochromators, and may have up to four.
@@ -223,17 +223,17 @@ Absolute alignment of the sample is required in order to absolutely determine th
 Precise orientation and movement of sample is achieved by a goniometer with resolution of at least one arcsecond (1/3600 of a degree), with good reproducibility.
 
 Practical HRXRD measurements, even after performing alignment, are best performed by with reference to a known diffraction peak.
-2DXRD pole figures generated from a sample are an essential first run to screen samples and to determine absolute orientations, if multiple crystal orientations are present, HDXRD is not a sensible measurement.
+2DXRD pole figures generated from a sample are an essential first run to screen samples and to determine absolute orientations, if multiple crystal orientations are present, HDXRD does not provide useful results.
 If crystal orientation is determined relative to the sample orientation and very careful sample mounting is undertaken, absolute crystal d-spacings can be determined from straight HRXRD scans.
 For most practical HRXRD measurements attempting to determine the exact d-spacing for a epitaxial crystal, it is best practice to align to a strong reference peak of the substrate, and including that peak in the measurement in order to allow both absolute measurement and relative calculation of the d-spacing.
 D-spacings in such a configuration are calculated by measuring the difference in 2\straighttheta{} between the reference peak (which has a known d-spacing) and the peak of interest, determining the d-spacing absolutely.
 
 \section{Electron Microscopy}
 The second of two very useful probes for examining the properties of epitaxial thin films is electrons, specifically, electron beams generated for electron microscopy.
-The electron, unlike the X-ray is a particle which interacts fairly strongly with materials.
-Electrons can be generated and accelerated to high velocities, resulting in DeBroglie wavelengths orders of magnitude smaller than X-rays and as a a result can be confined or focused to sub-angstrom areas.
-The electron's use as a probe can be used as both a mechanism to produce excite other phenomena for study, or to measure the effect a given sample has on a beam of uniform electrons.
-For generic beam of nearly-monochromatic electrons, typical of electron microscopy, a number of interactions are possible for a sample of finite thickness, as shown in \cref{fig:exp_em_electron_interaction}.
+The electron, unlike the X-ray is a charged particle which interacts fairly strongly with materials.
+Free electrons can be generated and accelerated to high velocities, resulting in DeBroglie wavelengths orders of magnitude smaller than X-rays and as a a result can be confined or focused to sub-angstrom areas.
+The electron's use as a probe can be used as both a mechanism to excite other phenomena for study, or to measure the effect a given sample has on a beam of uniform electrons.
+For a generic beam of nearly-monochromatic electrons, typical of electron microscopy, a number of interactions are possible for a sample of finite thickness, as shown in \cref{fig:exp_em_electron_interaction}.
 The interactions of electrons with a sample can provide both chemical and structural information with fine spatial resolution thanks to the tight control of electron beams.
 \begin{figure}
  \centering \includegraphics[width=0.5\textwidth]{exp_em_electron_interaction}
@@ -244,7 +244,7 @@ This work relied upon two measurement techniques which utilized electrons as the
 SEM is an invaluable technique non-destructive technique for examining surfaces at high resolution to extract information about both the structural and chemical properties.
 STEM/TEM is a tool which utilizes similar interactions to examine the cross sectional structural and chemical properties of mechanically thinned slices of materials with sufficient resolution to examine individual columns of atoms in crystals.
 \subsection{SEM} Scanning electron microscopy is a high resolution non-destructive and non-contact technique used to examine the surface of a sample.
-SEM can provide information about the topography and chemical composition of a surface down to 10's of nanometers, and the exact chemical composition on the micrometer scale.
+SEM can provide information about the topography and chemical composition of a surface down to 10's of nanometers, and the chemical composition on the micrometer scale.
 These measurements are achieved through the interaction of a beam of nearly-monochromatic electrons generated from a heated filament or cold cathode and accelerated to kilovolt velocities in an high vacuum chamber and focused onto a sample.
 Magnification is achieved in SEM by careful scanning of the focused beam over a small area.
 
@@ -265,7 +265,7 @@ An extreme case of this is vertical edges, which will have a very high yield of 
 \subsubsection{Backscattered Electron Imaging} High energy incoming electrons can also interact with samples via elastic scattering.
 Electrons which are scattered at close to 90\degree{} are backscattered close to the incoming beam.
 By placing unbiased detector near the incoming electron beam the detector can capture backscattered electrons.
-The electron elastic scattering process is proportional to atomic mass (\(\sim\)Z\(^2\)) of the sample.
+The electron elastic scattering process is proportional to atomic mass (\(\sim\)\(\sqrt{Z}\))) of the sample.
 The yield of backscattered electrons provides mass (usually called chemical) contrast of the sample under the electron beam.
 Penetration depth of the electron beam for backscattered electrons is significantly deeper than secondary electrons, generally penetrating 1-2~\micro{}m into the sample, as well as laterally broadening.
 Such broadening reduces the resolution of backscattered imaging compared to secondary electron imaging.
@@ -284,18 +284,18 @@ Reduction of these working parameters has the side effect of reducing the signal
 Increasing dwell time can improve SNR, but for poorly conductive samples charge buildup will cause deflection of the incoming beam.
 Stacked averaging of quick scans yields improved SNR on the tradeoff of time.
 
-Interpretation of the secondary electron images in one key case is ambiguous; topographic features with vertical extent can be appear due to the human visual system to be both a depression and a bump alternately.
+Interpretation of the secondary electron images in one key case is ambiguous; topographic features with vertical extent can be appear due to the human visual system to be both a depression and a bump simultaneously.
 Tilting of the sample can sometimes break the ambiguity and reveal the actual topography.
 Adjustment of the focus plane can also reveal the topography but only during active analysis.
 
-Imaging of using backscattered electrons to achieve chemical composition requires optimization of the elastic scattering process from the sample.
-Backscattered electron yield increases with increasing accelerating voltage but that also increases the area of interaction reducing resolution.
-The elastic scattering process is significantly less efficient than secondary electron generation, as such dwell times must be increased to yield an image.
-In order to obtain a true measure of chemical composition, samples for backscatter analysis should be as flat as possible, as topography can modify the yield of backscattered electrons.
-Such processing as polishing can improve the chemical contrast.
+\todo{Add more info from goldstien}Imaging of samples using backscattered electrons to achieve chemical composition requires optimization of the elastic scattering process from the sample.
+The primary parameter than improves backscattered electron yield is increases of the electron accelerating voltage.
+Increasing the accelerating voltage has the downside of increasing the area of electron interaction, which reduces the effective spatial resolution\cite{goldstein2003scanning}.
+The elastic scattering process is significantly less efficient per incident electron than secondary electron generation, as such beam dwell times must be increased in order to improve SNR.
+In order to obtain a accurate measure of chemical composition, samples for backscatter analysis should be as flat as possible, as topography can modify the yield of backscattered electrons, processing such as polishing is essential for the highest accuracy chemical composition.
 If the measurement is intended to be non-destructive, careful correlation between backscattered and secondary electron images must be used to ignore topographic effects.
 \subsection{TEM} While scanning electron microscopy relies on the information generated from the surface and subsurface of arbitrarily thick samples, transmission electron microscopy (TEM) relies upon the information generated from electrons which transmit through a sample.
-Through control of the electron beam information about thickness, crystalinity and defects of a sample can be collected.
+Through control of the electron beam information about the thickness, crystalinity and defects of a sample can be collected.
 
 Imaging of samples via TEM is produced via one of several interaction mechanisms of a beam electrons with a thin sample, as noted in the transmitted electron beams in \cref{fig:exp_em_electron_interaction}.
 Electron beams are generally on the order 10's to 100's of kilovolts and are controlled via magnetic lenses\cite{Egerton2005}.
@@ -309,7 +309,7 @@ Thus, some contrast formed in the image is an indication of the composition.
 
 While thickness-density contrast can provide some information, it is generally useful for amorphous or biological samples.
 Crystalline materials offer several other contrast mechanisms.
-The de~Broglie wavelength of electrons accelerated in a TEM is comparable to much smaller than the spacing between atoms in typical materials, so those electrons can undergo diffraction when they interact with a crystalline sample.
+The de~Broglie wavelength of electrons accelerated in a TEM is much smaller than the spacing between atoms in typical materials, so those electrons can undergo diffraction when they interact with a crystalline sample.
 Polycrystalline samples will provide distinct intensity contrast due to their large changes in orientation relative to the incoming electron beam, diffracting varying amounts of electrons\cite{Egerton2005}.
 
 Whens samples are more crystalline, polycrystalline diffraction contrast generally no longer plays a large role.
@@ -318,7 +318,7 @@ TEM samples are tilted in order to align the sample so the beam travels along a 
 When crystalline samples are aligned in such a way, defects that break the periodicity of the crystal result in phase contrast.
 Phase contrast will highlight regions where the atomic columns have defects which scatter electrons\cite{Egerton2005}.
 
-When a sample have crystal defects which present the same zone axis, such as twins, they do not show up in diffraction contrast or traditional phase contrast.
+When a sample has crystal defects which present the same zone axis, such as twins, they do not show up in diffraction contrast or traditional phase contrast.
 In these cases, single zone axis imaging cannot provide a contrast mechanism which differentiates the two phases.
 Two-zone axis contrast tilts the sample in a second direction perpendicular to the first and brings the sample into a dual-diffraction condition.
 Since such crystal phases differ in the direction perpendicular to the zone axis, the dual-zone diffraction uses this difference to provide contrast.
@@ -329,12 +329,13 @@ The size of the electron beam can also be limited, a method known as selected ar
 \subsubsection{Practical TEM} While TEM is a excellent technique for investigating the microstructure of epitaxial thin films, it imposes strict limitations on sample preparation.
 Samples must have lateral dimensions of several millimeters while being thinned to electron transparency.
 The exact thickness depends upon the the density of the material and the TEM conditions.
-Thicknesses are generally less than 100~nm for sufficient electron transmission to provide enough interaction while also allowing enough transmission.
+Samples must be generally thinner than 100~nm for sufficient electron transmission to provide enough electron scattering to provide contrast while also having those scattered electrons pass through to a detector.
 
 Samples generally start out as wafers or sections of wafers with thicknesses of 500~\micro{}m and lateral dimensions of up to several inches.
-Before thinning of a TEM sample can be undertaken, a section of this (possibly) large bulk sample must be selected.
+Before thinning of a TEM sample can be undertaken, a section of a (possibly) large bulk sample must be selected.
 The section selected must be of a size compatible with the thinning process.
-Preparation of such sections depends upon the properties of the substrate, for substrates with good cleaving properties, a thin bar can be cleaved, for substrates which are much harder, bars must be sectioned using sawing methods such as diamond or wire saws.
+Preparation of such sections depends upon the properties of the substrate.
+For substrates with good cleaving properties, a thin bar can be cleaved, for substrates which are much harder, bars must be sectioned using sawing methods such as diamond or wire saws.
 
 Once sections have been extracted from a larger sample, they must be progressively thinned.
 This is done through a number of steps, starting with mechanical polishing.
@@ -353,13 +354,14 @@ Some epitaxial layers will have greatly differing mechanical properties and reac
 Care must be taken to not preferentially remove the material of interest.
 Haphazard preparation can result in the introduction of artifacts which may cause misinterpretation during imaging.
 
-Beyond sample preparation, imaging in a TEM can be modified by tuning several parameters.
+\todo{ Reimer,L and Kohl, H (2008). Transmission Electron Microscopy: Physics of Image Formation. Springer}Beyond sample preparation, imaging in a TEM can be modified by tuning several parameters.
 The accelerating voltage of the TEM affects the wavelength of the electron beam, improving resolution with increasing accelerating voltage, however resolution is ultimately limited by lens aberrations.
+Lens aberrations can only be improved by the introduction of correctors such as electron monochrometers (which reduce electron current by throwing away those outside a set energy range) and aberration correctors which significantly increase cost.
 Beam current control is important to provide good signal to noise, but excess current can cause heating and damage in ultra-thin samples.
 
-\subsection{STEM} While TEM image formation passes a large beam of electrons through a region of a sample, scanning transmission electron microscopy (STEM) forms an image more akin to SEM. The electron beam is rastered across the thin sample and an image is formed by counting hits on one of several detectors.
-Because the electron beam is a focused point rather than a beam, requiring less optics after the sample, the maximum resolution achievable in such a system is substantially higher than traditional TEM, reaching levels of < 1\AA{}.
-While STEM's rastering system is beneficial for improving traditional bright-field and dark-field imaging, its major benefit is the addition of the High Angle Anular Dark Field (HAADF) detector for imaging.
+\subsection{STEM} While TEM image formation passes a large beam of electrons through a region of a sample, scanning transmission electron microscopy (STEM) forms an image more akin to SEM. The electron beam is rastered across the thin sample and an image is formed by measuring electron beam current on one of several detectors.
+Because the electron beam is a focused point rather than a beam, with the detector immediately after the sample, the maximum resolution achievable in such a system is substantially higher than traditional TEM, reaching levels of <~1\AA{}.
+While STEM's rastering system is beneficial for improving traditional bright-field and dark-field imaging, its major benefit is the addition of the High Angle Annular Dark Field (HAADF) detector for imaging.
 The HAADF detector is located after the sample at a significant angular deviation in comparison to the small angle scattering used in TEM, this high angle scattering arises due to atomic Z number scattering of the electrons.
 The resulting image formed by collecting data with a HAADF detector is a Z-contrast image, with the brighter spots corresponding to higher Z-number atomic columns within a sample.
 This allows relative identification of atoms within a crystal structure based upon the relative intensities.
@@ -397,12 +399,12 @@ Growth rates for PLD are limited by the pulse rate of the laser, and secondarily
 The laser ablation process is achieved by application of laser pulses focused onto a target material, to achieve energy densities >~1~J/cm\textsuperscript{2}.
 The photon energy is absorbed within a thin surface layer 1/\textalpha{}, producing plasmons, excited electrons and excitons\cite{Willmott2000}.
 These high energy electrons thermalize and release their energy into the lattice within a few picoseconds.
-After this thermalization step, the ablation depth is modified by thermal diffusion.
-The deposited energy then results in a pulse of thermal evaporation from the target.
+After this thermalization step, the ablation depth is modified by thermal diffusion, highly conductive metals can quickly spread heat up to a micron deep.
+The deposited energy then results in a pulse of evaporation from the target, referred to as the plume.
 For highly thermally conductive samples, the surface layer can begin to ablate before laser pulse is fully absorbed, in these cases further absorption in bulk is screened by the atomic plume\cite{Willmott2000}.
 
-Regardless of the target material, a plume is generated at the laser spot which, due to it's timescales, is stochiometric with regards to the composition of the target.
-The atomic plume is also highly ionized, with energies of 1-100~eV with typical energies of 5-50~eV. The atomic plume is now a vapour but highly compressed adjacent to the target, explodes perpendicular to the surface, expanding across the deposition chamber, to be collected by a waiting substrate.
+Regardless of the target material, a plume is generated at the laser spot which, due to the laser pulse and heating timescales, is stochiometric with regards to the composition of the target.
+The atomic plume is also highly ionized, with energies of 1-100~eV and with typical energies of 5-50~eV. The atomic plume is now a vapour but highly compressed adjacent to the target, explodes perpendicular to the surface, expanding across the deposition chamber, to be collected by a waiting substrate.
 The plume expands from the target with a a \(\cos^{10-20}(\theta)\)
 dependence, meaning it is very highly peaked centrally about the spot.
 Once the atomic plume arrives at the substrate, its energy is delivered to the growing film.
