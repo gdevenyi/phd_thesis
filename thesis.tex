@@ -4,7 +4,7 @@
 \usepackage{amsmath} %AMS Math Package
 \usepackage{amssymb} %AMS Math Symbols
 \usepackage[all,warning]{onlyamsmath}%Warn about non-ams math useage, suggest improvements
-\usepackage[letterpaper,twoside,top=3.8cm,bottom=2.5cm,inner=3.8cm,outer=2.5cm]{geometry} %Sets up basic page dimensions
+\usepackage[letterpaper,twoside,top=3.8cm,bottom=2.5cm,inner=2.5cm,outer=3.8cm]{geometry} %Sets up basic page dimensions
 \usepackage[tracking=true,kerning=true,expansion]{microtype} %makes type look better
 \usepackage{booktabs} %makes tables look better
 \usepackage{siunitx} %provides standard printing for SI units
@@ -26,7 +26,7 @@
 \usepackage{syntonly}%Provides syntax-only latex runs, useful for when the document starts getting big!
 \usepackage{csquotes}
 \usepackage{float} %Fixes up floats (figures) and provides the H placement modifier (place the float RIGHT HERE). with great power...
-\usepackage[style=numeric-comp,backend=biber,sorting=none]{biblatex}
+\usepackage[style=numeric-comp,backend=biber,sorting=none,backref=true]{biblatex}
 \addbibresource{library.bib}
 \addbibresource{nanogold.bib}
 \addbibresource{nanocdte.bib}
@@ -45,14 +45,11 @@
 
 \usepackage{subcaption} %The standard method to do figures with a), b) and such
 \usepackage{fancyhdr} %Package for changing header/footer
-%\usepackage{showkeys} %Prints all instances of \label in margin for easy writing
 %\usepackage{lineno} %Allows labeling of line numbers throughout document
 \usepackage{makeidx} %For generating index files
 \usepackage{lipsum} %Prints junk text with \lipsum
 \usepackage{setspace} %Provides \doublespacing command
 \usepackage{todonotes} %Provides \todo{something} which puts labels in magin and \missingfigure{something} to put in placeholder figures
-\setlength{\marginparwidth}{2.5cm} %Fix Todonote placement
-\reversemarginpar
 \widowpenalty=300 %Prevent widows (single sentences at end of page)
 \clubpenalty=300 %Prevent orphans (single sentences on empty pages)
 %\doublespacing %Uncomment to turn on double spacing
@@ -67,7 +64,7 @@
     pdftoolbar=true,
     pdfmenubar=true,
     pdffitwindow=false,
-    pdfstartview={FitH},
+    pdfstartview={FitV},
     pdftitle={An Investigation into the Role of Energy and Symmetry at Epitaxial Interfaces},
     pdfauthor={Gabriel A. Devenyi},
     pdfsubject={Subject},
