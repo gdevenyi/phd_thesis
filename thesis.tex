@@ -1,5 +1,5 @@
 \RequirePackage[l2tabu, orthodox]{nag} %Package complains about uses of old functions, make sure you write modern latex
-\documentclass[letterpaper,12pt,twoside]{report}
+\documentclass[letterpaper,12pt,twoside,openright]{report}
 \usepackage[english,canadian]{babel}
 \usepackage{amsmath} %AMS Math Package
 \usepackage{amssymb} %AMS Math Symbols
@@ -39,6 +39,7 @@
 \setkeys{Gin}{width=0.75\textwidth} %Sets default width of \includegraphics{}
 \usepackage{wasysym}
 \usepackage{lastpage}
+\usepackage[raggedright]{titlesec}
 
 \pdfminorversion=5
 \pdfobjcompresslevel=3
@@ -51,8 +52,8 @@
 \usepackage{lipsum} %Prints junk text with \lipsum
 \usepackage{setspace} %Provides \doublespacing command
 \usepackage{todonotes} %Provides \todo{something} which puts labels in magin and \missingfigure{something} to put in placeholder figures
-\widowpenalty=300 %Prevent widows (single sentences at end of page)
-\clubpenalty=300 %Prevent orphans (single sentences on empty pages)
+\widowpenalty=1000 %Prevent widows (single sentences at end of page)
+\clubpenalty=1000 %Prevent orphans (single sentences on empty pages)
 %\doublespacing %Uncomment to turn on double spacing
 \onehalfspacing
 %\linenumbers %Uncomment to turn on line numbers
@@ -205,6 +206,7 @@ frame=single
 \part{Closing Discussions}
 \chapter{Future Work}
 \include{future}
+
 \chapter{Conclusions}
 \include{conclusions}
 

@@ -69,15 +69,15 @@ Three different footprint geometries (square, equilateral triangle, and rectangl
 The size and shape of the footprint were kept constant during the simulated growths in order to match the experimental observation indicating a high degree of base uniformity.
 For each orientation, the contact angle (i.e., the angle between the footprint plane and the tangent plane of any surface connected to the footprint's edge) was set to a constant where the value was chosen to be consistent with the observed faceting, as is schematically shown in \cref{fig:nanogold_facets}.
 
-With these constraints, the shape of an open elastic surface can be fully described by the mean curvature, H, and the Gaussian curvature, \textbf{K}, while its corresponding elastic properties can be characterized by a bending modulus \textkappa and a Gaussian modulus \textkappa\textsubscript{G}.
-The surface energy (\(F\)) can then be formulated as
+With these constraints, the shape of an open elastic surface can be fully described by the mean curvature, H, and the Gaussian curvature (K), while its corresponding elastic properties can be characterized by a bending modulus \textkappa and a Gaussian modulus \textkappa\textsubscript{G}.
+The surface energy (F) can then be formulated as
 \begin{equation}
  F = \int \frac{\kappa}{2}H^2 dA + \int \kappa_G K dA + \lambda S + PV \label{nanogold:eqn1}
 \end{equation}
-where \textlambda, \textbf{V}, \textbf{S}, and \textbf{dA} are the particle's surface tension, volume, total surface area, and surface area element\cite{RefWorks:49,RefWorks:97}.
-The pressure, \textbf{P}, serves as a Lagrange multiplier which ensures that a constant volume is enclosed between the structure and the footprint plane.
+where \textlambda, V, S, and dA are the particle's surface tension, volume, total surface area, and surface area element\cite{RefWorks:49,RefWorks:97}.
+The pressure (P), serves as a Lagrange multiplier which ensures that a constant volume is enclosed between the structure and the footprint plane.
 The second term gives the integrated Gaussian curvature, which is constant according to the Gauss-Bonnet theorem\cite{RefWorks:98}.
-For a given surface tension and volume, the equilibrium shape will correspond to an energy minimum determined by the shape equation \textdelta{} \textbf{F} \(=\) 0.
+For a given surface tension and volume, the equilibrium shape will correspond to an energy minimum determined by the shape equation \textdelta{} \(F = 0\).
 The structures are more readily solved by first rescaling the free energy of the model to become dimensionless, such that
 \begin{equation}
  \tilde{F} = \int \left (\frac{\tilde{\kappa} \tilde{H}^2}{2} + 1 \right)d \tilde{A} + \tilde{P} \tilde{V} \label{nanogold:eqn2}
@@ -96,15 +96,15 @@ where
  \tilde{F} &%
  = F / (\lambda S_0)
 \end{align*}
-and \textbf{S\textsubscript{0}} is the area of the base.
-Thus, according to this dimensionless free-energy expression, there are two independent controlling parameters, \(\tilde{\kappa}\) and \textbf{P}.
+and S\textsubscript{0} is the area of the base.
+Thus, according to this dimensionless free-energy expression, there are two independent controlling parameters, \(\tilde{\kappa}\) P.
 
 Helfrich and Ou-Yang\cite{RefWorks:49} have analytically solved the shape equation for some symmetrical geometries.
 For the work presented here, the surface is sectioned into discrete elements using a triangulation mesh, and a simple dissipative model is used to minimize the energy, as in \cref{nanogold:eqn2}\cite{RefWorks:76}
 \begin{equation}
  \frac{\delta \mathbf{r}}{\delta t} = - M \frac{\delta \tilde{F}}{\delta \mathbf{r}} \label{nanogold:eqn3}
 \end{equation}
-where \textbf{r(t)} is the position vector of a point on the particle surface at time \textbf{t} and \textbf{M} is a kinetic coefficient.
+where \textbf{r(t)} is the position vector of a point on the particle surface at time (t) and M is a kinetic coefficient.
 These methods, developed by Taniguchi et al.\cite{RefWorks:76}, are, however, unable to simulate large deformations.
 To circumvent this limitation, we employed two techniques, equiangulation and vertex averaging, available through the Surface Evolver software developed by Brakke et al.\cite{RefWorks:62}. Following the procedure of Lim et al.,\cite{RefWorks:99,RefWorks:100,RefWorks:101} the curvature was discretized based on the methods of Julicher\cite{RefWorks:52}, which exactly describe the curvature in the continuum limit.
 
@@ -146,7 +146,8 @@ Motivated by the simulation results, we examined the topography of the self-asse
 \Cref{fig:nanogold_afm}b shows a tapping mode AFM image of the base structure obtained using a Digital Instruments scanning probe microscope (SPM) and a NanoScope IIIa controller.
 Even though the features of the nanostructure are somewhat washed out since the resulting image is a convolution of the nanostructure and the AFM tip geometry, the nanostructure's four lobes and central depression are visible.
 \begin{figure}
- \centering \includegraphics[width=0.8\textwidth]{nanogold_afm}
+ \centering
+ \includegraphics[width=0.8\textwidth]{nanogold_afm}
  \caption[Comparison of AFM and simulated gold nanostructure topography]{\label{fig:nanogold_afm}A comparison of the (a) topographical colour map derived from the continuum elastic model and (b) the AFM image of a self-assembled gold nanostructure deposited on the (100) MgAl\textsubscript{2}O\textsubscript{4} substrate.
   The simulation predicts both the presence of four lobes at the corners and a central depression.
   The scale of the topographic image is arbitrary, and the scale of the AFM image is 10~nm.}
