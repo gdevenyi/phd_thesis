@@ -5,7 +5,8 @@
 \usepackage{amssymb} %AMS Math Symbols
 \usepackage[all,warning]{onlyamsmath}%Warn about non-ams math useage, suggest improvements
 \usepackage[letterpaper,twoside,top=3.8cm,bottom=2.5cm,inner=2.5cm,outer=3.8cm]{geometry} %Sets up basic page dimensions
-\usepackage[tracking=true,kerning=true,expansion]{microtype} %makes type look better
+\usepackage[tracking=true,kerning=true,expansion=true,spacing=true]{microtype} %makes type look better
+\microtypecontext{spacing=nonfrench}
 \usepackage{booktabs} %makes tables look better
 \usepackage{siunitx} %provides standard printing for SI units
 \usepackage[breaklinks,hidelinks]{hyperref} %Provides clickable links
@@ -18,7 +19,7 @@
 \usepackage{fixltx2e} %Fixings bugs in latex2e that aren't fixed due to breaking backwards compatability
 \usepackage{upgreek} %Provides upright (non italic) greek fonts
 \usepackage{gensymb} %Provides  \de­gree, \cel­sius, \pert­hou­sand, \mi­cro and \ohm amongst others
-\usepackage{textcomp}
+\usepackage{textcomp} %Supports lmodern
 \usepackage{textgreek} %Provides \textbeta and similar greek letters in text mode
 %\usepackage[section]{placeins} %Fixes placement of figures so they don't cross section boundaries
 \usepackage[section,subsection,subsubsection]{extraplaceins} %Modified version of placeins which works at section, subsection and subsubsection
@@ -46,7 +47,7 @@
 \usepackage{subcaption} %The standard method to do figures with a), b) and such
 \usepackage{fancyhdr} %Package for changing header/footer
 %\usepackage{lineno} %Allows labeling of line numbers throughout document
-\usepackage{makeidx} %For generating index files
+%\usepackage{makeidx} %For generating index files
 \usepackage{lipsum} %Prints junk text with \lipsum
 \usepackage{setspace} %Provides \doublespacing command
 \usepackage{todonotes} %Provides \todo{something} which puts labels in magin and \missingfigure{something} to put in placeholder figures
@@ -82,11 +83,12 @@
 \author{Gabriel A. Devenyi}
 \date{\today}
 
-\makeindex
+%\makeindex
 \raggedbottom
 \begin{document}
 
 \begin{titlepage} %Half-title page for McMaster Formatting
+    \thispagestyle{empty}
     \topskip0pt
     \vspace*{\fill}
     \begin{center}{\Large
@@ -97,6 +99,7 @@
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \begin{titlepage} %Titlepage
+\thispagestyle{empty}
 \pagenumbering{roman}
 \centering
 \vspace*{\fill} %This makes text vertically centered
@@ -107,7 +110,7 @@ A Thesis Submitted to the School of Graduate Studies in Partial Fulfilment of
 the Requirements for the Degree Doctor of Philosophy
 McMaster University
 \vfill%This pushes copyright to the bottom
-\textcopyright{} Copyright by Gabriel A.\ Devenyi, May 2013
+\textcopyright{} Copyright by Gabriel A.\ Devenyi, 2013
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 {\noindent McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario (Engineering Physics)\\
@@ -119,18 +122,34 @@ NUMBER OF PAGES: xi,~\pageref{LastPage}}
     \begin{abstract}
         \thispagestyle{plain}
         \setcounter{page}{3}
-            Abstract goes here.
+            Epitaxy is a key technological process for the production of thin films and nanostructures for electronic and optoelectronic devices.
+            The epitaxial process has been studied for many years through the lens of lattice-matched and chemically similar material systems, specifically the III-V quaternary material systems.
+            This work investigates the role energy and symmetry play at epitaxial interfaces for cases far different than those of typical epitaxy.
+            In the realm of energy, the impact of chemically dissimilar epitaxial interfaces is investigated, specifically between semiconductors and oxides, noble metals and oxides, and polar-on-nonpolar epitaxy.
+            For symmetry at epitaxial interfaces, the role of symmetry breaking, through surface reconstructions and asymmetric surfaces is investigated.
+            Investigations into energy found two key insights; epitaxy is possible between materials which one would expect to be very weakly interacting (gold on oxides) and epitaxial interfaces, while promoting single crystal growth, can be weakly bonded enough to allow controlled liftoff of single crystal epitaxial thin films.
+            Investigations into symmetry at epitaxial interfaces found YYY key insights; intentional symmetry breaking of the growth substrate through steps can suppress twinning of zincblende thin films, asymmetric (211)-oriented substrates can accommodate strain of mismatched zincblende thin films and reconstructed oxide substrates can provide unique epitaxial templates for thin films which significantly differ from their bulk lattice.
+            The results of this investigation provide a path towards the improvement of epitaxy through the manipulation of symmetry at epitaxial surfaces, and the production of free standing thin films through the epitaxial liftoff process.
     \end{abstract}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-    \setcounter{page}{4}
     \chapter*{Acknowledgements}
-    My wife, my dog, my parents, my supervisor.
+    First of all, I must thank my wonderful wife Diana, she has been with me my entire academic career, now eleven years at McMaster. Her love and support has allowed me to pursue my research towards the successful thesis you see before. Our partnership in both life and academics has allowed us to both be more than the sum of our parts.
+    
+    Second, I must thank my supervisor Dr. John Preston. Dr. Preston's careful balance of supervision, providing instruction and guidance when it was needed, while giving me extensive leeway to follow my own ideas and experiments, and accessing the funding necessary to never worry about expense.
+    His urging to always ``try the experiment'' has driven many surprising discoveries and instilled onto me a risk taking attitude to always experiment.
+    
+    This work, in many senses is a collaboration. Many colleagues participated in conversations, assisted with measurements and provided their unique insights to this work. I make an effort here to name and thank my direct collaborators and those have contributed directly to my work, however this will omit many who have contributed at the lunch table or late nights at the Phoenix. Dr. Robert Hughes, my first collaborator and in many ways my first mentor, gave me the opportunity to contribute early and substantially in the work of the research group, and taught me to recognize publishable units, a skill that has resulted in the production of many articles. My collaborators and colleagues Steffi Woo, Stephen Jovanovic, Dr. Kristoffer Meinander, Vicky Jarvis, Matthew Minnick and Joshua Rideout.
+    %Diana
+    %Preston
+    %kris
+    %nathan
+    %matt
+    %parents
+    
     \newpage
-
     \tableofcontents
     \listoffigures
-    \listoftodos
-    \clearpage
+    \newpage
     \pagenumbering{arabic} %Reset page numbering
 
 %Fix all the header/footer according to McMaster Requirements
