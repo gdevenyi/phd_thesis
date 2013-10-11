@@ -12,12 +12,12 @@ X-rays have weak interactions with matter, being absorbed or perturbed only slig
 X-rays have wavelengths comparable with the typical spacings between atoms in crystals, placing them as an ideal non-destructive probe for crystal structure.
 In XRD, X-rays experience elastic scattering when interacting with the electrons surrounding atoms.
 The scattering of X-rays, combined with the 3D periodic structure of atoms, results in constructive and destructive interference and X-ray diffraction\cite{zavalij}.
-\begin{equation}
- \label{eqn:bragg}
- 2d \sin(\theta) = n \lambda
-\end{equation}
 X-ray diffraction is fundamentally an interference phenomenon. 
 For a set of planes within a crystal separated by some distance (d), they will diffract from those planes at an angle (\straighttheta) depending upon the wavelength (\textlambda{}), this is known as Bragg's law as in \cref{eqn:bragg}.
+\begin{equation}
+\label{eqn:bragg}
+2d \sin(\theta) = n \lambda
+\end{equation}
 Bragg's law is identical to the phenomenon of thin film interference of visible light, only differing by the scale.
 Bragg's law, while correct, is a one dimensional expression, in three dimensions it can be represented by the Laue equations as in \cref{eqn:lauea,eqn:laueb,eqn:lauec}.
 The vectors \textbf{k\textsubscript{i}} and \textbf{k\textsubscript{0}} are the incident and outgoing X-ray beam, \((a,b,c)\) are the primitive vectors of the crystal lattice and \((h,k,l)\) are the reciprocal lattice indices.
@@ -38,7 +38,7 @@ As a crystal is rotated (or the incoming beam is moved), the Ewald sphere will r
 The pinned rotation of the Ewald sphere about the origin means that only reciprocal lattice points with a radius from the origin of less than 2/\textlambda{} can be excited into diffraction, indicating the effective limitation of a given X-ray source, as well as why light is an ineffective diffraction probe.
 \begin{figure}
  \centering \includegraphics[width=0.6\textwidth]{exp_xray_ewald}
- \caption[Ewald sphere]{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions (vector form of Laue equation) showing incoming X-ray beam to crystal (C) and the reflected and transmitted diffraction cones for a fixed (hkl) and 2\straighttheta{} (used with permission from \cite{He2009})}
+ \caption[Ewald sphere]{\label{fig:exp_xray_ewald}Ewald sphere construction of diffraction conditions (vector form of Laue equation) showing incoming X-ray beam to crystal (C) and the reflected and transmitted diffraction cones for a fixed (hkl) and 2\straighttheta{} (used with permission from \cite{He2009}).}
 \end{figure}
 
 \subsection{2DXRD --- Reciprocal Space Mapping}
@@ -59,15 +59,18 @@ If the configuration is then swept through a range of diffraction conditions, th
 \subsubsection{Practical 2DXRD Measurement}
 \begin{figure}
  \centering \includegraphics[width=0.8\textwidth]{exp_xray_machine}
- \caption[Typical 2DXRD experimental implementation]{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system with source, sample and detector, with the sample (S) and laboratory (L) coordinate systems labelled. Standard goiniometer angles are also labelled (used with permission from \cite{He2009})}
+ \caption[Typical 2DXRD experimental implementation]{\label{fig:exp_xray_machine}Standard configuration of a 2DXRD system with source, sample and detector, with the sample (S) and laboratory (L) coordinate systems labelled. Standard goiniometer angles are also labelled (used with permission from \cite{He2009}).}
 \end{figure}
 Practical 2DXRD measurements are achieved through the use of a multi-axis goiniometer, a device which maintains the sample at a central point while rotating its orientation relative to the X-ray source and detector.
 For epitaxial crystals grown on crystalline substrates, a sample under measurement is placed in the goinometer with its surface normal oriented along the goiniometer's sample axis and a reference edge.
 An X-ray source is placed on one arm of the goiniometer and the 2D detector is placed on the other arm.
 
 A standard 2DXRD measurement is performed by configuring the goiniometer (\cref{fig:exp_xray_machine}) such that the X-ray source to 2D detector angle corresponds to a known or presumed low-order 2\straighttheta{} angle for the sample.
-The sample was then rotated such that incident angle relative to the surface is shallow, less than 5\degree{}.
-Such a beam configuration is ideal for collection of maximum diffraction information, however it can greatly increase the X-ray beam width, as shown in \cref{fig:exp_xray_beam_width} and \cref{eqn:exp_xray_beam_width}.
+The sample is then rotated such that incident angle relative to the surface is shallow, less than 5\degree{}.
+Such a beam configuration is ideal for collection of maximum diffraction information, however it can greatly increase the X-ray beam width (d\textsubscript{eff}), as shown in \cref{fig:exp_xray_beam_width} and \cref{eqn:exp_xray_beam_width}.
+\begin{equation}
+d_{eff} = \frac{d}{\sin{\alpha}} \label{eqn:exp_xray_beam_width}
+\end{equation}
 If the sample is of limited size, alternate measurement schemes must be computed.
 The sample is then rotated about its surface normal while the 2D detector takes sequential images, a process known as a \textphi{}-scan.
 By aligning the sample along 2\straighttheta{} in one dimension, and rotating the sample in a complimentary dimension, crystallographic reflections that contain the d-spacing corresponding to a range of 2\straighttheta{} around the selected value will be collected on the detector as they pass through their diffraction condition.
@@ -76,11 +79,9 @@ An additional scan of the sample while maintaining the 2\straighttheta{} configu
 While the combination of these two scans collects only the reflections surrounding the centred 2\straighttheta{} of interest, if the measurement scheme successfully collects all or the most of the reflections, the symmetry of the underlying system will allow any other reflections to be inferred, greatly reducing overall measurement time.
 \begin{figure}
  \centering \includegraphics{exp_xrd_beam_width}
- \caption[X-Ray Beam Width]{\label{fig:exp_xray_beam_width}Comparison of beam width and effective beam width caused by inclination of sample}
+ \caption[X-Ray Beam Width]{\label{fig:exp_xray_beam_width}Comparison of beam width and effective beam width caused by inclination of sample.}
 \end{figure}
-\begin{equation}
- d_{eff} = \frac{d}{\sin{\alpha}} \label{eqn:exp_xray_beam_width}
-\end{equation}
+
 
 As reciprocal space mapping is a process which operates in angular space, the distance to the detector is an important optimization parameter for 2DXRD measurements.
 The distance the 2DXRD detector is situated away from sample will change the solid angle subtended by the detector.
@@ -99,7 +100,7 @@ The two perpendicular pixel directions on the 2DXRD frames are transformed into 
 The resulting frame is sliced into hyperbola with the x-direction of the frame corresponding to the radius and a new dimension \textchi{} corresponding to the direction along a given hyperbola.
 \begin{figure}
  \centering \includegraphics{exp_xray_frame}
- \caption[Example 2DXRD frame]{\label{fig:exp_xray_frame}An example X-ray frame with a conic section of fixed 2\straighttheta{} highlighted}
+ \caption[Example 2DXRD frame]{\label{fig:exp_xray_frame}An example X-ray frame with a conic section of fixed 2\straighttheta{} highlighted, also showing diffraction space coordinate directions \straighttheta{} and \textchi{}.}
 \end{figure}
 
 The data on a frame can be integrated in one dimensional plots along either dimension of the hyperbola.
@@ -128,7 +129,7 @@ The pole figure is a polar diffraction intensity colour map with the radial dire
 An example pole figure mapping a single data point from the pole sphere is shown in \cref{fig:exp_xray_polefigure}.
 \begin{figure}
  \centering \includegraphics[width=\textwidth]{exp_xray_polefigure}
- \caption[Mapping of pole sphere to pole figure]{\label{fig:exp_xray_polefigure}Example mapping of pole sphere data points to pole figure\cite{He2009}(used with permission)}
+ \caption[Mapping of pole sphere to pole figure]{\label{fig:exp_xray_polefigure}Example mapping of pole sphere data points to pole figure (used with permission from \cite{He2009}).}
 \end{figure}
 
 \subsubsection{Interpretation and Simulation of Pole Figures} Once a pole figure has been generated the resulting graphical representation of the diffraction data must be interpreted in the context of the sample composition.
@@ -136,15 +137,15 @@ Generally, a pole figure will be generated for a low-index reflection (100,110,1
 By generating two figures, the orientation relationship between the diffraction intensity produced by the grown crystal and the single crystal substrate can be examined by comparing the two figures.
 \begin{figure}
  \centering \centering
- \begin{subfigure}[t]{0.55\textwidth}
+ \begin{subfigure}[t]{0.53\textwidth}
   \centering \includegraphics[width=\textwidth]{exp_xrd_winwulff_si_100}
-  \caption{\label{fig:exp_xrd_winwulff_si_100}WinWulff (111) pole figure of (100)-up silicon}
- \end{subfigure}%
- \begin{subfigure}[t]{0.45\textwidth}
+  \caption{\label{fig:exp_xrd_winwulff_si_100}WinWulff (111) pole figure of (100)-up silicon.}
+ \end{subfigure}\quad%
+ \begin{subfigure}[t]{0.43\textwidth}
   \centering \includegraphics[width=\textwidth]{exp_xrd_si_100}
-  \caption{\label{fig:exp_xrd_si_100}Experimentally generated (111) pole figure of (100)-up silicon}
+  \caption{\label{fig:exp_xrd_si_100}Experimentally generated (111) pole figure of (100)-up silicon.}
  \end{subfigure}
- \caption{\label{fig:exp_xray_winwulff}Comparison of WinWulff simulation and experimental single crystal silicon pole figure}
+ \caption{\label{fig:exp_xray_winwulff}Comparison of WinWulff simulation and experimental single crystal silicon pole figure.}
 \end{figure}
 
 The first step for pole figure analysis is to examine the pole figure generated from the substrate low index reflection.
@@ -177,8 +178,8 @@ Other textured epitaxial crystals may arise through multiple preferred growth re
 Such systems typically have pole figures where the symmetry of the overall pole figure reflects the substrate surface symmetry.
 The example in \cref{fig:exp_xray_polefigure_examples}c is one of a (111)-up crystal (3-fold symmetry) on a (100) substrate (4-fold symmetry), showing \(3\times 4=12\) peaks.
 \begin{figure}
- \centering \includegraphics{exp_xray_polefigure_examples}
- \caption[Example simulated pole figures]{\label{fig:exp_xray_polefigure_examples}Example (111) pole figures of a) Polycrystalline randomly oriented b) (111)-up in-plane random orientation c) (111)-up textured epitaxial d) (111)-up single crystal FCC cubic crystal}
+ \centering \includegraphics[width=\textwidth]{exp_xray_polefigure_examples}
+ \caption[Example simulated pole figures]{\label{fig:exp_xray_polefigure_examples}Example (111) pole figures of a) Polycrystalline randomly oriented b) (111)-up in-plane random orientation c) (111)-up textured epitaxial d) (111)-up single crystal FCC cubic crystal.}
 \end{figure}
 
 Beyond the analysis of the symmetry of diffraction intensity, which identifies the crystallites present within a sample, the relative intensities within the pole figure provide a wealth of information about the epitaxial crystal.
@@ -190,7 +191,7 @@ Finally, pole figure intensity can be integrated versus \textphi{} and plotted r
 Plots of peak broadening from pole figures are particularly informative.
 Broadening of diffraction peaks preferentially in the radial dimensions is a sign of strain present in a crystallite.
 The radial location of a peak in a pole figure is determined by angular relationships of the unit cells of the sample, fixed angles are expected for a given crystal group (e.g.\ cubic).
-Radial broadening in a pole figure is an indication that the unit cell has been distorted relative to it's preferred shape.
+Radial broadening in a pole figure is an indication that the unit cell has been distorted relative to its preferred shape.
 Similarly, broadening in azimuthal directions indicates the individual crystallites sampled by the 2DXRD measurement have in-plane misalignment, similar to a textured film, but of much smaller extent.
 
 \subsection{High Resolution XRD} While mapping reciprocal space provides much information about the phases and symmetries present in a given sample, the resolution available on such 2D detectors is limited in both the number of pixels, and the spacing between them.
@@ -208,11 +209,11 @@ In the 2\straighttheta{} direction, the radial direction in reciprocal space, br
 Such distributions can indicate strain or compositional variation in the region of interest.
 The broadness of the X-ray peak when a sample is rocked in the \textomega{} direction, while keeping 2\straighttheta{} fixed indicates that a given d-spacing has a distribution of orientations within the sample, usually indicating multiple crystallites.
 
-\subsubsection{Practical HRXRD Measurement} To ensure the validity of HRXRD measurements of precise d-spacings and X-ray diffraction peak widths, the HRXRD system and it's operation must satisfy several conditions.
+\subsubsection{Practical HRXRD Measurement} To ensure the validity of HRXRD measurements of precise d-spacings and X-ray diffraction peak widths, the HRXRD system and its operation must satisfy several conditions.
 These properties specifically deal with the properties of the X-ray source used in HRXRD, and the operation of the goiniometer in the rotation of the sample, source, and detector.
 
 For practical HRXRD, the X-ray source must be monochromated far more than for general X-ray work.
-Typical X-ray sources will contain bright peaks from multiple core electron levels, along with Bremsstrahlung radiation, and will be monochromated with a single monochromator.
+Typical X-ray sources will contain bright peaks from multiple core electron levels, along with bremsstrahlung radiation, and will be monochromated with a single monochromator.
 Such a source will still have an appreciable broadening in its peak and such broadness will convolve with the sample's true properties.
 HRXRD measurements must be taken with X-ray sources with at least two monochromators, and may have up to four.
 Monochromation will ensure that the instrumentation broadening will be below the level of the sample's diffraction properties, allowing a sensible measurement result.
@@ -247,7 +248,7 @@ SEM is an invaluable non-destructive technique for examining surfaces at high re
 STEM/TEM is a tool which uses similar interactions to examine the cross sectional structural and chemical properties of mechanically thinned slices of materials with sufficient resolution to examine individual columns of atoms in crystals.
 \subsection{SEM} Scanning electron microscopy is a high resolution non-destructive and non-contact technique used to examine the surface of a sample.
 SEM can reveal the topography and chemical composition of a surface down to 10's of nanometers, and the chemical composition on the micrometer scale.
-These measurements are achieved through the interaction of a beam of nearly-monochromatic electrons generated from a heated filament or cold cathode and accelerated to kilovolt velocities in an high vacuum chamber and focused onto a sample.
+These measurements are achieved through the interaction of a beam of nearly-monochromatic electrons generated from a heated filament or cold cathode and accelerated to kilovolt energies in an high vacuum chamber and focused onto a sample.
 Magnification is achieved in SEM by careful scanning of the focused beam over a small area.
 
 \subsubsection{Secondary Electron Imaging} The most common electron-material interaction utilized in SEM is generation of images through the production and capture of secondary electrons.
@@ -259,7 +260,7 @@ Electron detectors are typically a phosphor screen combined with a photomultipli
 Images are formed by scanning the beam across the surface of the sample and counting the secondary electron yield for each dwell point within the scan.
 The resulting grid of counts is transformed into a bitmapped grayscale image.
 
-As secondary electrons are low energy, their escape depth from a surface is very shallow (\(<\)~2~nm), as such their yield is very sensitive to the local topography of the sample.
+As secondary electrons are low energy, their escape depth from a surface is very shallow, as such their yield is very sensitive to the local topography of the sample.
 Thus to the first approximation, the contrast in a grayscale image formed from secondary electrons is a representation of the topography present on the surface of the sample.
 Regions with vertical extent will increase the yield of secondary electrons, due to more of the sample being within nanometers of the surface.
 An extreme case of this is vertical edges, which will have a high yield of secondary electrons, due to having the top and side surfaces both yielding secondary electrons.
@@ -297,7 +298,7 @@ The elastic scattering process is less efficient per incident electron than seco
 To obtain a accurate measure of chemical composition, samples for backscatter analysis should be as flat as possible, as topography can modify the yield of backscattered electrons, processing such as polishing is essential for the highest accuracy chemical composition.
 If the measurement is intended to be non-destructive, careful correlation between backscattered and secondary electron images must be used to ignore topographic effects.
 \subsection{TEM} While scanning electron microscopy relies on the information generated from the surface and sub-surface of arbitrarily thick samples, transmission electron microscopy (TEM) relies on the information generated from electrons which transmit through a sample.
-Through control of the electron beam information about the thickness, crystalinity and defects of a sample can be collected.
+Through control of the electron beam information about the thickness, crystalinity, and defects of a sample can be collected.
 
 Imaging of samples via TEM is produced via one of several interaction mechanisms of a beam electrons with a thin sample, as noted in the transmitted electron beams in \cref{fig:exp_em_electron_interaction}.
 Electron beams are generally on the order 10's to 100's of kilovolts and are controlled via magnetic lenses\cite{Egerton2005}.
@@ -315,7 +316,7 @@ The de~Broglie wavelength of electrons accelerated in a TEM is much smaller than
 Polycrystalline samples will provide distinct intensity contrast due to their large changes in orientation relative to the incoming electron beam, diffracting varying amounts of electrons\cite{Egerton2005}.
 
 When samples are more crystalline, polycrystalline diffraction contrast generally no longer plays a large role.
-In order improve the contrast effects of electrons passing through crystalline samples, the sample must be aligned along a ``zone-axis,'' that is, along some crystal direction in order to transport electrons mostly unperturbed down atomic columns.
+In order to improve the contrast effects of electrons passing through crystalline samples, the sample must be aligned along a ``zone-axis,'' that is, along some crystal direction in order to transport electrons mostly unperturbed down atomic columns.
 TEM samples are tilted to align the sample so the beam travels along a crystal direction.
 When crystalline samples are aligned in such a way, defects that break the periodicity of the crystal result in scattering of the electrons and create what is called phase contrast.
 Phase contrast will highlight regions where the atomic columns have defects which scatter electrons\cite{Egerton2005}.
@@ -393,7 +394,7 @@ Such a regime is achieved by the use of a pulsed, high photon energy and high en
 The properties of the PLD growth system allow a wide range of temperatures, pressures and material types to be used during attempts at epitaxial growths.
 \begin{figure}
  \centering \includegraphics[width=0.9\textwidth]{exp_PLD_chamber}
- \caption{\label{fig:exp_pld_chamber}PLD Chamber Schematic after~\cite{stephen-thesis} (used with permission)}
+ \caption[PLD chamber schematic]{\label{fig:exp_pld_chamber}PLD Chamber Schematic (used with permission after~\cite{stephen-thesis}).}
 \end{figure}
 
 The PLD process uses a process known as laser ablation to produce the atomic species used for epitaxial growth.
@@ -412,11 +413,11 @@ For highly thermally conductive samples, the surface layer can begin to ablate b
 Regardless of the target material, a plume is generated at the laser spot which, due to the laser pulse and heating timescales, is stochiometric with regards to the composition of the target.
 The atomic plume is also highly ionized, with energies of 1--100~eV and with typical energies of 5--50~eV\@. The atomic plume is now a vapour but highly compressed next to the target surface.
 It explodes perpendicular to the surface, expanding across the deposition chamber, to be collected by a waiting substrate.
-The plume expands from the target with a \(\cos^{10-20}(\theta)\)
-dependence, meaning it is highly peaked centrally about the spot.
+The plume expands from the target with a \(\cos^{10}(\theta)\) -- \(\cos^{20}(\theta)\)
+dependence, meaning it is highly peaked centrally about the laser spot.
 Once the atomic plume arrives at the substrate, its energy is delivered to the growing film.
 The high energy atoms, in addition to having high rates of diffusion, also promote the movement of atoms already present by providing activation energy for their diffusion processes\cite{Willmott2000}.
-This is a key reason the PLD process can be used at substrate temperatures lower than other methods, the atomic plume delivers energy directly to the growing film.
+This is a key reason the PLD process can be used at substrate temperatures lower than other methods, as the atomic plume delivers energy directly to the growing film.
 
 Due to the generation of atomic species using light, the environment surrounding the target and growth substrate need not be ultra-high-vacuum or even high vacuum for the excited plume to successfully traverse the gap between target and substrate.
 Gas pressures on the order of mTorr can be used to modify the energetics of the atomic plume, reducing the total energy or modifying the distribution\cite{Willmott2000}.

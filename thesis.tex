@@ -27,7 +27,7 @@
 \usepackage{syntonly}%Provides syntax-only latex runs, useful for when the document starts getting big!
 \usepackage{csquotes}
 \usepackage{float} %Fixes up floats (figures) and provides the H placement modifier (place the float RIGHT HERE). with great power...
-\usepackage[style=numeric-comp,backend=biber,sorting=none,backref=true]{biblatex}
+\usepackage[style=numeric-comp,backend=biber,sorting=none,backref=true,maxnames=99,alldates=iso8601]{biblatex}
 \addbibresource{library.bib}
 \addbibresource{nanogold.bib}
 \addbibresource{nanocdte.bib}
@@ -52,8 +52,8 @@
 \usepackage{lipsum} %Prints junk text with \lipsum
 \usepackage{setspace} %Provides \doublespacing command
 \usepackage{todonotes} %Provides \todo{something} which puts labels in magin and \missingfigure{something} to put in placeholder figures
-\widowpenalty=1000 %Prevent widows (single sentences at end of page)
-\clubpenalty=1000 %Prevent orphans (single sentences on empty pages)
+\widowpenalty=2000 %Prevent widows (single sentences at end of page)
+\clubpenalty=2000 %Prevent orphans (single sentences on empty pages)
 %\doublespacing %Uncomment to turn on double spacing
 \onehalfspacing
 %\linenumbers %Uncomment to turn on line numbers
@@ -88,12 +88,12 @@
 \raggedbottom
 \begin{document}
 
-\begin{titlepage} %Half-title page for McMaster Formatting
+\begin{titlepage} %Half-title page for McMaster Formatting, Max 60 Characters
     \thispagestyle{empty}
     \topskip0pt
     \vspace*{\fill}
     \begin{center}{\Large
-    \uppercase{An Investigation into the Role of Energy and Symmetry at Epitaxial Interfaces}}
+    \uppercase{The Role of Energy and Symmetry at Epitaxial Interfaces}}
     \end{center}
     \vspace*{\fill}
     \setcounter{page}{0}
@@ -105,13 +105,13 @@
 \centering
 \vspace*{\fill} %This makes text vertically centered
 {\Large \uppercase{An Investigation into the Role of Energy and Symmetry at Epitaxial Interfaces}\\
-By\\GABRIEL A.\ DEVENYI, B.\ ENG.\\}
+\vfill
+By GABRIEL A.\ DEVENYI, B.\ ENG.\\}
 \vfill
 A Thesis Submitted to the School of Graduate Studies in Partial Fulfilment of
 the Requirements for the Degree Doctor of Philosophy
-McMaster University
 \vfill%This pushes copyright to the bottom
-\textcopyright{} Copyright by Gabriel A.\ Devenyi, 2013
+McMaster University \textcopyright{} Copyright by Gabriel A.\ Devenyi, November 2013
 \end{titlepage}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 {\noindent McMaster University DOCTOR OF PHILOSOPHY (2013) Hamilton, Ontario (Engineering Physics)\\
@@ -132,22 +132,16 @@ NUMBER OF PAGES: xi,~\pageref{LastPage}}
             Investigations into symmetry at epitaxial interfaces found YYY key insights; intentional symmetry breaking of the growth substrate through steps can suppress twinning of zincblende thin films, asymmetric (211)-oriented substrates can accommodate strain of mismatched zincblende thin films and reconstructed oxide substrates can provide unique epitaxial templates for thin films which significantly differ from their bulk lattice.
             The results of this investigation provide a path towards the improvement of epitaxy through the manipulation of symmetry at epitaxial surfaces, and the production of free standing thin films through the epitaxial liftoff process.
     \end{abstract}
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-    \chapter*{Acknowledgements}
+\renewcommand{\abstractname}{Acknowledgements}
+    \begin{abstract} \setcounter{page}{4} \thispagestyle{plain}
     First of all, I must thank my wonderful wife Diana, she has been with me my entire academic career, now eleven years at McMaster. Her love and support has allowed me to pursue my research towards the successful thesis you see before. Our partnership in both life and academics has allowed us to both be more than the sum of our parts.
     
     Second, I must thank my supervisor Dr. John Preston. Dr. Preston's careful balance of supervision, providing instruction and guidance when it was needed, while giving me extensive leeway to follow my own ideas and experiments, and accessing the funding necessary to never worry about expense.
     His urging to always ``try the experiment'' has driven many surprising discoveries and instilled onto me a risk taking attitude to always experiment.
     
-    This work, in many senses is a collaboration. Many colleagues participated in conversations, assisted with measurements and provided their unique insights to this work. I make an effort here to name and thank my direct collaborators and those have contributed directly to my work, however this will omit many who have contributed at the lunch table or late nights at the Phoenix. Dr. Robert Hughes, my first collaborator and in many ways my first mentor, gave me the opportunity to contribute early and substantially in the work of the research group, and taught me to recognize publishable units, a skill that has resulted in the production of many articles. My collaborators and colleagues Steffi Woo, Stephen Jovanovic, Dr. Kristoffer Meinander, Vicky Jarvis, Matthew Minnick and Joshua Rideout.
-    %Diana
-    %Preston
-    %kris
-    %nathan
-    %matt
-    %parents
-    
-    \newpage
+    This work, in many senses is a collaboration. Many colleagues participated in conversations, assisted with measurements and provided their unique insights to this work. I make an effort here to name and thank my direct collaborators and those have contributed directly to my work, however this will omit many who have contributed at the lunch table or late nights at the Phoenix. Dr. Robert Hughes, my first collaborator and in many ways my first mentor, gave me the opportunity to contribute early and substantially in the work of the research group, and taught me to recognize publishable units, a skill that has resulted in the production of many articles. My collaborators and colleagues Steffi Woo, Stephen Jovanovic, Dr. Kristoffer Meinander, Vicky Jarvis, Matthew Minnick and Joshua Rideout.\todo{Add parents}
+    \end{abstract}
+\setcounter{secnumdepth}{3}
     \tableofcontents
     \listoffigures
     \newpage
@@ -210,11 +204,11 @@ frame=single
 \chapter{Conclusions}
 \include{conclusions}
 
+\printbibliography{}
+
 \appendix
 \chapter{Lattice Matching Calculations}
 \label{apndx:lattice-matches}
 \lstinputlisting[language=Octave]{lattice-checker.m}
 
-\printbibliography{}
-%\printindex
 \end{document}

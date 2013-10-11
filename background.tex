@@ -22,34 +22,34 @@ Kinetics refers to the role time plays in an epitaxial growth process, usually e
 There are two fundamental kinetic rates involved in epitaxial growth, those which can be directly controlled and those which are primarily properties of the material system and can only be indirectly influenced by the experimenter. The most important kinetic processes in epitaxy are shown as \cref{fig:back_epi_rates}.
 \begin{figure}
  \centering \includegraphics[width=0.9\textwidth]{back_epi_rates}
- \caption[Kinetic Processes of atoms on surfaces]{\label{fig:back_epi_rates}Common kinetic processes with Arrhenius rates which participate during epitaxy}
+ \caption[Kinetic Processes of atoms on surfaces]{\label{fig:back_epi_rates}Common kinetic processes with Arrhenius rates which participate during epitaxy.}
 \end{figure}
 
 The most common experimentally controlled rates in an epitaxial growth are the rate of addition of atoms to the growth interface, and the indirect rates controlled by the temperature of the substrate.
-The rate of atom addition, or the growth rate is a key parameter and in homoepitaxial growth, can reveal the role kinetics plays in growth.
-If the rate at which atoms are added to an epitaxial interface is extremely high, the atoms will have no time to move towards their thermodynamically preferred location.
-The resulting material that grows will consist of layers of atoms stacked randomly where they first hit the substrate and were immediately covered by more atoms.
+The rate of atom addition, or the impingement rate is a key parameter and in homoepitaxial growth, can reveal the role kinetics plays in growth.
+If the rate at which atoms are added to an epitaxial interface is extremely high, the atoms will have no time to move towards their thermodynamically preferred (global minimum) location.
+The resulting material that grows will consist of layers of atoms stacked randomly where they first hit the substrate or in local energy minimia, and are immediately covered by more atoms.
 Such a configuration is not an epitaxial growth, rather the film is likely to be amorphous or fine-grained polycrystalline, yet there are no material limitations per-se that are causing the poor growth, it is purely kinetic.
-As the growth rate is lowered, adatoms are allowed more time to move via diffusion, they may register in some regions, but not in others, resulting in a partially crystalline growth.
+As the impingement rate is lowered, adatoms are allowed more time to move via diffusion, they may register in some regions, but not in others, resulting in a partially crystalline growth.
 As the deposition rate is further reduced, depending upon the material, the film may grow in a fully crystalline nature, but be twinned or contain stacking faults.
 The bonding along \{111\} directions in a zincblende crystal is susceptible to faults due to their relative rotational symmetry, the exact susceptibility is known by the Stacking Fault Energy (SFE)\cite{Duffar2010}.
 Stacking fault energies in semiconductor materials vary from as low as single digit mJ/m\textsuperscript{2} (CdTe 9~mJ/m\textsuperscript{2}), to over 200 mJ/m\textsuperscript{2} (C 285~mJ/m\textsuperscript{2})\cite{Takeuchi1999}.
 This energy is a measure of the cost of making such a defect in a crystal, so crystals with low SFE are very susceptible to twinning during growth.
-At yet lower growth rates the adatoms have time to find their low energy states with respect to twins, finally arriving at a single crystal.
+At yet lower impingement rates the adatoms have time to find their low energy states with respect to twins, finally arriving at a single crystal.
 
 While the directly controlled deposition rate seems to be severely limited by defect formation and stacking of adatoms, there are large number of kinetic processes during growth that can be indirectly influenced by an experimenter through the control of temperature.
 The other kinetic processes fundamental to growth are all of the Arrhenius type, as shown in \cref{eqn:arrhenius}.
-The Arrhenius processes are exponential, with a pre-factor (A\textsubscript{0}) and an activation energy (E\textsubscript{0}).
-For crystalline surfaces, the pre-factor can be further defined as an attempt frequency or attempt rate (v) and the surface lattice spacing (a)\cite{Einax2013}.
+The Arrhenius rates are exponential, with a pre-factor (A\textsubscript{0}) and an activation energy (E\textsubscript{0}).
+For crystalline surfaces, the pre-factor can be further defined as an attempt frequency or attempt rate (v) and the surface lattice spacing (a) as in \cref{eqn:arrhenius2}\cite{Einax2013}.
 As such, these processes have an exponential dependence on the temperature at which growth occurs.
-Among the other kinetic processes involved in growth, the most important are surface diffusion, bulk diffusion, desorption and aggregation/disassociation.
-Through the increase in temperature the rates of all of these (except nucleation) processes increase.
-This has a strong impact on the epitaxial process.
 \begin{align}
     A = A_0 e^{-\frac{E_0}{kT}} \label{eqn:arrhenius} \\
-    A = - v a^2 e^{-\frac{E_0}{kT}}
+    A = - v a^2 e^{-\frac{E_0}{kT}} \label{eqn:arrhenius2}
 \end{align}
 
+Among the other kinetic processes involved in growth. The most common are surface diffusion, bulk diffusion, desorption, aggregation(nucleation) and disassociation.
+Through the increase in temperature the rates of all of these processes increase (except nucleation, which decreases with temperature).
+This has a strong impact on the epitaxial process.
 The key kinetic factor to the improvement of epitaxial growth is the increase in the surface diffusion rate.
 Surface diffusion of adatoms during growth is the process by which a newly adsorbed atom from the impinging atoms finds its lowest energy position on the epitaxial surface.
 Increases in temperature increase the rate at which these adatoms move, increasing the probability that they will find their lowest energy position before they are encapsulated by additional atoms.
@@ -57,9 +57,9 @@ While increases in temperature will improve the mobility of adatoms, increases i
 Bulk diffusion is the process by which adatoms at the epitaxial interface diffuse into the substrate through exchange with other atoms or travel interstitially.
 In homoepitaxy this process is irrelevant, but in any chemically dissimilar growth such a process distorts the interface, which is generally not preferred.
 Furthermore, as temperature increases, adatoms can begin to desorb, leaving the epitaxial interface, slowing growth and under extreme circumstances, the substrate itself can also begin to lose atoms.
-Finally, at very high surface diffusion rates, adatoms may not ever attach to others, preventing nucleation of new layers of crystal.
+Finally, at very high surface diffusion rates, adatoms may never attach to others, preventing nucleation of new layers of crystal.
 
-The kinetics of growth are thus balanced between the intended growth rate, determined by the delivery of atoms to the epitaxial interface, and a temperature that is high enough to ensure single crystal growth, but not too high to cause breakdown of the epitaxial process, which is a delicate balance.
+The kinetics of growth are thus balanced between the impingement rate, determined by the delivery of atoms to the epitaxial interface, and a temperature that is high enough to ensure single crystal growth, but not too high to cause breakdown of the epitaxial process, which is a delicate balance.
 
 \subsection{Heteroepitaxy} 
 Heteroepitaxy covers a wide range of \emph{A} on \emph{B} epitaxy systems, as such, the following treatment will start from the basics established in homoepitaxy and gradually add the levels of complexity found in real-world systems and consider how they add to the model.
@@ -74,16 +74,16 @@ The lattice constant varies nearly linearly between silicon and germanium as in 
 \end{equation}
 
 The fundamental physical parameter describing such mismatched system is strain, that is, the distortion of atoms from the thermodynamic equilibrium positions, due to bonding to a mismatched substrate.
-Strain can be conceptualized as energy stored within the stretched bonds of the epitaxial layer, like a spring displaced from its equilibrium position, increasing the internal energy within the epitaxial crystal. The difference between lattice constants of crystals is expressed as the lattice mismatch as in \cref{eqn:mismatch}.
+Strain can be conceptualized as energy stored within the stretched bonds of the epitaxial layer, like a spring displaced from its equilibrium position, increasing the internal energy within the epitaxial crystal. The difference between lattice constants of crystals is expressed as the lattice mismatch as in \cref{eqn:mismatch}, where a\textsubscript{f} is the film lattice constant and a\textsubscript{s} is the substrate lattice constant.
 Negative values indicate that the growing layer is strained in tension by bonding to the substrate, while positive values indicate that growing layer is strained in compression by bonding to the substrate.
 \begin{figure}
  \centering \includegraphics[width=0.8\textwidth]{back_strain}
- \caption[Unit cell strain visualization]{\label{fig:back_strain}Effects of strain on unit cell of epitaxial crystal a) matched, no strain b) strained, but pseudomorphic, lattice is only distorted c) highly strained resulting in dislocations to relax strain\cite{ohring2001materials} (used with permission)}
+ \caption[Unit cell strain visualization]{\label{fig:back_strain}Effects of strain on unit cell of epitaxial crystal a) matched, no strain b) strained, but pseudomorphic, lattice is only distorted c) highly strained resulting in dislocations to relax strain (used with permission from \cite{ohring2001materials}).}
 \end{figure}
 
 Through the examination of the Si\(_{1-x}\)Ge\(_x\) system grown on silicon, the effect of pure compressive strain on an epitaxial process has been examined.
 As an epitaxial crystal of Si\(_{1-x}\)Ge\(_x\) is grown on a silicon substrate, the strain energy in the crystal increases with thickness.
-The growing epitaxial crystal maintains the lateral lattice constant of the substrate, and conserves it's volume by changing it's vertical lattice constant, this is known as pseudomorphic growth.
+The growing epitaxial crystal maintains the lateral lattice constant of the substrate, and conserves its volume by changing its vertical lattice constant, this is known as pseudomorphic growth.
 Beyond a certain point, the energy required to add another layer of strained crystal is too much, and the strain is relieved through the introduction of a defects in the form of dislocations.
 In a dislocation, the bonding between the epitaxial crystal and the substrate is broken to allow the crystal to expand, leaving a dangling bond at the substrate.
 Such a process is random so defects are located randomly at the interface.
@@ -98,7 +98,7 @@ The critical thickness model is qualitatively similar for other systems that hav
 \begin{figure}
  \centering \includegraphics[width=0.6\textwidth]{back_strain_regions}
  \caption[Critical thickness dependence on strain]{\label{fig:back_strain_regions}Critical thickness versus germanium fraction of Si\(_{1-x}\)Ge\(_x\), showing regions of pseudomorphic growth and relaxed growth by dislocations (Reprinted with permission from Bean \textit{et al.}\cite{Bean1986}.
-  Copyright 1986, American Institute of Physics.)}
+  Copyright 1986, American Institute of Physics).}
 \end{figure}
 \subsubsection{Chemically Dissimilar Heteroepitaxy} On the other side of the heteroepitaxy spectrum are those epitaxial growths that have commensurate crystal structures but differ in their chemical compositions.
 There are few material systems which provide an ideal model for a lattice matched (zero strain), but chemically dissimilar epitaxial growth.
@@ -112,7 +112,7 @@ This breaking of symmetry in the crystal means that the ordering of the group-II
 This problem is known as ``polar-on-nonpolar'' epitaxy\cite{Biegelsen1992,Kroemer1987}.
 \begin{figure}
  \centering \includegraphics[width=\textwidth]{back_polar_model}
- \caption[Atomic model of polar on non-polar epitaxy]{\label{fig:back_polar_model}GaAs (polar) on Ge (non-polar) ideal epitaxy model a) separate crystals b) bonding showing surface charge c) atomic exchange resolving surface charge\cite{Biegelsen1992}(used with permission)}
+ \caption[Atomic model of polar on non-polar epitaxy]{\label{fig:back_polar_model}GaAs (polar) on Ge (non-polar) ideal epitaxy model a) separate crystals b) bonding showing surface charge c) atomic exchange resolving surface charge (used with permission from \cite{Biegelsen1992}).}
 \end{figure}
 
 If the truncated crystal surface of such a polar semiconductor is brought towards the truncated surface of a silicon crystal as in \cref{fig:back_polar_model}, the interface that results, while all bonds will be satisfied with no strain, will not be satisfied electronically.
@@ -153,7 +153,7 @@ For crystalline materials, there are preferred close packed surfaces which have 
 These close packed surfaces provide an addition energy consideration to equilibrium shapes which now form Wulff shapes, balancing surface interface energies and the energy of exposed crystal facets\cite{Venables1984} as visualized in \cref{fig:back_epi_young}b.
 \begin{figure}
  \centering \includegraphics[width=0.9\textwidth]{back_epi_young}
- \caption[Young's equation]{\label{fig:back_epi_young}a) Young's equation visualized as an isotropic droplet sitting atop a substrate, with surface energies and contact angle labelled b) Minimum surface energy Wulff shape of a crystalline material atop a substrate, with surface energies, contact angle and crystal surface energy (after \cite{wikipedia_surface_energy})}
+ \caption[Young's equation]{\label{fig:back_epi_young}a) Young's equation visualized as an isotropic droplet sitting atop a substrate, with surface energies and contact angle labelled b) Minimum surface energy Wulff shape of a crystalline material atop a substrate, with surface energies, contact angle and crystal surface energy (after \cite{wikipedia_surface_energy}).}
 \end{figure}
 
 Since Young's equation (and Wulff shapes) describe the preference of a given material to stick to a substrate or to itself, such wetting and dewetting can naturally be extended to describe the modes of growth when a film is deposited onto a substrate.
@@ -176,7 +176,7 @@ If atoms are delivered too quickly nucleation can form islands regardless of the
 The conditions for optimal nucleation may be different than those of growth, especially in the case of mixed-mode, where changes in growth parameters during growth may lead to better outcomes overall.
 \begin{figure}
  \centering \includegraphics[width=0.8\textwidth]{back_nucleation_regions}
- \caption[Nucleation phase diagram of surface energy and strain]{\label{fig:back_nucleation_regions}Phase diagram showing regions of different thin film nucleation modes, plotted with axes of lattice mismatch (strain) and ratio of surface energies (used with permission after \cite{ohring2001materials})}
+ \caption[Nucleation phase diagram of surface energy and strain]{\label{fig:back_nucleation_regions}Phase diagram showing regions of different thin film nucleation modes, plotted with axes of lattice mismatch (strain) and ratio of surface energies (used with permission after \cite{ohring2001materials}).}
 \end{figure}
 
 \section{Surface Reconstructions}\label{sec:reconstruction}
@@ -188,7 +188,7 @@ While the name surface reconstruction implies changes to just the surface atoms,
 Thus, the changes that occur at the surface of a crystal can result in a very different interface than the bulk crystal for the purposes of epitaxy.
 
 The atoms on the surface of a newly cleaved crystal have a number of options for resolving their high energy configuration.
-The simplest of options for atoms in those high energy states to reduce their energy, is to move, that is, to change it's position relative to other atoms.
+The simplest of options for atoms in those high energy states to reduce their energy, is to move, that is, to change its position relative to other atoms.
 These movements happen both the in-plane and out-of-plane directions.
 Both atomic translations can cause additional shifts in the atomic layers below the surface.
 Both in-plane and out-of-plane atomic movement breaks the bulk symmetry of the original crystal, resulting in a surface with lower symmetry.
@@ -196,7 +196,7 @@ In extreme cases, atoms can migrate and form islands or otherwise cause faceting
 A schematic example of the simple atomic movement and relaxation for surface reconstructions as shown in \cref{fig:back_recon_move}.
 \begin{figure}
  \centering \includegraphics[width=0.5\textwidth]{back_recon_move}
- \caption[Simple surface reconstruction]{\label{fig:back_recon_move}The process of surface reconstruction with atomic movement a) truncated crystal b) layer movement due to no overlayer c) atomic roughening of surface to reduce total energy, with a\textsubscript{r} labelled as the reconstructed perpendicular lattice spacing (after \cite{ohring2001materials})}
+ \caption[Simple surface reconstruction]{\label{fig:back_recon_move}The process of surface reconstruction with atomic movement a) truncated crystal b) layer movement due to no overlayer c) atomic roughening of surface to reduce total energy, with a\textsubscript{r} labelled as the reconstructed perpendicular lattice spacing (after \cite{ohring2001materials}).}
 \end{figure}
 
 A more complex response resulting in a surface reconstruction that can arise is a change in the bonding in the upper layers of the crystal.
@@ -205,11 +205,11 @@ This dimerization of the surface can reduce the chemical activity of the surface
 One common example of the dimerization is that of the silicon (100) surface, as shown in \cref{fig:back_recon_dimer}.
 \begin{figure}
  \centering \includegraphics[width=0.7\textwidth]{back_recon_dimer}
- \caption[Silicon dimer surface reconstruction]{\label{fig:back_recon_dimer}a) STM of silicon surface reconstruction showing Si dimers b) cross sectional view of model (\(2 \times 1\)) surface reconstruction c) top view showing reconstructed surface unit cell after \cite{Zhang1997,Lagally1993}(used with permission)}
+ \caption[Silicon dimer surface reconstruction]{\label{fig:back_recon_dimer}a) STM of silicon surface reconstruction showing Si dimers b) cross sectional view of model (\(2 \times 1\)) surface reconstruction c) top view showing reconstructed surface unit cell after (used with permission from \cite{Zhang1997,Lagally1993}).}
 \end{figure}
 
 Finally, a surface can reconstruct by ejecting some of the atoms which originally formed the surface.
-The removal of such atoms can allow which was once a close-packed surface to have less density than the parent crystal lattice.
+The removal of such atoms can allow what was once a close-packed surface to have less density than the parent crystal lattice.
 This is typical in reconstructions of materials where gaseous are materials integrated into the lattice.
 The resulting reconstruction can be multiple layers thick, progressively containing less atoms from the bulk to the surface.
 Similarly, if reconstructions are formed in the appropriate atmosphere, the reconstruction can integrate additional atoms into the reconstruction.
@@ -221,7 +221,7 @@ The high index surface instead undergoes a breakup into sections of low index pl
 These low index planes can then further reconstruct as previously discussed.
 \begin{figure}
  \centering \includegraphics{back_recon_vicinal}
- \caption[Silicon single and double step surface reconstructions]{\label{fig:back_recon_vicinal}Vicinal silicon (100) surface reconstructions, a) single steps (SA, SB) with alternating sublattices and dimers and b) double steps (DB) with the same sublattice exposed\cite{Alerhand1990}(used with permission, Copyright (1990) by The American Physical Society)}
+ \caption[Silicon single and double step surface reconstructions]{\label{fig:back_recon_vicinal}Vicinal silicon (100) surface reconstructions, a) single steps (SA, SB) with alternating sublattices and dimers and b) double steps (DB) with the same sublattice exposed\cite{Alerhand1990}(used with permission, Copyright (1990) by The American Physical Society).}
 \end{figure}
 
 The most common case of high index planes exposed for surface reconstruction is offcut or vicinal surfaces.
@@ -230,7 +230,7 @@ These wafers, when reconstructed form terraces of the low index plane separated 
 Steps are formed either as ``single'' (height \(\frac{a}{2}\)) or ``double'' (height \(a\)), with terrace lengths determined by the offcut angle, as in \cref{fig:back_recon_terrace} and \cref{eqn:back_recon_terrace}.
 \begin{figure}
  \centering \includegraphics{back_recon_terrace}
- \caption{\label{fig:back_recon_terrace}Terrace length of reconstructed stepped surface due to offcut of \textalpha}
+ \caption{\label{fig:back_recon_terrace}Terrace length of reconstructed stepped surface due to offcut of \textalpha.}
 \end{figure}
 \begin{equation}
  l = \frac{a}{\tan{\alpha}} \text{ or } l = \frac{a/2}{\tan{\alpha}} \label{eqn:back_recon_terrace}
@@ -250,25 +250,25 @@ Crystals can be annealed at a carefully controlled temperature or over an arbitr
 Careful experimentation with annealing of crystals has resulted in phase diagrams of surface reconstructions given a surface and temperature combination, as seen for the Silcon (100) surface in \cref{fig:back_recon_phase}.
 \begin{figure}
  \centering \includegraphics[width=0.6\textwidth]{back_recon_phase}
- \caption[Silicon surface reconstruction phase diagram]{\label{fig:back_recon_phase}Phase diagram of the Silicon (100) surface reconstruction showing regions of single and double steps, with shaded region of mixed reconstruction\cite{Pehlke1991}(Copyright (1991) by The American Physical Society)}
+ \caption[Silicon surface reconstruction phase diagram]{\label{fig:back_recon_phase}Phase diagram of the Silicon (100) surface reconstruction showing regions of single and double steps, with shaded region of mixed reconstruction\cite{Pehlke1991}(Copyright (1991) by The American Physical Society).}
 \end{figure}
 
 The formation and stability of a given surface reconstruction also depends upon the environment surrounding the crystal.
 Assuming the surrounding environment does not chemically react with a given crystal, the presence or absence (vacuum) of an inert gas will affect the activation energies for the surface atom processes.
-A vacuum above a crystal when annealing promotes the exit of atoms from the surface as there is force resisting the atoms, or back scattering them towards the surface.
+A vacuum above a crystal when annealing promotes the exit of atoms from the surface as there is no equilibrium vapour pressure resisting the exit of addition atoms.
 For complex crystals which incorporate elemental gases into their lattice, different surface reconstructions are achievable if an overpressure of those gases are present, rather than a vacuum.
 These surface reconstructions are commonly seen in the complex oxides, where oxygen is a primary constituent of the crystal and will be lost from the surface during annealing if an overpressure is not provided.
 
 Stability of surface reconstructions to subsequent interactions with atoms added to the surface varies widely depending upon the properties of the crystal.
 Semiconductor crystals have less stable surface reconstructions, where interactions with additional atoms easily destroy an established reconstruction.
 The most common example are the common silicon reconstructions, which are disrupted and destroyed during epitaxy of additional layers.
-Refractory crystals (defined as those materials high melting points and with stability above 538\celsius{}\cite{ASTMC71}, such as MgO T\(_m\) = 2852\celsius{}, Al\(_2\)O\(_3\) T\(_m\) = 2072\celsius{} and MgAl\(_2\)O\(_4\) T\(_m\) = 2130\celsius{}) such as complex oxides are considerably more stable once reconstructed, a point which has been taken advantage of later in this work.
+Refractory crystals (defined as those materials wit high melting points and with stability above 538\celsius{}\cite{ASTMC71}, such as MgO T\(_m\) = 2852\celsius{}, Al\(_2\)O\(_3\) T\(_m\) = 2072\celsius{} and MgAl\(_2\)O\(_4\) T\(_m\) = 2130\celsius{}) such as complex oxides are considerably more stable once reconstructed, a point which has been taken advantage of later in this work.
 
 \subsection{Nomenclature for Surface Reconstructions} Since surface reconstructions are pseudo-2D constructs, the allowed symmetries of a surface reconstruction are a subset of those of the allowable 3D lattices.
 There are five unique 2D surface nets that can be used to describe the symmetry of a surface reconstruction as shown in \cref{fig:back_recon_lattices}
 \begin{figure}
  \centering \includegraphics[width=0.8\textwidth]{back_recon_lattices}
- \caption[2D Surface Nets]{\label{fig:back_recon_lattices}The five unique 2D surface nets, all are primitive (single atom basis) except for the two atom centred rectangular net (after \cite{ohring2001materials})}
+ \caption[2D Surface Nets]{\label{fig:back_recon_lattices}The five unique 2D surface nets, all are primitive (single atom basis) except for the two atom centred rectangular net (after \cite{ohring2001materials}).}
 \end{figure}
 
 The nomenclature of naming surface reconstructions is determined by the relationship of the 2D surface lattice to the underlying unit cell.
@@ -285,7 +285,7 @@ reconstruction.
  \caption[Examples of surface reconstructions]{\label{fig:back_recon_name_examples}Examples of simple cubic surface reconstructions showing atomic positions of reconstructed atoms (shaded) relative to bulk atoms (dots) on a (100) simple cubic substrate.
   a) P(\(2 \times 2\)) b) C(\(2 \times 2\)) or
   (\(\sqrt{2}\times\sqrt{2}\))R45\degree{}
-  c) P(\(1 \times 2\)) d) P(\(2 \times 1\)) (used with permission after \cite{ohring2001materials})}
+  c) P(\(1 \times 2\)) d) P(\(2 \times 1\)) (used with permission after \cite{ohring2001materials}).}
 \end{figure}
 
 \section{Atomic Bonding --- Attraction Between Atoms}
@@ -305,14 +305,14 @@ These bonds, sometimes called chemisorption, typically have energies of 1--10~eV
 When multiple atoms are brought together, they can hybridize and share atomic orbitals between more than one atom, allowing for a multitude of configurations and the diversity of crystal symmetries seen in nature.
 An example of a purely covalent material is silicon, where each atom has hybridized its electronic orbitals and shares its orbitals equally with four surrounding silicon atoms.
 \begin{figure}
- \centering \includegraphics[width=0.6\textwidth]{back_bond_potential}
- \caption[Energy potentials between two atoms]{\label{fig:back_bond_potential}Potential energy versus distance for an atom with respect to a surface, showing the region of physisorption and chemisorption\cite{ohring2001materials} (used with permission)}
+ \centering \includegraphics[width=0.75\textwidth]{back_bond_potential}
+ \caption[Energy potentials between two atoms]{\label{fig:back_bond_potential}Potential energy versus distance for an atom with respect to a surface, showing the region of physisorption and chemisorption (used with permission from \cite{ohring2001materials}).}
 \end{figure}
 
 Van der Walls attraction is the third of the atomic interaction potentials.
 Van der Walls attraction is due to the dipole-dipole interactions between the electronic structure of atoms.
 Such an attraction process is different than covalent sharing, the electronic structures are attracted due to their oscillating dipole of the electron could, but do not share or hybridize electronic structures.
-These atomic interactions occur at greater distances than covalent interactions, and are considerably weaker, generally having potentials of 10--100~meV\@. The Van der Walls potential is the force that initially binds adatoms at the epitaxial interface, sometimes denoted physisorption, allowing them to move on the surface before chemically reacting and becoming covalently bound.
+These atomic interactions occur at greater distances than covalent interactions, and are considerably weaker, generally having potentials of 10--100~meV\@. The van der Walls potential is the force that initially binds adatoms at the epitaxial interface, sometimes denoted physisorption, allowing them to move on the surface before chemically reacting and becoming covalently bound.
 The potential energy of an atom approaching a surface is shown qualitatively in \cref{fig:back_bond_potential}, showing the first energy minimum of physisorption and the second deeper potential energy minimum of chemisorption.
 
 In real materials, the bonding is more complicated than the three distinct potentials described.
@@ -321,10 +321,10 @@ In such materials, the electronic orbitals for the atoms hybridize as with coval
 Due to differences in electronegativity, one atom will contain a larger amount of the electronic charge, causing an electrostatic attraction between the atoms in addition to the covalent attraction.
 Most materials fall into this category of having a partial ionic nature.
 
-In addition to the partially ionic nature of some solid materials, other materials also contain a partial Van der Walls nature.
+In addition to the partially ionic nature of some solid materials, other materials also contain a partial van der Walls nature.
 Generally, such materials consist of stacked layers of covalently bonded atoms which have their electronic orbitals fully satisfied.
 These layers of atoms, by virtue of being atomically flat, come into close contact with adjacent layers, close enough that their electronic orbital electrical dipole moments cause attraction, allowing for stable stacking.
-A common example of such a material is graphite, an allotrope of carbon, in which the carbon atoms hybridize and covalently attract in a single atom thick layer, which are then attracted to each other via Van der Walls forces.
-Such bonding is rare in epitaxial systems but may of relevance to the epitaxial liftoff phenomenon examined later.
+A common example of such a material is graphite, an allotrope of carbon, in which the carbon atoms hybridize and covalently attract in a single atom thick layer, which are then attracted to each other via van der Walls forces.
+Such bonding is rare in epitaxial systems but may be of relevance to the epitaxial liftoff phenomenon examined later.
 
 
