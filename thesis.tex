@@ -40,6 +40,7 @@
 \usepackage{wasysym}
 \usepackage{lastpage}
 \usepackage[raggedright]{titlesec}
+\usepackage{nomencl}
 
 \pdfminorversion=5
 \pdfobjcompresslevel=3
@@ -48,7 +49,7 @@
 \usepackage{subcaption} %The standard method to do figures with a), b) and such
 \usepackage{fancyhdr} %Package for changing header/footer
 %\usepackage{lineno} %Allows labeling of line numbers throughout document
-%\usepackage{makeidx} %For generating index files
+\usepackage{makeidx} %For generating index files
 \usepackage{lipsum} %Prints junk text with \lipsum
 \usepackage{setspace} %Provides \doublespacing command
 \usepackage{todonotes} %Provides \todo{something} which puts labels in magin and \missingfigure{something} to put in placeholder figures
@@ -84,7 +85,10 @@
 \author{Gabriel A. Devenyi}
 \date{\today}
 
-%\makeindex
+\makeindex
+\renewcommand{\nomname}{List of Abbreviations and Symbols}
+\renewcommand{\nomlabel}[1]{\textbf{#1}}
+\makenomenclature
 \raggedbottom
 \begin{document}
 
@@ -118,7 +122,7 @@ McMaster University \textcopyright{} Copyright by Gabriel A.\ Devenyi, November 
 TITLE: An Investigation into the Role of Energy and Symmetry at Epitaxial Interfaces\\
 AUTHOR: Gabriel A. Devenyi, B.Eng. (McMaster University)\\
 SUPERVISOR: Professor John S. Preston\\
-NUMBER OF PAGES: xi,~\pageref{LastPage}}
+NUMBER OF PAGES: xiv,~\pageref{LastPage}}
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
     \begin{abstract}
         \thispagestyle{plain}
@@ -129,7 +133,7 @@ NUMBER OF PAGES: xi,~\pageref{LastPage}}
             In the realm of energy, the impact of chemically dissimilar epitaxial interfaces is investigated, specifically between semiconductors and oxides, noble metals and oxides, and polar-on-nonpolar epitaxy.
             For symmetry at epitaxial interfaces, the role of symmetry breaking, through surface reconstructions and asymmetric surfaces is investigated.
             Investigations into energy found two key insights; epitaxy is possible between materials which one would expect to be very weakly interacting (gold on oxides) and epitaxial interfaces, while promoting single crystal growth, can be weakly bonded enough to allow controlled liftoff of single crystal epitaxial thin films.
-            Investigations into symmetry at epitaxial interfaces found YYY key insights; intentional symmetry breaking of the growth substrate through steps can suppress twinning of zincblende thin films, asymmetric (211)-oriented substrates can accommodate strain of mismatched zincblende thin films and reconstructed oxide substrates can provide unique epitaxial templates for thin films which significantly differ from their bulk lattice.
+            Investigations into symmetry at epitaxial interfaces found three key insights; intentional symmetry breaking of the growth substrate through steps can suppress twinning of zincblende thin films, asymmetric (211)-oriented substrates can accommodate strain of mismatched zincblende thin films and reconstructed oxide substrates can provide unique epitaxial templates for thin films which significantly differ from their bulk lattice.
             The results of this investigation provide a path towards the improvement of epitaxy through the manipulation of symmetry at epitaxial surfaces, and the production of free standing thin films through the epitaxial liftoff process.
     \end{abstract}
 \renewcommand{\abstractname}{Acknowledgements}
@@ -143,7 +147,13 @@ NUMBER OF PAGES: xi,~\pageref{LastPage}}
     \end{abstract}
 \setcounter{secnumdepth}{3}
     \tableofcontents
-    \listoffigures
+    {\listoffigures \let\cleardoublepage\clearpage
+    \printnomenclature}
+    \renewcommand{\abstractname}{Declaration of Academic Achievement}
+    \begin{abstract} \thispagestyle{plain} \setcounter{page}{14}
+        The work presented here is the result of research performed by myself during the years 2009--2013. Results which have substantial contributions from other authors are clearly prefaced and the contributions of those authors are indicated.
+    \end{abstract}
+    \listoftodos
     \newpage
     \pagenumbering{arabic} %Reset page numbering
 
@@ -203,6 +213,8 @@ frame=single
 
 \chapter{Conclusions}
 \include{conclusions}
+
+\input{symbols.tex}
 
 \printbibliography{}
 
