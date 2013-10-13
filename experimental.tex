@@ -46,7 +46,7 @@ The pinned rotation of the Ewald sphere about the origin means that only recipro
 As shown by \cref{eqn:lauea,eqn:laueb,eqn:lauec} and \cref{fig:exp_xray_ewald}, there are a large number of orientations of a crystal which generate diffraction.
 For the analysis of crystals, the lowest orders of crystal diffraction (small h,k,l) are the strongest, and provide the least ambiguous information, the they are also at the lowest 2\straighttheta{} values.
 This still leaves a significant number of diffraction beams of interest to measure and provide structural information.
-The naive measurement technique for collecting this information involves taking a crystal and orienting an incoming X-ray beam, and a detector in configurations that satisfy \cref{eqn:lauea,eqn:laueb,eqn:lauec}.
+The na\"{\i}ve measurement technique for collecting this information involves taking a crystal and orienting an incoming X-ray beam, and a detector in configurations that satisfy \cref{eqn:lauea,eqn:laueb,eqn:lauec}.
 Such measurements assume that the experimenter knows the orientation and unit cell of the crystal to a degree well enough to calculate those configurations.
 If either of those pieces of information is unknown, the experimenter must instead sample the 4\textpi{} solid angle (usually only the upper 2\textpi{} half) of the angular space surrounding a crystal with enough resolution to intersect with the diffraction conditions of interest.
 Such experiments, when performed using a typical X-ray point detector, take inordinate amounts of time, as the angular space is large and the point detector must count for a long time to achieve good counting statistics.
@@ -74,9 +74,9 @@ d_{eff} = \frac{d}{\sin{\alpha}} \label{eqn:exp_xray_beam_width}
 If the sample is of limited size, alternate measurement schemes must be computed.
 The sample is then rotated about its surface normal while the 2D detector takes sequential images, a process known as a \textphi{}-scan.
 By aligning the sample along 2\straighttheta{} in one dimension, and rotating the sample in a complimentary dimension, crystallographic reflections that contain the d-spacing corresponding to a range of 2\straighttheta{} around the selected value will be collected on the detector as they pass through their diffraction condition.
-The number of frames exposed during this rotation determines the resolution along the rotation direction in reciprocal space, while the resolution of the 2DXRD detector determines the complimentary dimension.
+The number of frames exposed during this rotation determines the resolution along the \textchi direction in reciprocal space, while the pixel resolution of the 2DXRD detector, combined with of the 2DXRD detector distance determines the resolution in the 2\straighttheta{} dimension.
 An additional scan of the sample while maintaining the 2\straighttheta{} configuration and scanning the X-ray beam incident angle is known as an \textomega{}-scan.
-While the combination of these two scans collects only the reflections surrounding the centred 2\straighttheta{} of interest, if the measurement scheme successfully collects all or the most of the reflections, the symmetry of the underlying system will allow any other reflections to be inferred, greatly reducing overall measurement time.
+While the combination of these two scans collects only the reflections surrounding the centred 2\straighttheta{} of interest, if the measurement scheme successfully collects most of the reflections, the symmetry of the underlying system will allow any other reflections to be inferred, greatly reducing overall measurement time.
 \begin{figure}
  \centering \includegraphics{exp_xrd_beam_width}
  \caption[X-Ray Beam Width]{\label{fig:exp_xray_beam_width}Comparison of beam width and effective beam width caused by inclination of sample.}
@@ -97,7 +97,7 @@ The exact number of frames is determined by the sampling resolution set during t
 Each frame is a snapshot of the diffraction intensity collected from the sample for the exact angular configuration in space stored with the frame.
 A single 2DXRD frame (\cref{fig:exp_xray_frame}) which contains an X-ray diffraction peak can be analyzed via a number of integration techniques.
 The two perpendicular pixel directions on the 2DXRD frames are transformed into two angular dimensions in the coordinate system of the sample, 2\straighttheta{} and \textchi{} \cite{He2009}.
-The resulting frame is sliced into hyperbola with the x-direction of the frame corresponding to the radius and a new dimension \textchi{} corresponding to the direction along a given hyperbola.
+The resulting frame is sliced into hyperbola with the x-direction of the frame corresponding to the radius (2\straighttheta{}) and a new dimension (\textchi{}) corresponding to the azimuthal direction along a given hyperbola.
 \begin{figure}
  \centering \includegraphics{exp_xray_frame}
  \caption[Example 2DXRD frame]{\label{fig:exp_xray_frame}An example X-ray frame with a conic section of fixed 2\straighttheta{} highlighted, also showing diffraction space coordinate directions \straighttheta{} and \textchi{}.}
