@@ -12,11 +12,11 @@ These examinations also reveal the previously undocumented and highly surprising
 The liftoff phenomenon is examined and its resulting freestanding thin films are characterized.
 This liftoff phenomenon has been discovered to be robust enough to apply for a provisional patent\cite{patent} which has since been converted into a full simultaneous worldwide patent application.
 This work was completed in collaboration with Mr.~Stephen M. Jovanovic (growths), Dr.
-Kristoffer Mienander (DFT, surfaces) and Ms.~Steffi Woo (TEM), and relies on prior work by Dr.~Robert Hughes and Dr.~Svetlana Neretina.
+Kristoffer Mienander (surfaces), Ms.~Steffi Woo (TEM), and Dr. Martin Couillard (STEM) and relies on prior work by Dr.~Robert Hughes and Dr.~Svetlana Neretina.
 \section{Background}
 CdTe is a cubic semiconductor (a = 6.483\AA{}) with a strong propensity to grow (111)-up, that is alternating layers of cadmium and tellurium, regardless of the structure of the underlying substrate.
 Thus the key requirement for the growth of quality single crystal thin films is to control the nucleation and in-plane orientation. \textalpha-Al\(_2\)O\(_3\) (sapphire) is a rhobehedral complex oxide (a = 4.758~\AA{}, c = 12.991~\AA{}), which presents a hexagonal surface net on its c-plane surface.
-As had been previously investigated by the Preston research group, the (110) diagonal of CdTe matches to a lattice constant of sapphire to within 3.65\%, providing a geometric template for the epitaxial alignment of (111)-up on the 
+As had been previously investigated by the Preston research group, the (110) diagonal of CdTe matches to double of the lattice constant of sapphire to within 3.65\%, providing a geometric template for the epitaxial alignment of (111)-up on the 
 c-plane surface.
 While the c-plane sapphire offers an epitaxial template for the CdTe, the mismatch of cubic on hexagonal symmetries offers two equivalent orientations for the CdTe crystal, as shown in \cref{fig:cdteliftoff_geometry}.
 \begin{figure}
@@ -36,10 +36,12 @@ target obtained from Princeton Scientific was stoichiometric and undoped.
 During growth samples were kept at a nominal temperature of 300\celsius{} via a Pt-Rh thermocouple on the growth furnace surface.
 Films were grown to a thickness of 100 nm, as determined by optical and stylus profilometry.
 
-Structural information was obtained using 2DXRD techniques.
+Structural information was obtained using 2DXRD and TEM/STEM techniques.
 A Bru\-ker SMART\-6000 CCD detector on a Bruker 3-circle D8 goniometer with Rigaku RU-200 rotating anode X-ray generator and parallel-focusing mirror optics were used for the data collection.
 2DXRD data was processed into pole figures using Bruker GADDS\@.
-\section{Results and Discussion}
+TEM/STEM preparation was completed by FIB preparation of cross sections followed by gentle Ar ion milling.
+TEM imaging was collected using a Philips CM-12 and STEM imaging was collected using a FEI Titan 80-300HB with aberration correction.
+\section{Results}
 CdTe thin films had been previously thoroughly structurally characterized via 2DXRD, AFM and TEM\@. As such, one of the next steps to fully characterize the CdTe thin films was to produce larger uniform films\cite{stephen-thesis} and to electrically characterize these films via resistivity and the Hall effect.
 As part of this investigation, lithographic patterning of Pt contacts was performed to create van der Pauw geometry.
 Upon performing an acetone soak, as the photoresist dissolved, and the metal film floated off the sample, it remained in one piece, lifting off the areas of CdTe that were in contact with the metal from the epitaxial substrate.
@@ -67,7 +69,7 @@ Samples were then wetted with solder paste and placed metal side down onto a cop
 Upon removal from the oven, the films were found to have bonded to the copper surface and spontaneously lifted off from the original sapphire substrate.
 These experiments have demonstrated that the production of freestanding thin films by the liftoff phenomenon is simple and straightforward.
 
-Concurrent to investigations into the production of freestanding thin films via the liftoff process, the obvious question arose as to the properties of these films when compared to those attached to the epitaxial substrate.
+Concurrent to investigations into the production of freestanding thin films via the liftoff process, the question arose as to the properties of these films when compared to those attached to the epitaxial substrate.
 2DXRD measurements were undertaken on thin films before, \cref{fig:cdteliftoff_F22_attached} and after \cref{fig:cdteliftoff_F22_released}, liftoff processing using two part epoxy.
 \begin{figure}
  \centering
@@ -85,6 +87,48 @@ Concurrent to investigations into the production of freestanding thin films via 
 Peak broadness is unchanged, only the bleed through of the sapphire (024) peak disappears after the removal of the sapphire substrate.
 The change in the magnitude of the secondary twinning phase is due to the change in location of the two 2DXRD measurements on the sample.
 
+\subsection{Epitaxial Interface Characterization}
+The liftoff phenomenon observed hinges on the intimate relationship between CdTe and sapphire.
+In order to better understand the nature of the of this interface, experimental and computational investigations of the interface were undertaken.
+Samples were aligned using 2DXRD in order to prepare (01\(\overline{1}\)) cross-sections of CdTe using FIB for STEM imaging.
+Imaging was initially intended to provide atomic scale resolution of the interface, however it was found to be blurry for all samples prepared.
+It is unclear if this blurriness was an intrinsic property of the epitaxy process or as a result of sample preparation of the mechanically dissimilar interface.
+
+Due to the atomic contrast available from STEM imaging, alignment of the Cd-Te dumbbells, along with absolute alignment of the physical STEM sample, allowed for determination of the polarity of the CdTe thin film.
+STEM imaging of the (01\(\overline{1}\)) cross-section of CdTe was aligned from the FIB attachment point as in \cref{fig:cdteliftoff_stem_low}.
+After alignment, high magnification STEM was taken at the interface as in \cref{fig:cdteliftoff_stem_high}, showing distinct \{110\} family dumbbells.
+STEM image intensity was integrated along the dumbbells as plotted in \cref{fig:cdteliftoff_stem_intensity}, the modulation in the intensity data indicates a Te-Cd dumbbell oriented away from the interface.
+The STEM intensity modulation, combined 2DXRD crystal alignment and alignment of the STEM lamella, indicates the polarity of the thin film is CdTe(111)A, i.e. the film presents Cd-single bond up.
+The model of the CdTe(111)A crystal observed is shown in \cref{fig:cdteliftoff_stem_model}.
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering \includegraphics[width=\textwidth]{cdteliftoff_stem_low}
+        \caption{\label{fig:cdteliftoff_stem_low}Low magnification STEM of CdTe on sapphire, by FIB preparation, showing attachment point.}
+    \end{subfigure}\quad%
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering \includegraphics[width=\textwidth]{cdteliftoff_stem_high}
+        \caption{\label{fig:cdteliftoff_stem_high}High magnification STEM of CdTe on sapphire showing interface, CdTe dumbbells highlighted where intensity integration was performed.}
+    \end{subfigure}%
+    \caption{\label{fig:cdteliftoff_stem}CdTe on sapphire STEM images used for polarity determination.}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.50\textwidth}
+        \centering \includegraphics[width=\textwidth]{cdteliftoff_stem_intensity}
+        \caption{\label{fig:cdteliftoff_stem_intensity}Intensity plot of STEM image from \cref{fig:cdteliftoff_stem_high}, intensity is higher-lower away from surface, indicating Te-Cd dumbbells}
+    \end{subfigure}\quad%
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering \includegraphics[width=\textwidth]{cdteliftoff_stem_model}
+        \caption{\label{fig:cdteliftoff_stem_model}Atomic model corresponding to CdTe(111)A, Cd atoms in beige, Te atoms in orange}
+    \end{subfigure}%
+    \caption{\label{fig:cdteliftoff_stem2}CdTe on sapphire STEM images used for polarity determination.}
+\end{figure}
+%
+%While STEM imaging was unable to determine the atomic configuration of the interface,  some information can be determined about the interface from simulation of the interaction of adatoms of Cd and Te with the sapphire. Density functional theory (DFT) modelling was undertaken using ABINIT\cite{Gonze20092582}, to determine the potential energy landscape of Cd and Te adatoms. The stable sapphire (0001) surface was used as the starting configuration and Cd and Te atoms were scanned over the sapphire unit cell in a \(11 \times 11\) grid to compute the potential energy at each point. The potential energy map for Cd and Te on the bare sapphire surface is shown in \cref{fig:cdteliftoff_dft1} corresponding to the unit cell shown in \cref{fig:cdteliftoff_sapphire_unit}. From these potential energy maps, the lowest energy configuration is expected to be a Te atom located on one of the oxygen positions. Once a second atom is added to the configuration, as in \cref{fig:cdteliftoff_dft2}, the lowest energy configuration is the Te placed on the Al\textsubscript{1} position and the Cd atom placed on the Al\textsubscript{3} position.
+
+\section{Discussion}
 The mechanism by which liftoff of CdTe on sapphire substrates occurs has not been definitively determined.
 A number of theoretical models have been examined by this group to explain the exceptional interface which yields epitaxial single crystal thin film growth and then releases the resulting film with little effort.
 The models proposed to explain such a process are 1) finite thickness polarization induced interface reorganization (i.e. the polarization catastrophe) 2) double layer Te nucleation, 3) van der Waals induced epitaxy and 4) weak covalent bonding.
