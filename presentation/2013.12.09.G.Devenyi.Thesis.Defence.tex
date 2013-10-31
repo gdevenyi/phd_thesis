@@ -1,0 +1,88 @@
+\documentclass[]{beamer}%[handout]
+\let\Tiny=\tiny
+%\usepackage{multimedia}
+%\usepackage{handoutWithNotes}
+%\usepackage{colortbl}
+\usepackage{slantsc}
+
+\usepackage[canadian]{babel}
+\usepackage{amsmath} %AMS Math Package
+\usepackage{amssymb} %AMS Math Symbols
+\usepackage[all,warning]{onlyamsmath}%Warn about non-ams math useage, suggest improvements
+\usepackage[newcommands]{ragged2e} %provides better \right \left and \Centering, replaces old commands with improved ones
+\usepackage[tracking=true,kerning=true,expansion]{microtype} %makes type look better
+\usepackage{booktabs} %makes tables look better
+\usepackage{siunitx} %provides standard printing for SI units
+\usepackage[capitalize,noabbrev]{cleveref} %Allows use of \cref, which knows what kind of ref you're making, so you don't have to write EQN and such
+\usepackage{ifpdf} %Conditions for if pdftex is running
+\usepackage[T1]{fontenc} %upgrades font encodings
+\usepackage[utf8]{inputenc}%Tells latex the file is saved as UTF-8 (make sure it is!)
+\usepackage{lmodern} %improved version of computer modern font
+\usepackage{multirow} %Allows for mulirow a.k.a. grouped cells in tables
+\usepackage{fixltx2e} %Fixings bugs in latex2e that aren't fixed due to breaking backwards compatability
+\usepackage{upgreek} %Provides upright (non italic) greek fonts
+\usepackage{gensymb} %Provides  \de­gree, \cel­sius, \pert­hou­sand, \mi­cro and \ohm amongst others
+\usepackage{textcomp}
+\usepackage{textgreek} %Provides \textbeta and similar greek letters in text mode
+%\usepackage[section]{placeins} %Fixes placement of figures so they don't cross section boundaries
+\usepackage{verbatim}%Fixes bugs in \verbatim, and provides \begin{comment} and \verbatiminput for including files
+\usepackage{syntonly}%Provides syntax-only latex runs, useful for when the document starts getting big!
+\usepackage{csquotes}
+\usepackage{float} %Fixes up floats (figures) and provides the H placement modifier (place the float RIGHT HERE). with great power...
+\usepackage[style=numeric-comp,backend=biber,sorting=none]{biblatex}
+\usepackage{listing}%Package for listing sourcecode with syntax highlighting
+\usepackage{ellipsis}%Fix \ldots and similar commands, bugs with spacing and such
+\usepackage{graphicx}
+\setkeys{Gin}{width=0.75\textwidth,keepaspectratio}
+\usepackage{subcaption} %The standard method to do figures with a), b) and such
+\usepackage{lipsum} %Prints junk text with \lipsum
+\usepackage{todonotes} %Provides \todo{somethin
+
+
+\pdfminorversion=5
+\pdfobjcompresslevel=3 
+\pdfcompresslevel=9
+
+\hypersetup{pdfstartview={FitH}}
+
+\useoutertheme[glossy]{wuerzburg}
+\useinnertheme[outline,shadow]{chamfered}
+\usecolortheme{shark}
+\usefonttheme[stillsansseriftext,stillsansserifsmall]{serif}
+
+\title[The Role of Energy and Symmetry at Epitaxial Interfaces]{An Investigation into the Role of Energy\\ and Symmetry at Epitaxial Interfaces}
+\author[Gabriel A. Devenyi]{\textbf{Gabriel A. Devenyi}}
+\institute[McMaster University]{
+    Department of Engineering Physics\\McMaster University
+}
+\date{December 9, 2013}
+\logo{\includegraphics[width=0.1\textwidth]{graphics/mcmaster}}
+
+\setbeamercovered{dynamic}
+
+\begin{document}
+
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}[shrink]
+%  \frametitle{Outline}
+%    \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+
+\frame[plain]{\titlepage
+\begin{figure}
+        \includegraphics[width=0.3\textwidth]{graphics/mcmaster}
+\end{figure}
+    }
+
+\begin{frame}[shrink]
+\frametitle{Outline}
+\vspace{1cm}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+
+\end{document}
